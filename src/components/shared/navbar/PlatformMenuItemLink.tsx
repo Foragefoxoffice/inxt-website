@@ -13,12 +13,12 @@ const PlatformMenuItemLink = ({
     <Link
       href={href}
       onClick={() => setMenuDropdownId(null)}
-      className="group/platform-menu-item relative flex items-start gap-2 rounded-xl p-3 transition-all duration-300">
+      className="group/platform-menu-item relative flex items-center gap-2 rounded-xl p-3 transition-all duration-300">
       <HoverBgTransform className="group-hover/platform-menu-item:bg-primary-500/10 group-hover/platform-menu-item:border-primary-200 dark:group-hover/platform-menu-item:border-primary-500 rounded-xl border border-transparent group-hover/platform-menu-item:opacity-100" />
       <div className="border-stroke-1 dark:border-background-7 dark:bg-background-6 shadow-14 group-hover/platform-menu-item:bg-primary-500 relative z-10 mt-1 flex size-9 shrink-0 items-center justify-center rounded-lg border bg-white p-2 transition-all duration-300">
         <Icon className="dark:group-hover/platform-menu-item:stroke-accent transition-all duration-300 ease-in-out group-hover/platform-menu-item:stroke-white" />
       </div>
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col justify-center">
         <div className="flex items-center justify-between gap-2">
           <p className="text-tagline-1 text-secondary dark:text-accent font-normal">{title}</p>
           {/* hover arrow icon  */}
@@ -32,7 +32,6 @@ const PlatformMenuItemLink = ({
             </svg>
           </div>
         </div>
-        <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 font-normal">{description}</p>
       </div>
     </Link>
   );

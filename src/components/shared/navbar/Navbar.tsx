@@ -15,16 +15,16 @@ import { useState } from 'react';
 import MobileMenu from '../mobile-menu/MobileMenu';
 import MobileMenuButton from '../mobile-menu/MobileMenuButton';
 import CompanyMenu from './CompanyMenu';
-import PlanAndSupportMenu from './PlanAndSupportMenu';
-import PlatformMenu from './PlatformMenu';
+import ProductsMenu from './ProductsMenu';
+import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
 import { mobileMenuData } from './data';
 
 const dropdownNavItems = [
+  { label: 'Products', dataMenu: 'products-mega-menu', MenuComponent: ProductsMenu },
+  { label: 'Solutions', dataMenu: 'solutions-mega-menu', MenuComponent: SolutionsMenu },
+  { label: 'Recourse', dataMenu: 'resources-dropdown-menu', MenuComponent: ResourcesMenu },
   { label: 'Company', dataMenu: 'company-mega-menu', MenuComponent: CompanyMenu },
-  { label: 'Platform', dataMenu: 'platform-mega-menu', MenuComponent: PlatformMenu },
-  { label: 'Resources', dataMenu: 'resources-dropdown-menu', MenuComponent: ResourcesMenu },
-  { label: 'Plans & Support', dataMenu: 'plan-and-support-mega-menu', MenuComponent: PlanAndSupportMenu },
 ];
 
 const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
@@ -94,13 +94,6 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                       <MenuComponent menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
                     </li>
                   ))}
-                  <li className="relative cursor-pointer py-2.5">
-                    <Link
-                      href="/pricing"
-                      className="text-tagline-1 hover:bg-accent/5 text-accent/80 flex items-center gap-1 rounded-full px-4 py-2 font-normal transition-all duration-400 hover:text-white">
-                      <span>Pricing</span>
-                    </Link>
-                  </li>
                 </ul>
               </nav>
               <div className="hidden items-center justify-center xl:flex">

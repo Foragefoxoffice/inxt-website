@@ -1,18 +1,49 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
-import { FooterOneData } from '@/interface';
 import behance from '@public/images/icons/behance.svg';
 import dribbble from '@public/images/icons/dribbble.svg';
 import facebook from '@public/images/icons/facebook.svg';
 import instagram from '@public/images/icons/instagram.svg';
 import linkedin from '@public/images/icons/linkedin.svg';
 import youtube from '@public/images/icons/youtube.svg';
-import darkLogo from '@public/images/shared/dark-logo.svg';
+import mainLogo from '@public/technext-img/h-logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import { footerData } from '../navbar/data';
 import FooterDivider from './FooterDivider';
 import FooterLeftGradient from './FooterLeftGradient';
 import FooterRightGradient from './FooterRightGradient';
+
+const footerData = [
+  {
+    title: 'Products',
+    links: [
+      { label: 'Sales Verse', href: '/sales-verse' },
+      { label: 'Broker Verse', href: '/broker-verse' },
+      { label: 'DEX', href: '/dex' },
+      { label: 'Insure Prime', href: '/insure-prime' },
+      { label: 'Project Pulse', href: '/project-pulse' },
+    ],
+  },
+  {
+    title: 'Solutions',
+    links: [
+      { label: 'Core Moderations', href: '/core-moderations' },
+      { label: 'Insurance', href: '/insurance' },
+      { label: 'Bancassurance', href: '/bancassurance' },
+      { label: 'AI & ML Solution', href: '/ai-ml-solution' },
+      { label: 'Digital Consulting', href: '/digital-consulting' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'About Us', href: '/about' },
+      { label: 'Management Team', href: '/team' },
+      { label: 'News and Events', href: '/news' },
+      { label: 'Newsletter', href: '/newsletter' },
+      { label: 'Contact Us', href: '/contact-us' },
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -28,10 +59,10 @@ const Footer = () => {
             <RevealAnimation delay={0.3}>
               <div className="max-w-[306px]">
                 <figure>
-                  <Image src={darkLogo} alt="NextSass Logo" />
+                  <Image src={mainLogo} alt="iNXT Logo" className="max-w-[150px]" />
                 </figure>
                 <p className="text-accent/60 text-tagline-1 mt-4 mb-7 font-normal">
-                  Powerful crypto marketing tools to grow your Web3 project.
+                  Advanced digital platforms for modern insurance and financial services.
                 </p>
                 <div className="flex items-center gap-3">
                   <Link target="_blank" href="https://www.facebook.com" className="footer-social-link">
@@ -68,7 +99,7 @@ const Footer = () => {
             </RevealAnimation>
           </div>
           <div className="col-span-12 grid grid-cols-12 gap-x-0 gap-y-8 xl:col-span-8">
-            {footerData?.map((item: FooterOneData, index: number) => (
+            {footerData?.map((item, index: number) => (
               <div key={item.title} className="col-span-12 md:col-span-4">
                 <RevealAnimation delay={0.4 + 0.1 * index}>
                   <div className="space-y-8">
@@ -92,7 +123,7 @@ const Footer = () => {
           <FooterDivider />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-tagline-1 text-primary-50 font-normal">
-              Copyright &copy;NextSaaS – smart application for modern business
+              Copyright &copy;iNXT – smart application for modern business
             </p>
           </RevealAnimation>
         </div>

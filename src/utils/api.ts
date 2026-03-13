@@ -145,6 +145,8 @@ export const getWebinarById = (lang: string = 'en', id: string) =>
 export interface NewsletterIssue {
   _id: string;
   title: string;
+  featuredImage?: string;
+  author?: string;
   description?: string;
   issueDate: string;
   documents?: {
@@ -157,9 +159,9 @@ export interface NewsletterIssue {
 }
 
 export const getNewsletterIssues = (lang: string = 'en', params: string = '') => 
-  fetchAPI<NewsletterIssue[]>(`/${lang}/newsletter-issues${params ? `?${params}` : ''}`);
+  fetchAPI<NewsletterIssue[]>(`/${lang}/newsletter-issues/public${params ? `?${params}` : ''}`);
 
-export const subscribeNewsletter = (lang: string = 'en', data: { name?: string; email: string; languageId?: string }) => 
+export const subscribeNewsletter = (lang: string = 'en', data: { name?: string; email: string; designation?: string; companyName?: string; languageId?: string }) => 
   fetchAPI<any>(`/${lang}/newsletter/subscribe`, {
     method: 'POST',
     body: JSON.stringify(data),

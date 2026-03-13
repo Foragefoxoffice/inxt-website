@@ -17,6 +17,7 @@ import Image from 'next/image';
 
 import LinkButton from '@/components/ui/button/Button';
 import PlatformMenuItemLink from './PlatformMenuItemLink';
+import MenuCategoryHeader from './MenuCategoryHeader';
 
 export interface PlatformMenuItem {
   href: string;
@@ -114,18 +115,22 @@ const PlatformMenu = ({
             : 'pointer-events-none translate-y-2.5 opacity-0',
         )}>
         <div className="grid grid-cols-12 gap-x-8 gap-y-6">
-          <div className="col-span-4 space-y-3">
-            {firstColumnItems.map((item) => (
-              <PlatformMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
-            ))}
+          <div className="col-span-4">
+            <MenuCategoryHeader title="Features" />
+            <div className="space-y-3">
+              {firstColumnItems.map((item) => (
+                <PlatformMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
+              ))}
+            </div>
           </div>
           <div className="col-span-4">
+            <MenuCategoryHeader title="Analytics & Security" />
             <div className="space-y-3">
               {secondColumnItems.map((item) => (
                 <PlatformMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
               ))}
             </div>
-            <div className="mt-7">
+            <div className="mt-7 px-3">
               <LinkButton
                 btnClass="btn-xl-v2 !border-0 btn-primary-v2 group-hover/btn-v2:btn-secondary-v2"
                 href="/signup ">
@@ -134,7 +139,8 @@ const PlatformMenu = ({
             </div>
           </div>
           <div className="col-span-4">
-            <figure className="mb-2.5 w-full max-w-full overflow-hidden rounded-xl">
+            <MenuCategoryHeader title="Performance" />
+            <figure className="mb-4 w-full max-w-full overflow-hidden rounded-xl">
               <Image src={nsImg427} alt="What's New" className="h-full w-full rounded-xl object-cover" />
             </figure>
             <div className="space-y-3">

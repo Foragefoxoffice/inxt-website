@@ -23,13 +23,6 @@ const Hero = () => {
       {/* section overlay for md devices  */}
       <div className="absolute left-1/2 size-full w-[120%] -translate-x-1/2 bg-linear-to-t from-white from-58% to-transparent blur-[18px] md:hidden" />
       <div className="main-container">
-        <RevealAnimation delay={0.05} offset={20}>
-          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8 sm:mb-12 relative z-10">
-            <Link href="/" className="hover:text-primary-500 transition-colors duration-300">Home</Link>
-            <span className="text-[10px]">●</span>
-            <span className="text-secondary font-medium">Insurance</span>
-          </nav>
-        </RevealAnimation>
         <div className="relative w-full space-y-10 md:space-y-0">
           {/* hero img */}
           <RevealAnimation delay={0.1} offset={50} instant>
@@ -49,13 +42,12 @@ const Hero = () => {
 
                   <RevealAnimation delay={0.3} offset={50} instant>
                     <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">
-                     Automate insurance sales, policy management, and claims processing while modernizing legacy systems with intelligent digital platforms.
+                      Automate insurance sales, policy management, and claims processing while modernizing legacy systems
+                      with intelligent digital platforms.
                     </p>
                   </RevealAnimation>
                 </div>
-            
               </div>
-             
             </div>
           </div>
         </div>

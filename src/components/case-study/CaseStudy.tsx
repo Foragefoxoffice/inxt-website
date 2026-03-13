@@ -7,13 +7,6 @@ const CaseStudy = () => {
   return (
     <section className="pt-32 pb-[20px] sm:pt-36 md:pt-42 lg:pb-[100px] xl:pt-[180px]">
       <div className="main-container">
-        <RevealAnimation delay={0.05}>
-          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8 sm:mb-12 relative z-10">
-            <Link href="/" className="hover:text-primary-500 transition-colors duration-300">Home</Link>
-            <span className="text-[10px]">●</span>
-            <span className="text-secondary font-medium">Case study</span>
-          </nav>
-        </RevealAnimation>
         <div className="space-y-[70px]">
           <div className="max-w-[900px] space-y-3">
             <RevealAnimation delay={0.2}>

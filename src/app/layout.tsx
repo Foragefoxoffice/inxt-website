@@ -7,6 +7,7 @@ import { interTight } from '@/utils/font';
 import { generateMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 import { ReactNode, Suspense } from 'react';
+import { Toaster } from 'react-hot-toast';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
             <Suspense>
               <SmoothScrollProvider>
                 <HeaderWrapper />
-                
+                <Toaster position="top-right" />
                 {children}
                 <FooterWrapper />
               </SmoothScrollProvider>

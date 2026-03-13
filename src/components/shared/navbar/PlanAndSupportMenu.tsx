@@ -17,6 +17,7 @@ import nsImg423 from '@public/images/ns-img-423.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import PlanSupportMenuItemLink from './PlanSupportMenuItemLink';
+import MenuCategoryHeader from './MenuCategoryHeader';
 
 export interface PlanSupportMenuItem {
   href: string;
@@ -67,7 +68,7 @@ const PlanAndSupportMenu = ({
         )}>
         <div className="grid grid-cols-12 items-start gap-y-6 md:gap-x-6">
           <div className="col-span-4">
-            <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 p-3 font-medium">Account</p>
+            <MenuCategoryHeader title="Account" />
             <ul className="space-y-1">
               {accountMenuItems.map((item) => (
                 <PlanSupportMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
@@ -75,7 +76,7 @@ const PlanAndSupportMenu = ({
             </ul>
           </div>
           <div className="col-span-4">
-            <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 p-3 font-medium">Legal</p>
+            <MenuCategoryHeader title="Legal" />
             <ul className="space-y-1">
               {legalMenuItems.map((item) => (
                 <PlanSupportMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
@@ -83,7 +84,7 @@ const PlanAndSupportMenu = ({
             </ul>
           </div>
           <div className="col-span-4">
-            <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 mb-2 p-3 font-medium">Featured</p>
+            <MenuCategoryHeader title="Featured" />
             <article
               onClick={() => setMenuDropdownId(null)}
               className="border-stroke-1 group/blog w-full space-y-3 rounded-[30px] border p-2 dark:border-white/10">

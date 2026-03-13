@@ -5,13 +5,6 @@ const Hero = () => {
   return (
     <section className="pt-[100px] pb-16 lg:pt-[140px] lg:pb-20 xl:pt-[170px] xl:pb-28">
       <div className="main-container">
-        <RevealAnimation delay={0.05}>
-          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8 sm:mb-12">
-            <a href="/" className="hover:text-primary-500 transition-colors duration-300">Home</a>
-            <span className="text-[10px]">●</span>
-            <span className="text-secondary font-medium">Whitepaper</span>
-          </nav>
-        </RevealAnimation>
         <div className="space-y-6 text-center">
           <RevealAnimation delay={0.1}>
             <span className="badge badge-green-v2">Whitepapers &amp; Insights</span>
