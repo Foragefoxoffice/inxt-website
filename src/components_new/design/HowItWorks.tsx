@@ -9,26 +9,26 @@ const HowItWorks = () => {
     {
       id: 'step-1',
       stepNumber: 1,
-      title: 'Sign up',
-      description: 'Get started for free in just a few seconds!',
+      title: 'Research & Discovery',
+      description: 'We begin by understanding your business goals, user needs, and market landscape to ensure a strong foundation.',
     },
     {
       id: 'step-2',
       stepNumber: 2,
-      title: 'Import or start fresh',
-      description: 'Upload your resume or paste your LinkedIn profile.',
+      title: 'Prototyping & Wireframing',
+      description: 'Low- and high-fidelity prototypes are created to visualize structure, flow, and interactions before development begins.',
     },
     {
       id: 'step-3',
       stepNumber: 3,
-      title: 'Paste the job details',
-      description: 'Let AI help you jazz up your resume!',
+      title: 'UI/UX Design',
+      description: 'User-centered interfaces are designed to be intuitive, engaging, and aligned with your brand identity.',
     },
     {
       id: 'step-4',
       stepNumber: 4,
-      title: 'Apply & track',
-      description: 'Submit applications and track your progress all in one place.',
+      title: 'Testing & Iteration',
+      description: 'Designs and features are tested with real users and iterated for continuous improvement and optimal performance.',
     },
   ];
 
@@ -40,13 +40,16 @@ const HowItWorks = () => {
         <div className="space-y-10 md:space-y-12 lg:space-y-14 xl:space-y-19">
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.1}>
+              <span className="badge badge-cyan">How it works</span>
+            </RevealAnimation>
+            <RevealAnimation delay={0.1}>
               <h2 id="how-it-works-heading" itemProp="name">
-                How it works
+                From Vision to Execution
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="text-[#323A44]" itemProp="description">
-                Step-by-step Flow
+                Our process focuses on understanding your business needs and customer expectations todesign custom solutions that align with your goals.
               </p>
             </RevealAnimation>
           </div>
@@ -57,7 +60,7 @@ const HowItWorks = () => {
             {/* card one  */}
             {stepCardData.map((step, index) => (
               <RevealAnimation key={step.id} delay={0.1 + index * 0.2} direction="left">
-                <StepCard key={step.id} {...step} className={cn(index % 2 === 0 ? 'bg-background-3' : 'bg-ns-green')} />
+                <StepCard key={step.id} {...step} className={`${cn(index % 2 === 0 ? 'bg-background-3' : 'bg-ns-green')} min-h-[430px]`} />
               </RevealAnimation>
             ))}
 

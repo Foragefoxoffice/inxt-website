@@ -7,51 +7,51 @@ import LinkButton from '@/components/ui/button/LinkButton';
 const data = [
   {
     id: 1,
-    title: 'Sales CRM',
+    title: 'User research and behavioral insights',
   },
   {
     id: 2,
-    title: 'Marketing automation',
+    title: 'Customer journey mapping',
   },
   {
     id: 3,
-    title: 'Mobile CRM app',
+    title: 'Information architecture planning',
   },
   {
     id: 4,
-    title: 'Customer portal',
+    title: 'Interaction design frameworks',
   },
   {
     id: 5,
-    title: 'Lead management system',
+    title: 'Usability testing and validation',
   },
   {
     id: 6,
-    title: 'API & developer platform',
+    title: 'Accessibility and inclusive design',
   },
   {
     id: 7,
-    title: 'Real estate',
+    title: 'Modern UI design systems',
   },
   {
     id: 8,
-    title: 'Finance & banking',
+    title: 'Responsive and mobile-first design',
   },
   {
     id: 9,
-    title: 'E-commerce',
+    title: 'Design prototyping and wireframing',
   },
   {
     id: 10,
-    title: 'Travel & hospitality',
+    title: 'Visual design and branding alignment',
   },
   {
     id: 11,
-    title: 'B2B SaaS',
+    title: 'Design consistency across platforms',
   },
   {
     id: 12,
-    title: 'And more!',
+    title: 'Scalable design components',
   },
 ];
 
@@ -61,18 +61,17 @@ const FeatureV2 = () => {
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan">Features</span>
+            <span className="badge badge-cyan">Design Excellence</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
               <h2>
-                A<span className="text-primary-500"> one-stop </span>solution
+                Designing Intuitive and Impactful Digital Experiences
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="mx-auto max-w-[500px] lg:max-w-[674px]">
-                With our lead capture automation software, you can effortlessly collect, manage, and nurture leads from
-                various online and offline sources in real-time.
+                Our UI/UX design approach focuses on creating seamless, user-centered digital experiences that improve usability, engagement, and business outcomes. We combine research, design strategy, and modern design systems to deliver interfaces that are both visually compelling and highly functional.
               </p>
             </RevealAnimation>
           </div>
@@ -81,7 +80,7 @@ const FeatureV2 = () => {
           <div className="flex flex-col items-center gap-y-6 lg:flex-row lg:gap-8 xl:gap-12">
             <RevealAnimation delay={0.5} offset={70} start="top 88%">
               <div className="bg-white dark:bg-background-6 w-full max-w-[500px] space-y-6 rounded-[20px] p-8 lg:max-w-[300px] xl:max-w-[360px] xl:p-[42px]">
-                <h3 className="xl:text-heading-4 text-heading-5">Our products</h3>
+                <h3 className="xl:text-heading-4 text-heading-5">User Experience Strategy</h3>
                 <ul>
                   {data.slice(0, 6).map((item) => (
                     <li key={item.id} className="flex items-center gap-2 py-1.5 xl:py-2.5">
@@ -121,7 +120,7 @@ const FeatureV2 = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.7} offset={70} start="top 88%">
               <div className="bg-white dark:bg-background-6 w-full max-w-[500px] space-y-6 rounded-[20px] p-8 lg:max-w-[300px] xl:max-w-[360px] xl:p-[42px]">
-                <h3 className="xl:text-heading-4 text-heading-5">Industries we serve</h3>
+                <h3 className="xl:text-heading-4 text-heading-5">Interface Design & Innovation</h3>
                 <ul>
                   {data.slice(6).map((item) => (
                     <li key={item.id} className="flex items-center gap-2 py-1.5 xl:py-2.5">

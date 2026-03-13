@@ -71,18 +71,36 @@ const WhyChooseNextSaas = () => {
             </div>
             {/* content  */}
             <div className="mx-auto flex max-w-[1178px] flex-col items-center gap-10 lg:flex-row lg:gap-0">
-              <div className="flex w-full flex-col gap-8 md:flex-row lg:flex-col">
-                {data.slice(0, 3).map((item, index) => (
-                  <RevealAnimation delay={0.6 + index * 0.1} direction="left" key={item.id}>
-                    <div className="w-full space-y-3 md:max-w-[300px]">
-                      <span className={cn('text-secondary dark:text-accent block text-[36px]', item.icon)} />
-                      <div>
-                        <h3 className="text-tagline-1 font-medium">{item.title}</h3>
-                        <p className="text-tagline-2">{item.description}</p>
-                      </div>
+              <div className="flex w-full flex-col gap-8 md:flex-row lg:mr-4 lg:flex-col xl:mr-0">
+                <RevealAnimation delay={0.6} direction="left">
+                  <div className="w-full space-y-3 md:max-w-[300px]">
+                    <span className={cn('text-secondary dark:text-accent block text-[36px]', data[0].icon)} />
+                    <div>
+                      <h3 className="text-tagline-1 font-medium">{data[0].title}</h3>
+                      <p className="text-tagline-2">{data[0].description}</p>
                     </div>
-                  </RevealAnimation>
-                ))}
+                  </div>
+                </RevealAnimation>
+
+                <RevealAnimation delay={0.7} direction="left">
+                  <div className="w-full space-y-3 md:max-w-[300px]">
+                    <span className={cn('text-secondary dark:text-accent block text-[36px]', data[1].icon)} />
+                    <div>
+                      <h3 className="text-tagline-1 font-medium">{data[1].title}</h3>
+                      <p className="text-tagline-2">{data[1].description}</p>
+                    </div>
+                  </div>
+                </RevealAnimation>
+
+                <RevealAnimation delay={0.8} direction="left">
+                  <div className="w-full space-y-3 md:max-w-[300px]">
+                    <span className={cn('text-secondary dark:text-accent block text-[36px]', data[2].icon)} />
+                    <div>
+                      <h3 className="text-tagline-1 font-medium">{data[2].title}</h3>
+                      <p className="text-tagline-2">{data[2].description}</p>
+                    </div>
+                  </div>
+                </RevealAnimation>
               </div>
               {/* feature img  */}
               <RevealAnimation delay={0.7} duration={0.7} offset={80}>
