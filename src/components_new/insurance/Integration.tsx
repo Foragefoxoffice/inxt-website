@@ -16,43 +16,50 @@ import LinkButton from '../ui/button/LinkButton';
 const integrationData = [
   {
     id: 1,
-    name: 'Zapier',
-    category: 'Communication',
+    name: 'SalesVerse',
+    category: 'Sales',
     icon: zapierIcon,
     href: '/pricing',
   },
   {
     id: 2,
-    name: 'Snapchat',
-    category: 'Messaging App',
+    name: 'BrokerVerse',
+    category: 'Brokerage',
     icon: snapchatIcon,
     href: '/pricing',
   },
   {
     id: 3,
-    name: 'Shopify',
-    category: 'e-commerce',
+    name: 'CustomerVerse',
+    category: 'Customers',
     icon: shopifyIcon,
     href: '/pricing',
   },
   {
     id: 4,
-    name: 'Figma',
-    category: 'Design Tool',
+    name: 'MerchantVerse',
+    category: 'Payments',
     icon: figmaIcon,
     href: '/pricing',
   },
   {
     id: 5,
-    name: 'Slack',
-    category: 'Communication',
+    name: 'ClaimVerse',
+    category: 'Claims',
     icon: slackIcon,
     href: '/pricing',
   },
   {
     id: 6,
-    name: 'Tiktok',
-    category: 'Video Tool',
+    name: 'ReportVerse',
+    category: 'Analytics',
+    icon: tiktokIcon,
+    href: '/pricing',
+  },
+  {
+    id: 7,
+    name: 'ReconVerse',
+    category: 'Reconciliation',
     icon: tiktokIcon,
     href: '/pricing',
   },
@@ -68,16 +75,16 @@ const Integration = () => {
         <div className="mx-auto max-w-[850px]">
           <div className="mb-[112px] flex flex-col items-center gap-y-4 text-center max-[426px]:mb-10">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3">Integration</span>
+              <span className="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3">Insurance Platforms</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
-                Link up with your favorite tools.
+               Platforms Supporting Insurance Operations
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent max-[426px]:text-tagline-2 max-w-[510px]">
-                We assist startups in standing out with exceptional messaging that effectively engages their audience.
+                Our suite of digital platforms is designed to streamline insurance operations, improve efficiency, and enable seamless integration across sales, claims, customer engagement, and analytics.
               </p>
             </RevealAnimation>
           </div>
@@ -115,15 +122,6 @@ const Integration = () => {
               </RevealAnimation>
             ))}
           </div>
-          <RevealAnimation delay={0.7}>
-            <div className="text-center">
-              <LinkButton
-                href="/integration"
-                className="btn btn-xl btn-white dark:btn-transparent hover:btn-white-dark dark:hover:btn-white max-[526px]:btn-md max-[526px]:w-full">
-                See in Action
-              </LinkButton>
-            </div>
-          </RevealAnimation>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="relative w-full space-y-10 md:space-y-0">
           {/* hero img */}
           <RevealAnimation delay={0.1} offset={50} instant>
-            <figure className="lp:!max-w-[1290px] lp:!h-[925px] bg-accent/40 mx-auto w-full max-w-[900px] overflow-hidden rounded-[20px] p-2 md:h-[384px] lg:h-[580px] xl:max-w-[1140px]">
+            <figure className="lp:!max-w-[1290px] lp:!h-[725px] bg-accent/40 mx-auto w-full max-w-[900px] overflow-hidden rounded-[20px] p-2 md:h-[384px] lg:h-[580px] xl:max-w-[1140px]">
               <Image src={hero} alt="hero" className="rounded-[16px] object-cover" />
             </figure>
           </RevealAnimation>
@@ -36,13 +36,12 @@ const Hero = () => {
               <div className="space-y-7 xl:space-y-14">
                 <div className="space-y-3 text-center md:text-left">
                   <RevealAnimation delay={0.2} offset={50} instant>
-                    <h1>Your resume, perfected by AI</h1>
+                    <h1>Digital Platforms for Modern Insurance Operations</h1>
                   </RevealAnimation>
 
                   <RevealAnimation delay={0.3} offset={50} instant>
                     <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">
-                      NestSaaS helps you create tailored, keyword-rich resumes that pass ATS filters and impress
-                      recruiters—fast, accurate, and stress-free.
+                     Automate insurance sales, policy management, and claims processing while modernizing legacy systems with intelligent digital platforms.
                     </p>
                   </RevealAnimation>
                 </div>

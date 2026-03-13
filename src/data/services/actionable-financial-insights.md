@@ -12,7 +12,7 @@ userReview:
   userRole: 'Finance Director, Growth Ventures'
 ---
 
-## Actionable Financial Insights
+## Actionable financial insights
 
 Our **advanced analytics engine** transforms raw financial data into actionable insights through interactive dashboards, customizable KPI tracking, and predictive trend analysis. Monitor performance, track trends, and make smarter decisions with real-time analytics and clear reporting. Visualize revenue patterns, identify growth opportunities, and understand spending behaviors with comprehensive charts and graphs.
 

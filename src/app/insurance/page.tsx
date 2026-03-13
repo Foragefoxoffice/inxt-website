@@ -5,8 +5,8 @@ import Templates from '@/components_new/insurance/Templates';
 import Integration from '@/components_new/insurance/Integration';
 import Feature from '@/components_new/insurance/Feature';
 import Feature2 from '@/components_new/insurance/Feature2';
-import CTA from '@/components_new/insurance/CTA';
-import Faq from '@/components_new/insurance/Faq';
+import CTA from '@/components_new/insurance/InsuranceCTA';
+import Faq from '@/components_new/insurance/InsuranceFaq';
 
 import { Metadata } from 'next';
 
