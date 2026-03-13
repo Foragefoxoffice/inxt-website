@@ -20,11 +20,11 @@ const CTA = () => {
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Transform Your Insurance Sales Operations
+                Manage Projects More Efficiently with Project Pulse
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p itemProp="description">Empower your sales teams with AI-driven lead management, real-time insights, and a unified platform designed for modern insurance distribution.</p>
+              <p itemProp="description">Plan smarter, collaborate better, and track progress in real time with a project management platform designed for modern teams.</p>
             </RevealAnimation>
           </div>
         </div>
@@ -35,7 +35,7 @@ const CTA = () => {
               href="/signup"
               btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
               aria-label="Book your free strategy call - Navigate to signup page">
-              Contact Our Team
+              Talk to Our Team
             </LinkButton>
           </div>
         </RevealAnimation>

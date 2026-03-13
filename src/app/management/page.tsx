@@ -1,5 +1,6 @@
 import ManagementTeam from '@/components_new/management/ManagementTeam';
 import { defaultMetadata } from '@/utils/generateMetaData';
+import CTA from '@/components_new/management/CTA';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ const ManagementPage = () => {
   return (
     <main>
       <ManagementTeam />
+      <CTA />
     </main>
   );
 };

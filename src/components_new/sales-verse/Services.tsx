@@ -12,7 +12,7 @@ export interface ServiceData {
 const servicesData: ServiceData[] = [
   {
     id: '1',
-    title: '20+ professional resume sections',
+    title: 'AI Lead Management',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '2',
-    title: 'Built-in grammar & clarity checker',
+    title: 'Sales Dashboard & Insights',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={33} height={34} viewBox="0 0 33 34" fill="none" aria-hidden="true">
         <path
@@ -49,7 +49,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '3',
-    title: 'AI resume tailoring & summary writing',
+    title: 'AI Sales Recommendations',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={34} height={33} viewBox="0 0 34 33" fill="none" aria-hidden="true">
         <path
@@ -63,7 +63,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '4',
-    title: 'Chrome extension to bookmark jobs',
+    title: 'Customer Onboarding Automation',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={35} height={33} viewBox="0 0 35 33" fill="none" aria-hidden="true">
         <path
@@ -77,7 +77,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '5',
-    title: 'Export as PDF, TXT & more!',
+    title: 'Omni-Channel Engagement',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={34} height={33} viewBox="0 0 34 33" fill="none" aria-hidden="true">
         <path
@@ -92,7 +92,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '6',
-    title: 'Translation tool for resumes',
+    title: 'Customer 360° View',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={33} height={34} viewBox="0 0 33 34" fill="none" aria-hidden="true">
         <path
@@ -107,7 +107,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '7',
-    title: 'AI cover letter & more builder',
+    title: 'eKYC & Document Automation',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={34} height={33} viewBox="0 0 34 33" fill="none" aria-hidden="true">
         <path
@@ -121,7 +121,7 @@ const servicesData: ServiceData[] = [
   },
   {
     id: '8',
-    title: 'Real-time feedback sharing',
+    title: 'Revenue & Conversion Optimization',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width={33} height={34} viewBox="0 0 33 34" fill="none" aria-hidden="true">
         <path
@@ -138,32 +138,22 @@ const servicesData: ServiceData[] = [
 
 const Services = () => {
   return (
-    <section className="pt-14 pb-30 xl:pt-28 xl:pb-43.5" aria-labelledby="services-heading">
+    <section className="pt-14 pb-10 xl:pt-28 xl:pb-5" aria-labelledby="services-heading">
       <div className="main-container">
         <div className="space-y-12 lg:space-y-19">
           <div className="flex flex-col items-center justify-between gap-y-5 lg:flex-row">
-            <div className="space-y-3">
+            <div className="space-y-3 mx-auto">
               <RevealAnimation delay={0.1}>
-                <h2 id="services-heading" className="text-center lg:max-w-[470px] lg:text-left" itemProp="name">
-                  Everything you need to stand out
+                <h2 id="services-heading" className="mx-auto text-center lg:max-w-[630px] lg:text-center" itemProp="name">
+                  Advanced Features for Intelligent Insurance Sales Management
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="mx-auto max-w-[400px] text-center lg:mx-0 lg:text-left" itemProp="description">
-                  From AI-powered writing to ATS-ready optimization— NestSaaS helps you create resumes that get noticed,
-                  fast.
+                <p className="mx-auto max-w-[630px] text-center lg:mx-0 lg:text-center" itemProp="description">
+                  AI-powered features that help insurers capture leads, manage sales activities, and improve conversion through intelligent automation and real-time insights.
                 </p>
               </RevealAnimation>
             </div>
-            <RevealAnimation delay={0.3}>
-              <div className="mt-auto mb-0 flex w-full items-center justify-center md:w-auto">
-                <div className="w-[90%] sm:w-auto">
-                  <LinkButton href="/pricing" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Build your resume now
-                  </LinkButton>
-                </div>
-              </div>
-            </RevealAnimation>
           </div>
           <div
             className="grid w-full grid-cols-12 items-center justify-center gap-3"

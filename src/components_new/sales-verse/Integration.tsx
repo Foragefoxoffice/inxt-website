@@ -7,24 +7,29 @@ import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
 const stackCards = [
   {
     icon: 'ns-shape-19',
-    title: 'Startups',
-    description: 'Launch your MVP quickly and validate your idea',
+    title: 'Lead Conversion Improvement',
+    description: 'Higher sales productivity',
   },
   {
     icon: 'ns-shape-35',
-    title: 'Business teams',
-    description: 'Automate workflows and streamline operations',
+    title: 'Sales Performance Visibility',
+    description: 'Real-time insights',
   },
   {
     icon: 'ns-shape-4',
-    title: 'Freelancers & agencies',
-    description: 'Deliver custom apps to your clients with ease',
+    title: 'Customer Onboarding Acceleration',
+    description: 'Faster onboarding',
   },
   {
     icon: 'ns-shape-21',
-    title: 'Educators & creators',
-    description: 'Build tools, portals, and learning apps fast',
+    title: 'Data-Driven Decisions',
+    description: 'Analytics-based strategy',
   },
+  {
+    icon: 'ns-shape-21',
+    title: 'Distribution Network Scaling',
+    description: 'Efficient growth',
+  }
 ];
 
 const Integration = () => {
@@ -34,27 +39,17 @@ const Integration = () => {
         <div className="flex flex-col items-start gap-y-10 pt-14 pb-14 md:gap-y-20 md:pt-16 md:pb-16 lg:flex-row lg:gap-[100px] lg:pt-[88px] lg:pb-[88px] xl:pt-[150px] xl:pb-[150px]">
           <div className="mx-auto w-full max-w-[520px] text-center lg:sticky lg:top-28 lg:mx-0 lg:max-w-full lg:flex-1 lg:text-left">
             <RevealAnimation delay={0.2}>
-              <span className="badge badge-green mb-5"> Integration </span>
+              <span className="badge badge-green mb-5"> Business Benefits </span>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <h2 className="mb-3 whitespace-normal">
-                Designed for makers,<span className="text-primary-500"> teams &amp; entrepreneurs</span>
+                Drive Sales Growth and Operational Efficiency
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="mb-14 lg:max-w-[620px]">
-                Built to support ambitious founders, agile teams, and visionary entrepreneurs. We turn ideas into
-                strategic, user-first digital products.
+                Improve lead conversion, gain real-time sales visibility, and streamline onboarding with intelligent automation and analytics.
               </p>
-            </RevealAnimation>
-            <RevealAnimation delay={0.5}>
-              <div>
-                <LinkButton
-                  href="/integration-01"
-                  className="btn btn-secondary hover:btn-white btn-md dark:btn-transparent dark:hover:btn-accent w-[85%] md:w-auto">
-                  See use cases
-                </LinkButton>
-              </div>
             </RevealAnimation>
           </div>
           <StackCardWrapper

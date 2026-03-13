@@ -18,22 +18,22 @@ interface Feature {
 const featuresData: Feature[] = [
   {
     id: '1',
-    title: 'Billing & invoicing',
-    description: 'Create comprehensive receipts that include itemized purchases, taxes, and discounts',
+    title: 'Real-Time Decision Intelligence',
+    description: 'DEX analyzes live operational data and provides intelligent decision nudges, helping teams respond quickly to business events and operational changes.',
     image: feature1,
     imageDark: featureDark1,
   },
   {
     id: '2',
-    title: 'Supplier management',
-    description: 'Monitor your suppliers, manage purchase orders seamlessly, and keep an eye on your',
+    title: 'Predictive Insights & AI Analytics',
+    description: 'AI models identify patterns, forecast outcomes, and uncover hidden insights across enterprise data to support proactive and data-driven decision-making.',
     image: feature2,
     imageDark: featureDark2,
   },
   {
     id: '3',
-    title: 'Cloud-based accessibility',
-    description: 'Easily view your POS dashboard from any device, allowing you to manage sales',
+    title: 'Operational Monitoring & Smart Alerts',
+    description: 'Monitor key performance indicators and receive automated alerts when critical events, risks, or anomalies require immediate attention.',
     image: feature3,
     imageDark: featureDark3,
   },
@@ -45,16 +45,15 @@ const Features = () => {
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-14">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-green">More Features</span>
+            <span className="badge badge-green">AI Capabilities</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
-              <h2>Key Features</h2>
+              <h2>Advanced AI Features for Intelligent Decision-Making</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[578px]">
-                Our platform is designed with a focus on performance, usability, and innovation, delivering a seamless
-                experience tailored to modern needs.
+                DEX combines real-time analytics, predictive intelligence, and automated alerts to help organizations monitor operations, detect patterns, and make faster, data-driven decisions.
               </p>
             </RevealAnimation>
           </div>

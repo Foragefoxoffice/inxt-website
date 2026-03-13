@@ -22,21 +22,21 @@ interface Step {
 const stepsData: Step[] = [
   {
     id: '1',
-    title: 'Download the app',
-    description: 'Downloads available for iOS, Android & enterprise tablets.',
+    title: 'Policy & Core System Integration',
+    description: 'Connect seamlessly with policy administration systems to synchronize customer, policy, and sales data.',
     image: Step1,
   },
   {
     id: '2',
-    title: 'Create your account',
-    description: 'Add teams, assign policies, and connect devices in minutes.',
+    title: 'CRM & Sales Platforms',
+    description: 'Integrate with CRM tools to manage leads, track customer interactions, and improve sales collaboration.',
     image: Step2,
     imageDark: Step2Dark,
   },
   {
     id: '3',
-    title: 'Start managing',
-    description: 'Monitor, restrict, or wipe devices remotely any time.',
+    title: 'Analytics & Digital Platforms',
+    description: 'Link with analytics and digital platforms to gain real-time insights and enhance customer engagement across channels.',
     image: Step3,
   },
 ];
@@ -52,21 +52,12 @@ const Steps = () => {
             <div className="space-y-5 text-center md:space-y-8 lg:space-y-14 lg:text-left">
               <div className="space-y-1 sm:space-y-3">
                 <RevealAnimation delay={0.1}>
-                  <h2 className="mx-auto w-full sm:max-w-[629px] xl:mx-0">Manage any device in 3 easy steps</h2>
+                  <h2 className="mx-auto w-full sm:max-w-[629px] xl:mx-0">Connected Technology for Seamless Sales Operations</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
-                  <p>We streamline automation for a strategic and sustainable AI transition.</p>
+                  <p>SalesVerse integrates with core insurance systems and digital platforms to enable smooth data flow, improve operational efficiency, and support scalable sales operations across multiple channels.</p>
                 </RevealAnimation>
               </div>
-              <RevealAnimation delay={0.3}>
-                <div>
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn hover:btn-primary dark:btn-transparent btn-secondary btn-md mx-auto w-[85%] md:w-auto">
-                    Get started now
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6">

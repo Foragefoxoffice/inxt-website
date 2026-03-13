@@ -6,19 +6,23 @@ import LinkButton from '../ui/button/LinkButton';
 const eligibilityData = [
   {
     id: 1,
-    text: 'Minimum credit score: 620',
+    text: 'Limited visibility into agent and broker performance',
   },
   {
     id: 2,
-    text: 'Proof of stable income or employment',
+    text: 'Manual lead tracking and sales processes',
   },
   {
     id: 3,
-    text: 'Minimum 3% down payment',
+    text: 'Inefficient customer onboarding workflows',
   },
   {
     id: 4,
-    text: 'Property meets FHA/VA/conventional guidelines.',
+    text: 'Disconnected sales channels and data silos',
+  },
+  {
+    id: 5,
+    text: 'Difficulty identifying high-value leads',
   },
 ];
 
@@ -31,13 +35,13 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[461px] md:text-start">
-                  Check your eligibility in seconds.
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[530px] md:text-start">
+                  Challenges in Insurance Sales Operations
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="mb-8 text-center md:text-start">
-                  Track key indicators, spot trends early, and turn data into action.
+                <p className="mb-8 text-center md:text-start md:max-w-[530px]">
+                  Insurance organizations often struggle with managing complex distribution networks and tracking sales performance effectively.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}
@@ -67,17 +71,7 @@ const Eligibility = () => {
                 ))}
               </ul>
 
-              <RevealAnimation delay={0.7}>
-                <div className="text-center md:text-start">
-                  <LinkButton
-                    href="/features"
-                    rel="noopener noreferrer"
-                    className="btn btn-white btn-xl dark:btn-transparent hover:btn-primary w-[90%] md:w-auto"
-                    aria-label="Check eligibility now">
-                    Check eligibility now
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
+              
             </div>
             {/* img  */}
             <RevealAnimation delay={0.6}>

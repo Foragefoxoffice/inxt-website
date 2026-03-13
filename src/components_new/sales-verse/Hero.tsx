@@ -16,14 +16,12 @@ const Hero = () => {
           <div className="mb-12 text-center lg:mb-20 xl:mb-33">
             <RevealAnimation delay={0.1}>
               <h1 className="mb-3 font-medium opacity-0">
-                Using AI applications to boost <br className="hidden md:block" />
-                business success.
+                Sales Verse <br /> <span className="text-[26px] md:text-[50px]">AI-Powered Insurance Sales Management Platform</span>
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="mx-auto mb-7 max-w-[750px] md:mb-14">
-                Our startup development services aim to fast-track your path from idea to launch, equipping you with the
-                technical skills and strategic insights essential for success.
+                SalesVerse is an end-to-end sales cycle management platform that helps insurers capture leads, automate onboarding, manage agents, and gain real-time sales insights. With AI-driven automation and predictive analytics, insurers can improve lead conversion, accelerate deal closure, and optimize revenue growth.
               </p>
             </RevealAnimation>
             <ul className="flex flex-col items-center justify-center gap-x-4 gap-y-3 md:flex-row md:gap-y-0">

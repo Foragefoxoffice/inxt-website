@@ -35,23 +35,14 @@ const Overview = () => {
                 {/* heading text  */}
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h1>Boost your business with smart apps</h1>
+                    <h1>End-to-End Sales Cycle Management for Insurance</h1>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p>
-                      NextSaaS brings you a powerful, all-in-one smart application designed to streamline your
-                      operations, empower your team, and accelerate growth—no matter your industry.
+                      SalesVerse enables insurers to manage the complete sales lifecycle from lead generation to customer onboarding and post-sales engagement. The platform supports both digital and face-to-face sales channels, helping insurers improve productivity and streamline distribution operations.
                     </p>
                   </RevealAnimation>
                 </div>
-                {/* heading btn  */}
-                <RevealAnimation delay={0.4} className="w-full md:w-auto">
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn btn-lg btn-primary hover:btn-secondary dark:hover:btn-accent w-[90%] md:w-auto">
-                    <span>Book a strategy call</span>
-                  </LinkButton>
-                </RevealAnimation>
               </div>
               <div className="relative" aria-hidden="true">
                 {/* income   */}

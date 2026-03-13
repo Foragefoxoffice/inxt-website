@@ -25,37 +25,19 @@ const Templates = () => {
           {/* Header Section */}
           <div className="space-y-8 sm:space-y-10 lg:space-y-14">
             <div className="space-y-4 sm:space-y-6">
-              <RevealAnimation delay={0.1}>
-                <span
-                  className="badge badge-gray-light-v2 mx-auto flex w-[150px] items-center justify-center font-normal lg:mx-0"
-                  style={{ textTransform: 'capitalize' }}
-                  aria-label="Section category">
-                  Impressive templates
-                </span>
-              </RevealAnimation>
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-3 sm:space-y-4 text-center">
                 <RevealAnimation delay={0.2}>
-                  <h2 id="templates-heading" className="mx-auto text-center lg:mx-0 lg:max-w-[818px] lg:text-left">
-                    Professionally designed resume templates that get results
+                  <h2 id="templates-heading" className="mx-auto text-center lg:max-w-[818px]">
+                    Experience SalesVerse in Action
                   </h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
-                  <p className="mx-auto text-center lg:mx-0 lg:max-w-[450px] lg:text-left">
-                    Choose from 15+ customizable, ATS-friendly templates that are elegant, readable, and
-                    conversion-focused.
+                  <p className="mx-auto text-center lg:max-w-[450px]">
+                    Explore the intuitive dashboards and powerful tools that help sales teams manage leads, track performance, and streamline insurance sales operations through a centralized platform.
                   </p>
                 </RevealAnimation>
               </div>
             </div>
-            <RevealAnimation delay={0.4}>
-              <div className="flex justify-center lg:justify-start">
-                <div className="group w-[90%] sm:w-auto">
-                  <LinkButton href="/services" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Get started now
-                  </LinkButton>
-                </div>
-              </div>
-            </RevealAnimation>
           </div>
           {/* Cards Grid */}
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2" aria-label="Template feature cards">
@@ -103,10 +85,10 @@ const Templates = () => {
                   />
                   <div className="relative z-20 mt-28 space-y-1 sm:mt-0">
                     <h3 id="card1-heading" className="text-heading-5 text-[#0d0d12]/90">
-                      A4 and US Letter formats
+                      Lead Management Dashboard
                     </h3>
                     <p className="max-w-[320px]">
-                      A4 and US Letter formats are two of the most commonly used paper sizes
+                      Capture, organize, and track leads from multiple channels while prioritizing high-potential opportunities using AI-driven scoring.
                     </p>
                   </div>
                 </div>
@@ -177,9 +159,9 @@ const Templates = () => {
                   />
                   <div className="absolute bottom-[41px] z-20 mt-8 space-y-1 sm:mt-13.5">
                     <h3 id="card2-heading" className="text-heading-5 max-w-[250px] text-[#0d0d12]/90">
-                      9 fonts, unlimited colors, 20+ background styles
+                      Sales Performance Dashboard
                     </h3>
-                    <p className="max-w-[350px]">Customize every detail to match your unique style.</p>
+                    <p className="max-w-[350px]">Monitor sales performance, agent productivity, and lead conversion rates through real-time dashboards and analytics.</p>
                   </div>
                 </div>
               </RevealAnimation>
@@ -237,12 +219,12 @@ const Templates = () => {
                       background: 'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fff 37.44%)',
                     }}
                   />
-                  <div className="relative z-20 mt-6 space-y-1 sm:mt-8">
+                  <div className="relative z-20 space-y-1 sm:mt-0">
                     <h3 id="card3-heading" className="text-heading-5 text-[#0d0d12]/90">
-                      Smart Prompt suggestions
+                      Customer 360° Profile
                     </h3>
-                    <p className="max-w-[320px]">
-                      Access your files from any device with secure cloud synchronization.
+                    <p className="max-w-[400px]">
+                      Access complete customer profiles including demographics, engagement history, and behavioral insights for personalized interactions.
                     </p>
                   </div>
                 </div>
@@ -324,9 +306,9 @@ const Templates = () => {
                   {/* text  */}
                   <div className="absolute bottom-8 left-6 z-20 space-y-1 sm:bottom-10.5 sm:left-8">
                     <h3 id="card4-heading" className="text-heading-5 max-w-[300px] text-[#0d0d12]/90">
-                      Adjustable spacing, margins, and line height.
+                      Sales Pipeline Management
                     </h3>
-                    <p className="max-w-[250px]">Customize your resume look with diverse, modern backgrounds.</p>
+                    <p className="max-w-[250px]">Track opportunities across the entire sales funnel and manage deals efficiently from lead generation to conversion.</p>
                   </div>
                 </div>
               </RevealAnimation>
@@ -374,9 +356,9 @@ const Templates = () => {
                   {/* text  */}
                   <div className="absolute bottom-8 left-6 z-20 space-y-1 sm:bottom-10.5 sm:left-8">
                     <h3 id="card5-heading" className="text-heading-5 max-w-[300px] text-[#0d0d12]/90">
-                      PDF and TXT downloads.
+                      Customer Onboarding & Proposal Management
                     </h3>
-                    <p className="max-w-[200px]">Download your content as PDF or TXT in one click.</p>
+                    <p className="max-w-[500px]">Generate proposals, upload documents, and manage onboarding workflows through a seamless digital process.</p>
                   </div>
                 </div>
               </RevealAnimation>
@@ -425,10 +407,10 @@ const Templates = () => {
                   {/* text  */}
                   <div className="absolute bottom-8 left-6 z-20 space-y-1 sm:bottom-10.5 sm:left-8">
                     <h3 id="card6-heading" className="text-heading-5 max-w-[300px] text-[#0d0d12]/90">
-                      Template categories
+                      Sales Analytics & Reports
                     </h3>
                     <p className="max-w-[320px]">
-                      Deliver a seamless experience across every screen no extra effort required.
+                      Generate detailed reports and insights that help teams evaluate performance and make data-driven sales decisions.
                     </p>
                   </div>
                 </div>

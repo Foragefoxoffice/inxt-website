@@ -14,17 +14,17 @@ const CTA = () => {
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>
             <span className="badge badge-ivory uppercase" aria-label="Call to action section badge" itemProp="name">
-              CTA
+              Get Started
             </span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Start creating <span className="text-ns-linen">stunning voiceover</span> today
+                Transform Data into Smarter Decisions
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p itemProp="description">Join thousands using NextSaaS to create lifelike voices—no mic, no hassle.</p>
+              <p itemProp="description">Empower your organization with AI-driven insights that enable faster responses, better operational visibility, and confident decision-making.</p>
             </RevealAnimation>
           </div>
         </div>
@@ -35,7 +35,7 @@ const CTA = () => {
               href="/signup"
               btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
               aria-label="Book your free strategy call - Navigate to signup page">
-              Book your free strategy call
+              Talk to Our Experts
             </LinkButton>
           </div>
         </RevealAnimation>

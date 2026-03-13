@@ -1,6 +1,28 @@
-import { faqData } from '@/data/faq';
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+
+const faqData = [
+  {
+    id: 1,
+    question: 'What is DEX used for?',
+    answer: 'DEX is an AI-powered decision intelligence platform that analyzes operational data and provides actionable insights to support faster and smarter business decisions.',
+  },
+  {
+    id: 2,
+    question: 'How does DEX improve decision-making?',
+    answer: 'DEX uses AI models, predictive analytics, and real-time monitoring to identify patterns, detect risks, and recommend the next best actions for operational teams.',
+  },
+  {
+    id: 3,
+    question: 'Can DEX integrate with existing enterprise systems?',
+    answer: 'Yes. DEX integrates with policy administration systems, claims platforms, customer engagement systems, and data warehouses through API-based integration.',
+  },
+  {
+    id: 4,
+    question: 'Who can benefit from using DEX?',
+    answer: 'Operational teams, executives, analysts, and business leaders can use DEX to gain real-time insights and make more informed decisions.',
+  },
+];
 
 const Faq = () => {
   return (
@@ -10,16 +32,15 @@ const Faq = () => {
           <div className="main-container">
             <div className="mx-auto mb-12 max-w-[720px] space-y-3 text-center md:space-y-5 lg:mb-[70px]">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-white-v2 uppercase">FAQ</span>
+                <span className="badge badge-white-v2 uppercase">Frequently Asked Questions</span>
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>All the essential information you need to understand.</h2>
+                  <h2>Common Questions About DEX</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    By offering concise and informative responses, this section helps users find solutions without the
-                    need to contact customer support, saving time
+                    Learn how DEX helps organizations transform operational data into intelligent insights and support faster, data-driven decision-making.
                   </p>
                 </RevealAnimation>
               </div>

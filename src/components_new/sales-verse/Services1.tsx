@@ -13,35 +13,30 @@ interface Service {
 const servicesData: Service[] = [
   {
     id: '1',
-    text: 'Kiosk mode for retail & public devices',
+    text: 'Lead management and opportunity tracking',
   },
   {
     id: '2',
-    text: 'Factory reset protection',
+    text: 'Agent and broker performance management',
   },
   {
     id: '3',
-    text: 'Restrict profile removal & unauthorized changes',
+    text: 'Customer onboarding and proposal automation',
   },
+  {
+    id:'4',
+    text:'Cross-sell and upsell opportunity management'
+  },
+  {
+    id:'5',
+    text:'Sales performance analytics'
+  }
 ];
 
 const Services = () => {
   return (
     <section className="relative py-16 md:py-20 lg:py-[90px] xl:py-[100px]">
       <div className="main-container">
-        {/* Actions steps */}
-        <div className="mb-[100px] space-y-10 max-lg:px-2 lg:space-y-14">
-          <Process />
-          <RevealAnimation delay={0.4}>
-            <div>
-              <LinkButton
-                href="/process"
-                className="btn dark:btn-transparent btn-md btn-secondary hover:btn-primary mx-auto w-[85%] md:mx-0 md:w-auto">
-                See It in action
-              </LinkButton>
-            </div>
-          </RevealAnimation>
-        </div>
         {/* Request demo */}
         <div className="my-24 lg:my-[100px]">
           <div className="bg-background-2 dark:bg-background-5 flex flex-col gap-y-14 rounded-2xl px-6 py-10 sm:px-8 sm:py-10 md:px-[42px] md:py-14 lg:flex-row lg:gap-20 lg:rounded-4xl xl:gap-[165px]">
@@ -49,12 +44,12 @@ const Services = () => {
               <div>
                 <div className="mb-6 space-y-3 md:mb-8">
                   <RevealAnimation delay={0.1}>
-                    <h2 className="xl:text-heading-2 md:text-heading-3 sm:text-heading-4 text-heading-5 md:max-w-[520px]">
-                      Designed for security teams that can&apos;t afford downtime
+                    <h2 className="xl:text-heading-2 md:text-heading-3 sm:text-heading-4 text-heading-5 md:max-w-[620px]">
+                      Real-World Applications of SalesVerse
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.2}>
-                    <p>Track key indicators, spot trends early, and turn data into action.</p>
+                    <p>SalesVerse supports key insurance sales activities including lead management, agent performance tracking, customer onboarding, and sales analytics to improve conversion and revenue growth.</p>
                   </RevealAnimation>
                 </div>
                 <ul className="mb-10 space-y-3 sm:mb-14 md:space-y-4">
@@ -80,15 +75,6 @@ const Services = () => {
                     </RevealAnimation>
                   ))}
                 </ul>
-                <RevealAnimation delay={0.6}>
-                  <div>
-                    <LinkButton
-                      href="/signup"
-                      className="btn md:btn-xl btn-md dark:btn-transparent hover:btn-primary btn-white w-full md:w-auto">
-                      Request a live demo
-                    </LinkButton>
-                  </div>
-                </RevealAnimation>
               </div>
             </div>
             <div className="flex-1">

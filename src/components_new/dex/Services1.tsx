@@ -13,15 +13,23 @@ interface Service {
 const servicesData: Service[] = [
   {
     id: '1',
-    text: 'Kiosk mode for retail & public devices',
+    text: 'Operational performance monitoring',
   },
   {
     id: '2',
-    text: 'Factory reset protection',
+    text: 'Claims and underwriting decision support',
   },
   {
     id: '3',
-    text: 'Restrict profile removal & unauthorized changes',
+    text: 'Customer engagement intelligence',
+  },
+  {
+    id: '4',
+    text: 'Fraud detection and risk monitoring',
+  },
+  {
+    id: '5',
+    text: 'Executive performance tracking',
   },
 ];
 
@@ -40,11 +48,11 @@ const Services = () => {
                 <div className="mb-6 space-y-3 md:mb-8">
                   <RevealAnimation delay={0.1}>
                     <h2 className="xl:text-heading-2 md:text-heading-3 sm:text-heading-4 text-heading-5 md:max-w-[520px]">
-                      Designed for security teams that can&apos;t afford downtime
+                      Real-World Applications of DEX
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.2}>
-                    <p>Track key indicators, spot trends early, and turn data into action.</p>
+                    <p>DEX helps organizations monitor performance, detect risks, and make faster, data-driven decisions across operations.</p>
                   </RevealAnimation>
                 </div>
                 <ul className="mb-10 space-y-3 sm:mb-14 md:space-y-4">
@@ -70,15 +78,6 @@ const Services = () => {
                     </RevealAnimation>
                   ))}
                 </ul>
-                <RevealAnimation delay={0.6}>
-                  <div>
-                    <LinkButton
-                      href="/signup"
-                      className="btn md:btn-xl btn-md dark:btn-transparent hover:btn-primary btn-white w-full md:w-auto">
-                      Request a live demo
-                    </LinkButton>
-                  </div>
-                </RevealAnimation>
               </div>
             </div>
             <div className="flex-1">

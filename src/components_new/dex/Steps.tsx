@@ -22,23 +22,29 @@ interface Step {
 const stepsData: Step[] = [
   {
     id: '1',
-    title: 'Download the app',
-    description: 'Downloads available for iOS, Android & enterprise tablets.',
+    title: 'Policy Administration Systems',
+    description: 'Policy data integration',
     image: Step1,
   },
   {
     id: '2',
-    title: 'Create your account',
-    description: 'Add teams, assign policies, and connect devices in minutes.',
+    title: 'Claims Management Platforms',
+    description: 'Claims workflow integration',
     image: Step2,
     imageDark: Step2Dark,
   },
   {
     id: '3',
-    title: 'Start managing',
-    description: 'Monitor, restrict, or wipe devices remotely any time.',
+    title: 'Customer Engagement Systems',
+    description: 'Customer interaction sync',
     image: Step3,
   },
+  {
+    id: '4',
+    title: 'Data Warehouses & Analytics Platforms',
+    description: 'Enterprise data integration',
+    image: Step3,
+  }
 ];
 
 const Steps = () => {
@@ -52,10 +58,10 @@ const Steps = () => {
             <div className="space-y-5 text-center md:space-y-8 lg:space-y-14 lg:text-left">
               <div className="space-y-1 sm:space-y-3">
                 <RevealAnimation delay={0.1}>
-                  <h2 className="mx-auto w-full sm:max-w-[629px] xl:mx-0">Manage any device in 3 easy steps</h2>
+                  <h2 className="mx-auto w-full sm:max-w-[629px] xl:mx-0">Seamless Integration with Enterprise Systems</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
-                  <p>We streamline automation for a strategic and sustainable AI transition.</p>
+                  <p>DEX integrates with existing enterprise platforms and insurance systems to enable real-time data analysis and intelligent decision support.</p>
                 </RevealAnimation>
               </div>
               <RevealAnimation delay={0.3}>

@@ -35,23 +35,19 @@ const Overview = () => {
                 {/* heading text  */}
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h1>Boost your business with smart apps</h1>
+                    <h1>AI-Powered Decision Intelligence for Enterprises</h1>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p>
-                      NextSaaS brings you a powerful, all-in-one smart application designed to streamline your
-                      operations, empower your team, and accelerate growth—no matter your industry.
+                      DEX is an AI-powered decision intelligence platform that helps organizations transform complex operational data into clear, actionable insights. Instead of relying only on dashboards and reports, DEX actively analyzes data patterns, predicts outcomes, and recommends the next best actions.
+                    </p>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.4}>
+                    <p>
+                      The platform empowers operational teams, executives, and analysts to make faster, more confident decisions.
                     </p>
                   </RevealAnimation>
                 </div>
-                {/* heading btn  */}
-                <RevealAnimation delay={0.4} className="w-full md:w-auto">
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn btn-lg btn-primary hover:btn-secondary dark:hover:btn-accent w-[90%] md:w-auto">
-                    <span>Book a strategy call</span>
-                  </LinkButton>
-                </RevealAnimation>
               </div>
               <div className="relative" aria-hidden="true">
                 {/* income   */}

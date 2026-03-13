@@ -16,15 +16,15 @@ import LinkButton from '../ui/button/LinkButton';
 const integrationData = [
   {
     id: 1,
-    name: 'Zapier',
-    category: 'Communication',
+    name: 'Digital One',
+    category: 'Enterprise intelligence',
     icon: zapierIcon,
     href: '/pricing',
   },
   {
     id: 2,
-    name: 'Snapchat',
-    category: 'Messaging App',
+    name: 'DASHES',
+    category: 'Executive analytics',
     icon: snapchatIcon,
     href: '/pricing',
   },
@@ -41,16 +41,16 @@ const Integration = () => {
         <div className="mx-auto max-w-[850px]">
           <div className="mb-[112px] flex flex-col items-center gap-y-4 text-center max-[426px]:mb-10">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3">Integration</span>
+              <span className="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3">Related Platforms</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
-                Link up with your favorite tools.
+                Explore Other Insurance Solutions
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent max-[426px]:text-tagline-2 max-w-[510px]">
-                We assist startups in standing out with exceptional messaging that effectively engages their audience.
+                Discover other platforms designed to support key insurance operations including customer engagement, claims management, broker networks, and business intelligence. These solutions work together to create a connected and efficient insurance ecosystem.
               </p>
             </RevealAnimation>
           </div>

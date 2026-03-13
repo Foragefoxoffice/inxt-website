@@ -1,6 +1,4 @@
-import { IService } from '@/interface';
 import { cn } from '@/utils/cn';
-import getMarkDownData from '@/utils/getMarkDownData';
 import arrowUpRightLight from '@public/images/icons/arrow-up-right-light.svg';
 import arrowUpRight from '@public/images/icons/arrow-up-right.svg';
 import avatar1 from '@public/images/ns-avatar-1.png';
@@ -10,7 +8,65 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
-const services = getMarkDownData<IService & { [key: string]: unknown }>('src/data/services').slice(0, 5);
+// Mock images to match the exact paths from the original markdown data
+import serviceImage1 from '@public/images/ns-img-124.png';
+import serviceImageDark1 from '@public/images/ns-img-dark-127.png';
+import serviceImage2 from '@public/images/ns-img-120.png';
+import serviceImageDark2 from '@public/images/ns-img-dark-52.png';
+import serviceImage3 from '@public/images/ns-img-208.png';
+import serviceImageDark3 from '@public/images/ns-img-dark-141.png';
+import serviceImage4 from '@public/images/ns-img-123.png';
+import serviceImageDark4 from '@public/images/ns-img-dark-92.png';
+import serviceImage5 from '@public/images/ns-img-100.png';
+import serviceImageDark5 from '@public/images/ns-img-dark-89.png';
+
+const services = [
+  {
+    slug: 'predictive-analytics',
+    title: 'Machine Learning',
+    description: 'Predict trends and forecast future business outcomes.',
+    icon: 'ns-shape-33',
+    image: serviceImage1,
+    imageDark: serviceImageDark1,
+    imgAlt: 'Predictive Analytics representation',
+  },
+  {
+    slug: 'automated-decisioning',
+    title: 'Pattern Recognition',
+    description: 'Detect anomalies and unusual patterns across business data',
+    icon: 'ns-shape-34',
+    image: serviceImage2,
+    imageDark: serviceImageDark2,
+    imgAlt: 'Automated Decisioning workflow',
+  },
+  {
+    slug: 'Decision Recommendations',
+    title: 'Decision Recommendations',
+    description: 'Generate automated next-best-action suggestions.',
+    icon: 'ns-shape-35',
+    image: serviceImage3,
+    imageDark: serviceImageDark3,
+    imgAlt: 'Real-Time Risk dashboard',
+  },
+  {
+    slug: 'Real-Time Data Processing',
+    title: 'Real-Time Data Processing',
+    description: 'Analyze data continuously to deliver immediate insights.',
+    icon: 'ns-shape-36',
+    image: serviceImage4,
+    imageDark: serviceImageDark4,
+    imgAlt: 'Intelligent Recommendations interface',
+  },
+  {
+    slug: 'Natural Language Insights',
+    title: 'Natural Language Insights',
+    description: 'Query data using natural language.',
+    icon: 'ns-shape-37',
+    image: serviceImage5,
+    imageDark: serviceImageDark5,
+    imgAlt: 'Executive Insights dashboard',
+  },
+];
 
 const OurServices = () => {
   return (
@@ -18,18 +74,16 @@ const OurServices = () => {
       <div className="main-container">
         <div className="mb-14 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.3}>
-            <span className="badge badge-green mb-3.5 md:mb-5">Our services</span>
+            <span className="badge badge-green mb-3.5 md:mb-5">AI Technology</span>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <h2>
-              In-depth overview of crypto <br className="hidden md:block" />
-              currency <span className="text-primary-500 inline-block">solutions.</span>
+              Advanced AI Technologies Behind DEX
             </h2>
           </RevealAnimation>
           <RevealAnimation delay={0.5}>
             <p className="mx-auto lg:max-w-[650px]">
-              An in-depth overview of cryptocurrency solutions reveals a rapidly evolving ecosystem designed to
-              revolutionize traditional financial systems.
+              DEX leverages advanced AI technologies to transform operational data into intelligent insights.
             </p>
           </RevealAnimation>
         </div>

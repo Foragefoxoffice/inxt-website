@@ -6,19 +6,19 @@ import LinkButton from '../ui/button/LinkButton';
 const eligibilityData = [
   {
     id: 1,
-    text: 'Minimum credit score: 620',
+    text: 'Critical insights hidden in large volumes of data',
   },
   {
     id: 2,
-    text: 'Proof of stable income or employment',
+    text: 'Dependence on manual analysis and delayed reports',
   },
   {
     id: 3,
-    text: 'Minimum 3% down payment',
+    text: 'Operational risks identified too late',
   },
   {
     id: 4,
-    text: 'Property meets FHA/VA/conventional guidelines.',
+    text: 'Lack of real-time decision intelligence',
   },
 ];
 
@@ -32,12 +32,12 @@ const Eligibility = () => {
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
                 <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[461px] md:text-start">
-                  Check your eligibility in seconds.
+                  Why Organizations Struggle with Data-Driven Decisions
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p className="mb-8 text-center md:text-start">
-                  Track key indicators, spot trends early, and turn data into action.
+                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}

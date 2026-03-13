@@ -11,20 +11,17 @@ const Hero = () => {
     <section className="dark:bg-background-5 relative bg-white pt-[180px] pb-[100px] lg:pt-[230px] lg:pb-[200px]">
       <div className="main-container relative z-10">
         <div className="space-y-5 text-center">
-          <RevealAnimation delay={0.1}>
-            <span className="badge badge-gray-light">Keep an eye on your finances</span>
-          </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h1 className="mx-auto max-w-[400px] leading-[1.3] sm:max-w-[600px] md:max-w-[900px] xl:max-w-[1110px]">
                 <span className="hero-text-gradient hero-text-color-2 block">
-                  Elevate your property management game with NextSaaS!
+                  DEX – AI Decision Intelligence Platform
                 </span>
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-full">
-                All-in-one cloud-based software to streamline operations, boost sales, and generate leads effortlessly.
+                DEX analyzes operational data, predicts outcomes, and provides intelligent decision nudges that guide teams toward the right action at the right moment. Insurance leaders can respond faster to opportunities, risks, and operational events.
               </p>
             </RevealAnimation>
           </div>
