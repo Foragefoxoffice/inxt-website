@@ -16,33 +16,15 @@ const Hero = () => {
           <div className="mb-12 text-center lg:mb-20 xl:mb-33">
             <RevealAnimation delay={0.1}>
               <h1 className="mb-3 font-medium opacity-0">
-                Using AI applications to boost <br className="hidden md:block" />
-                business success.
+                Project Pulse – Project Management System
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="mx-auto mb-7 max-w-[750px] md:mb-14">
-                Our startup development services aim to fast-track your path from idea to launch, equipping you with the
-                technical skills and strategic insights essential for success.
+                Project Pulse helps teams organize tasks, monitor project progress, and collaborate seamlessly across departments. With real-time insights and centralized project tracking, organizations can manage resources more effectively and deliver projects on time.
               </p>
             </RevealAnimation>
-            <ul className="flex flex-col items-center justify-center gap-x-4 gap-y-3 md:flex-row md:gap-y-0">
-              <RevealAnimation delay={0.4} direction="left" instant offset={50}>
-                <div>
-                  <LinkButton href="/services" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Get Started
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
-
-              <RevealAnimation delay={0.5} direction="left" instant offset={50}>
-                <div>
-                  <LinkButton href="/signup" btnClass="btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2">
-                    Get started
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
-            </ul>
+            
           </div>
           {/* banner */}
           <RevealAnimation delay={0.4} direction="up" instant>

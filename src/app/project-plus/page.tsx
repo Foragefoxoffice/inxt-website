@@ -20,8 +20,8 @@ const page = () => {
   return (
     <main className="space-y-10 bg-white">
       <Hero />
-      <Features />
       <HowItsWork />
+      <Features />      
       <Faq />
       <CTA />
     </main>

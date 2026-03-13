@@ -16,6 +16,12 @@ const FeaturesFileCard = () => {
   const featureCard2Ref = useRef<HTMLElement>(null);
   const featureCard3Ref = useRef<HTMLElement>(null);
 
+  const cardData = {
+    title: 'Real-Time Progress Insights',
+    description:
+      'Track project performance with live dashboards, progress monitoring, and detailed reports for better decision-making.',
+  };
+
   useGSAP(
     () => {
       const featureCard1 = featureCard1Ref.current;
@@ -92,11 +98,8 @@ const FeaturesFileCard = () => {
         </div>
         <RevealAnimation delay={0.1} start="top 97%">
           <div className="relative z-20 max-md:space-y-0.5">
-            <h3 className="text-heading-6 md:text-heading-5">Get your completed files.</h3>
-            <p className="max-w-[450px]">
-              The inputs are multiplied by their respective weights, summed, and then passed through the activation
-              function.
-            </p>
+            <h3 className="text-heading-6 md:text-heading-5">{cardData.title}</h3>
+            <p className="max-w-[450px]">{cardData.description}</p>
           </div>
         </RevealAnimation>
       </div>

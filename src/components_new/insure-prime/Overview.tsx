@@ -35,23 +35,28 @@ const Overview = () => {
                 {/* heading text  */}
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h1>Boost your business with smart apps</h1>
+                    <span className="badge badge-green mb-5">Platform Overview </span>
                   </RevealAnimation>
-                  <RevealAnimation delay={0.3}>
+                  <RevealAnimation delay={0.1}>
+                    <h2 className="text-primary dark:text-accent">Manage Insurance Operations with a Unified Digital Platform</h2>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.2}>
                     <p>
-                      NextSaaS brings you a powerful, all-in-one smart application designed to streamline your
-                      operations, empower your team, and accelerate growth—no matter your industry.
+                      InsurePrime is a modular insurance platform designed to simplify policy management, claims processing, underwriting, and operational workflows. Built on a flexible architecture, it supports multiple insurance segments while enabling organizations to streamline operations and scale digital capabilities.
                     </p>
                   </RevealAnimation>
+                  <RevealAnimation delay={0.3}>
+                    <h4 className="text-primary dark:text-accent">Supported Solutions</h4>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.4}>
+                    <ul className="list-disc pl-5">
+                      <li className="text-primary dark:text-accent">General Insurance</li>
+                      <li className="text-primary dark:text-accent">Life Insurance</li>
+                      <li className="text-primary dark:text-accent">Health Insurance</li>
+                      <li className="text-primary dark:text-accent">Group Life Insurance</li>
+                    </ul>
+                  </RevealAnimation>
                 </div>
-                {/* heading btn  */}
-                <RevealAnimation delay={0.4} className="w-full md:w-auto">
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn btn-lg btn-primary hover:btn-secondary dark:hover:btn-accent w-[90%] md:w-auto">
-                    <span>Book a strategy call</span>
-                  </LinkButton>
-                </RevealAnimation>
               </div>
               <div className="relative" aria-hidden="true">
                 {/* income   */}

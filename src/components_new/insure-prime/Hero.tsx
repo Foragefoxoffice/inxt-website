@@ -36,13 +36,17 @@ const Hero = () => {
               <div className="space-y-7 xl:space-y-14">
                 <div className="space-y-3 text-center md:text-left">
                   <RevealAnimation delay={0.2} offset={50} instant>
-                    <h1>Your resume, perfected by AI</h1>
+                    <h1>iNXT InsurePrime <br /> Insurance Operations Platform</h1>
                   </RevealAnimation>
 
                   <RevealAnimation delay={0.3} offset={50} instant>
                     <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">
-                      NestSaaS helps you create tailored, keyword-rich resumes that pass ATS filters and impress
-                      recruiters—fast, accurate, and stress-free.
+                      A comprehensive platform designed to manage the entire insurance lifecycle from policy administration and underwriting to claims processing and customer engagement.
+                    </p>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.4} offset={50} instant>
+                    <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">
+                     InsurePrime enables insurers to streamline operations, improve efficiency, and deliver better digital services across multiple insurance segments.
                     </p>
                   </RevealAnimation>
                 </div>

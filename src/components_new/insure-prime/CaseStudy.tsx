@@ -5,23 +5,23 @@ import LinkButton from '../ui/button/LinkButton';
 const data = [
   {
     id: 1,
-    title: 'Web & mobile apps',
+    title: 'Operational Efficiency',
     icon: 'ns-shape-32',
-    description: 'Engage visitors with real-time chat on your website and mobile apps.',
+    description: 'Streamline insurance workflows and improve operational productivity across policy management, claims processing, and underwriting.',
     link: '#',
   },
   {
     id: 2,
-    title: 'Social media',
+    title: 'Faster Product Innovation',
     icon: 'ns-shape-35',
-    description: 'Provide instant support on WhatsApp, Facebook Messenger, Instagram',
+    description: 'Launch new insurance products faster by using flexible digital platforms designed for modern insurance operations.',
     link: '#',
   },
   {
     id: 3,
-    title: 'Business tools',
+    title: 'Digital Customer Engagement',
     icon: 'ns-shape-52',
-    description: 'Connect messaging with Slack, Microsoft Teams, and CRM platforms for seamless',
+    description: 'Enhance customer service through digital platforms that support seamless interactions and improved customer experiences.',
     link: '#',
   },
 ];
@@ -32,20 +32,17 @@ const CaseStudy = () => {
       <div className="main-container">
         <div className="mb-[70px] text-center lg:text-left">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan mb-5">use cases</span>
+            <span className="badge badge-cyan mb-5">Business Benefits</span>
           </RevealAnimation>
           <div className="flex flex-col lg:flex-row gap-8 justify-between items-center lg:items-end">
             <RevealAnimation delay={0.3}>
               <h2>
-                How we connect with <br />
-                customers
+                How InsurePrime Improves Insurance Operations
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[518px]">
-                Explore the ways our innovative solutions improve communication and boost efficiency in your
-                organization. From streamlined workflows to enhanced collaboration tools, we provide everything you need
-                to succeed.
+                InsurePrime helps insurance organizations streamline operations, reduce manual processes, and deliver better digital experiences while enabling scalable growth.
               </p>
             </RevealAnimation>
           </div>
@@ -59,11 +56,6 @@ const CaseStudy = () => {
                   <h5 className="max-md:text-heading-6">{item.title}</h5>
                   <p className="max-w-[337px]">{item.description}</p>
                 </div>
-                <LinkButton
-                  href={item.link}
-                  className="btn btn-white btn-md inline-block dark:btn-transparent hover:btn-primary w-[90%] md:w-auto">
-                  Read More
-                </LinkButton>
               </div>
             </RevealAnimation>
           ))}

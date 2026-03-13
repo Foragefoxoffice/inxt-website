@@ -1,6 +1,32 @@
-import { faqData } from '@/data/faq';
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+
+const insurePrimeFaqData = [
+  {
+    id: 1,
+    question: 'What is InsurePrime used for?',
+    answer:
+      'InsurePrime is a modular insurance platform designed to manage policy administration, claims processing, underwriting support, and customer engagement through a unified digital system.',
+  },
+  {
+    id: 2,
+    question: 'Can InsurePrime integrate with existing insurance systems?',
+    answer:
+      'Yes. InsurePrime supports API-based integrations that allow insurers to connect with existing systems, third-party applications, and digital services.',
+  },
+  {
+    id: 3,
+    question: 'Which insurance segments does InsurePrime support?',
+    answer:
+      'The platform supports multiple insurance segments including general insurance, life insurance, health insurance, and group life insurance.',
+  },
+  {
+    id: 4,
+    question: 'How does InsurePrime improve operational efficiency?',
+    answer:
+      'By automating workflows, reducing manual processing, and providing real-time analytics, InsurePrime helps insurers streamline operations and improve decision-making.',
+  },
+];
 
 const Faq = () => {
   return (
@@ -10,16 +36,16 @@ const Faq = () => {
           <div className="main-container">
             <div className="mx-auto mb-12 max-w-[720px] space-y-3 text-center md:space-y-5 lg:mb-[70px]">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-white-v2 uppercase">FAQ</span>
+                <span className="badge badge-white-v2 uppercase">Frequently Asked Questions</span>
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>All the essential information you need to understand.</h2>
+                  <h2>Common Questions About InsurePrime</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    By offering concise and informative responses, this section helps users find solutions without the
-                    need to contact customer support, saving time
+                    Learn more about how InsurePrime helps insurance organizations modernize core operations, automate
+                    workflows, and improve customer experiences.
                   </p>
                 </RevealAnimation>
               </div>
@@ -29,7 +55,7 @@ const Faq = () => {
               defaultValue="1"
               enableScrollAnimation={true}
               animationDelay={0.1}>
-              {faqData.map((item) => (
+              {insurePrimeFaqData.map((item) => (
                 <AccordionItem
                   className="rounded-2xl bg-white px-6 md:rounded-4xl md:px-8"
                   key={item.id}

@@ -14,17 +14,17 @@ const CTA = () => {
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>
             <span className="badge badge-ivory uppercase" aria-label="Call to action section badge" itemProp="name">
-              Get Started
+              Let’s Work Together
             </span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Transform Your Insurance Operations with InsurePrime
+                Partner with Us to Transform Insurance Technology
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p itemProp="description">Modernize your insurance systems, streamline policy and claims management, and deliver better digital experiences with a flexible insurance platform.</p>
+              <p itemProp="description">At Iorta TechNXT, we combine deep insurance expertise with advanced technology to help organizations modernize systems, accelerate digital transformation, and deliver better customer experiences.</p>
             </RevealAnimation>
           </div>
         </div>
@@ -35,7 +35,7 @@ const CTA = () => {
               href="/signup"
               btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
               aria-label="Book your free strategy call - Navigate to signup page">
-              Contact Our Team
+              Connect With Our Team
             </LinkButton>
           </div>
         </RevealAnimation>
