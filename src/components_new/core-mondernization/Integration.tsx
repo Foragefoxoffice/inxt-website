@@ -11,31 +11,21 @@ const Integration = () => {
             <div className="mt-[180px] space-y-[76px] md:mt-[200px] lg:mt-[280px]">
               <div className="space-y-4 text-center">
                 <RevealAnimation delay={0.2}>
-                  <span className="badge badge-ivory">Integration</span>
+                  <span className="badge badge-ivory">Why Choose Iorta TechNXT</span>
                 </RevealAnimation>
                 <div className="space-y-3">
                   <RevealAnimation delay={0.3}>
-                    <h2>
-                      Seamless tool <span className="text-ns-linen">integration</span>
+                    <h2 className='max-w-[729px] mx-auto'>
+                      Trusted Expertise for <span className="text-ns-linen">Modern Insurance </span>Transformation
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.4}>
-                    <p className="mx-auto max-w-[367px] text-center">
-                      Easily connect NextSaaS Ai to Canva, Notion, Adobe, Google Slides, Webflow, and more.
+                    <p className="mx-auto max-w-[867px] text-center">
+                      Iorta TechNXT combines deep insurance domain expertise with modern technology to help organizations modernize legacy systems, accelerate digital innovation, and build scalable insurance platforms. Our flexible modernization strategies enable insurers to transform operations with minimal disruption while preparing for future growth.
                     </p>
                   </RevealAnimation>
                 </div>
               </div>
-
-              <RevealAnimation delay={0.5} offset={10}>
-                <div className="text-center">
-                  <LinkButton
-                    href="/integration"
-                    btnClass="btn-lg-v2 lg:btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Explore integration
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
             </div>
           </div>
 

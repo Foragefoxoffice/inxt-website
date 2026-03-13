@@ -16,9 +16,9 @@ const stepsData: StepData[] = [
   {
     id: 'step-1',
     stepNumber: 1,
-    title: 'Write or paste script',
+    title: 'AI-Driven Automation',
     description:
-      "Quickly draft your message or drop in your ready-to-go text to get started instantly. Whether you're crafting a new idea, refining existing",
+      "Leverage artificial intelligence to automate underwriting, claims processing, and decision-making, improving accuracy and reducing manual effort.",
     mainImage: stepImage554,
     overlayImage: stepImage555,
     overlayImagePosition: 'right',
@@ -26,25 +26,25 @@ const stepsData: StepData[] = [
   {
     id: 'step-2',
     stepNumber: 2,
-    title: 'Choose your voice style',
+    title: 'Microservices Architecture',
     description:
-      'Select from natural human-like voices, accents, and tones that fit your content. Browse through our extensive library of professional voices, each designed to match',
+      'Adopt a flexible microservices-based architecture that enables scalable applications, faster development cycles, and seamless system integrations.',
     mainImage: stepImage556,
   },
   {
     id: 'step-3',
     stepNumber: 3,
-    title: 'Customize the delivery',
+    title: 'Digital Customer Platforms',
     description:
-      'Adjust speed, pitch, pauses, and emotions for a perfect performance. Fine-tune every aspect of your voiceover to create the exact tone and pacing you need for your project.',
+      'Enable modern digital experiences through customer portals, mobile applications, and connected digital services.',
     mainImage: stepImage557,
   },
   {
     id: 'step-4',
     stepNumber: 4,
-    title: 'Generate & download',
+    title: 'Advanced Analytics & Insights',
     description:
-      "Get studio-quality audio in seconds and download instantly. Your professional voiceover is ready to use in any format, whether you're creating content for videos, podcasts, or presentations.",
+      "Utilize real-time analytics and business intelligence to gain deeper insights, improve decision-making, and drive data-driven strategies.",
     mainImage: stepImage558,
     overlayImage: stepImage559,
     overlayImagePosition: 'center',
@@ -117,11 +117,18 @@ const Steps = () => {
       <div className="main-container">
         <div className="flex flex-wrap items-start justify-center gap-y-[58px] lg:flex-nowrap lg:gap-x-[58px] lg:gap-y-0">
           {/* heading  */}
-          <RevealAnimation delay={0.1}>
-            <h2 className="top-[156px] max-w-[629px] text-center font-normal lg:sticky lg:text-left">
-              Create stunning voiceover in <span className="text-ns-linen">4 simple steps</span>
-            </h2>
-          </RevealAnimation>
+          <div className="lg:sticky lg:top-[156px] space-y-[20px] text-center lg:text-left">
+            <RevealAnimation delay={0.1}>
+              <h2 className="max-w-[629px] font-normal">
+                Technology Integration
+              </h2>
+            </RevealAnimation>
+            <RevealAnimation delay={0.4}>
+              <p className="max-w-[550px]">
+                Modernized core systems seamlessly integrate with advanced digital technologies to enhance operational efficiency, enable intelligent automation, and support scalable innovation across insurance operations.
+              </p>
+            </RevealAnimation>
+          </div>
 
           {/* bar  */}
           <RevealAnimation delay={0.1}>
