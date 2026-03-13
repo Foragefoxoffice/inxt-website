@@ -1,23 +1,29 @@
-import getMarkDownContent from '@/utils/getMarkDownContent';
+import { WhitePaper, resolveMediaUrl } from '@/utils/api';
 import Hero from './Hero';
 import KeyTakeWays from './KeyTakeaways';
 import Overview from './Overview';
 
-const Content = ({ slug }: { slug: string }) => {
-  const whitepaper = getMarkDownContent('src/data/whitepaper/', slug);
+interface ContentProps {
+  paper: WhitePaper;
+}
 
+const Content = ({ paper }: ContentProps) => {
   return (
     <>
-      <Hero badgeText={whitepaper.data.badgeText} content={whitepaper.content} />
+      <Hero 
+        badgeText={paper.category || 'Research'} 
+        content={paper.content || ''} 
+        title={paper.title}
+      />
       <Overview
-        overviewText={whitepaper.data.OverviewText}
-        img={whitepaper.data.img}
-        learningPoints={whitepaper.data.learn}
+        overviewText={paper.excerpt || ''}
+        img={resolveMediaUrl(paper.featuredImage) || '/images/ns-img-325.png'}
+        learningPoints={[]} // Map these if backend supports it
       />
       <KeyTakeWays
-        keyTakeWays={whitepaper.data.keyTakeWays}
-        keyTakeWaysDescription={whitepaper.data.keyTakeWaysDescription}
-        paperLink={whitepaper.data.paperLink}
+        keyTakeWays={[]}
+        keyTakeWaysDescription={''}
+        paperLink={'#'}
       />
     </>
   );

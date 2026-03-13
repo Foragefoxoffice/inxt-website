@@ -1,13 +1,39 @@
 import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
+import { Blog, resolveMediaUrl } from '@/utils/api';
 import RevealAnimation from '../animation/RevealAnimation';
 import BlogPaginationWrapper from './BlogPaginationWrapper';
+import { formatDate } from '@/utils/formatDate';
 
-const BlogShowcase = () => {
-  const blogs = getMarkDownData<IBlogPost & { [key: string]: unknown }>('src/data/blogs');
+interface BlogShowcaseProps {
+  blogs: Blog[];
+}
+
+const BlogShowcase = ({ blogs }: BlogShowcaseProps) => {
+  // Map API Blog type to IBlogPost type expected by components
+  const mappedBlogs: IBlogPost[] = blogs.map(blog => ({
+    tag: blog.category || 'General',
+    author: blog.author || 'Anonymous',
+    authorImage: '/images/ns-avatar-1.png',
+    publishDate: formatDate(blog.publishDate),
+    title: blog.title,
+    description: blog.excerpt || blog.content?.substring(0, 150) || '',
+    thumbnail: resolveMediaUrl(blog.featuredImage) || '/images/ns-img-325.png',
+    readTime: `${blog.readingTime || 5} min read`,
+    slug: blog.slug,
+    content: blog.content || '',
+    featured: blog.status === 'published'
+  }));
+
   return (
-    <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
+    <section className="py-14 md:py-16 lg:pt-[88px] xl:pt-[150px] xl:pb-20">
       <div className="main-container">
+        <RevealAnimation delay={0.05}>
+          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8">
+            <a href="/" className="hover:text-primary-500 transition-colors duration-300">Home</a>
+            <span className="text-[10px]">●</span>
+            <span className="text-secondary font-medium">Blog</span>
+          </nav>
+        </RevealAnimation>
         <div className="mb-10 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.1}>
             <h2>
@@ -23,7 +49,7 @@ const BlogShowcase = () => {
         </div>
 
         {/* Blog grid with pagination wrapper */}
-        <BlogPaginationWrapper blogs={blogs} />
+        <BlogPaginationWrapper blogs={mappedBlogs} />
       </div>
     </section>
   );

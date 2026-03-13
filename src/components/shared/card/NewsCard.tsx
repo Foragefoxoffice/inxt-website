@@ -1,16 +1,16 @@
-import { IBlogPost } from '@/interface';
+import { INewsItem } from '@/interface';
 import { cn } from '@/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
-import LinkButton from '../../ui/button/LinkButton';
+import LinkButton from '../../ui/button/Button';
 import { formatDate } from '@/utils/formatDate';
 
-interface BlogCardV1Props {
-  blog: IBlogPost;
+interface NewsCardProps {
+  news: INewsItem;
   className?: string;
 }
 
-const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
+const NewsCard = ({ news, className }: NewsCardProps) => {
   return (
     <article>
       <div
@@ -20,10 +20,10 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
         )}>
         <figure className="h-[260px] max-w-full overflow-hidden xl:max-w-[409px]">
           <Image
-            src={blog?.thumbnail}
+            src={news?.thumbnail}
             width={409}
             height={250}
-            alt="Illustration representing electronic prescription in finance sector"
+            alt={news?.title}
             loading="lazy"
             className="h-full w-full object-cover"
           />
@@ -31,31 +31,31 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
         <div className="space-y-6 p-6">
           <div className="flex items-center gap-2">
             <span className="badge badge-green mr-1">
-              <Link href={`/blog-03?category=${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
+              <Link href={`/news-events?category=${news?.tag.toLowerCase()}`}>{news?.tag}</Link>
             </span>
             <span rel="author" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
-              {blog?.author}
+              {news?.author}
             </span>
             <span className="h-[6px] w-[5px] rounded-full bg-[#ECE8FF]"> </span>
-            <time dateTime="2025-03-20" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
-              {formatDate(blog?.publishDate)}
+            <time dateTime={news?.publishDate} className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
+              {formatDate(news?.publishDate)}
             </time>
           </div>
           <div>
             <h3 className="sm:text-heading-5 text-heading-6 mb-2 font-normal">
-              <Link href={`/blog/${blog.slug}`} aria-label="Read more about electronic prescription in finance sector">
-                {blog?.title}
+              <Link href={`/news-events/${news.slug}`} aria-label={news?.title}>
+                {news?.title}
               </Link>
             </h3>
             <p className="text-tagline-1 text-secondary/60 dark:text-accent/60 line-clamp-2 font-normal">
-              {blog?.description}
+              {news?.description}
             </p>
           </div>
           <div className="flex justify-start md:block">
             <LinkButton
-              href={`/blog/${blog.slug}`}
-              className="btn btn-md btn-white hover:btn-secondary dark:btn-transparent dark:hover:btn-accent dark:hover:text-secondary w-full sm:w-auto"
-              aria-label="Read full article about electronic prescription">
+              href={`/news-events/${news.slug}`}
+              btnClass="btn-v2-white group-hover/btn-v2:btn-secondary-v2 btn-md-v2 w-full sm:w-auto"
+              aria-label="Read full article">
               Read more
             </LinkButton>
           </div>
@@ -65,4 +65,4 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
   );
 };
 
-export default BlogCardV1;
+export default NewsCard;

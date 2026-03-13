@@ -1,14 +1,32 @@
 //white paper research
 import { IWhitePaper } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
+import { WhitePaper, resolveMediaUrl } from '@/utils/api';
 import RevealAnimation from '../animation/RevealAnimation';
 import FeaturedCard from './FeaturedCard';
 import ResearchCard from './ResearchCard';
 
-const Research = () => {
-  const whitepaperData = getMarkDownData<IWhitePaper & { [key: string]: unknown }>('src/data/whitepaper');
+interface ResearchProps {
+  whitepapers: WhitePaper[];
+}
 
-  const featuredCard = whitepaperData.find((item) => item.featured === true);
+const Research = ({ whitepapers }: ResearchProps) => {
+  // Map API WhitePaper type to IWhitePaper structure expected by components
+  const mappedWhitepapers: IWhitePaper[] = whitepapers.map(paper => ({
+    title: paper.title,
+    description: paper.excerpt || '',
+    img: resolveMediaUrl(paper.featuredImage) || '/images/ns-img-325.png',
+    featured: paper.status === 'published', // Mapping for demo
+    badgeText: paper.category || 'Research',
+    OverviewText: paper.content || '',
+    learn: [], // Backend could store these in blocks or separate fields
+    keyTakeWays: [],
+    keyTakeWaysDescription: '',
+    paperLink: '#',
+    slug: paper.slug,
+    content: paper.content || ''
+  }));
+
+  const featuredCard = mappedWhitepapers.find((item) => item.featured === true) || mappedWhitepapers[0];
 
   return (
     <section>
@@ -17,12 +35,14 @@ const Research = () => {
           <div className="main-container">
             <div className="grid grid-cols-12 items-stretch gap-6">
               {/* FEATURED CARD    */}
-              <RevealAnimation delay={0.1}>
-                <FeaturedCard card={featuredCard as IWhitePaper} />
-              </RevealAnimation>
+              {featuredCard && (
+                <RevealAnimation delay={0.1}>
+                  <FeaturedCard card={featuredCard as IWhitePaper} />
+                </RevealAnimation>
+              )}
 
-              {whitepaperData
-                .filter((item) => item.featured === false)
+              {mappedWhitepapers
+                .filter((item) => item !== featuredCard)
                 .map((item, index) => {
                   const delay = 0.2 + index * 0.1;
                   return (

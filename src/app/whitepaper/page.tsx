@@ -2,6 +2,7 @@ import Client from '@/components/white-paper/Client';
 import Hero from '@/components/white-paper/Hero';
 import Research from '@/components/white-paper/Researchs';
 import { defaultMetadata } from '@/utils/generateMetaData';
+import { getWhitePapers } from '@/utils/api';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,11 +10,14 @@ export const metadata: Metadata = {
   title: 'Whitepaper - AI Voice Generator || NextSaaS',
 };
 
-const page = () => {
+const page = async () => {
+  const response = await getWhitePapers('en');
+  const whitepapers = response.data || [];
+
   return (
     <main className="bg-background-3">
       <Hero />
-      <Research />
+      <Research whitepapers={whitepapers} />
       <Client />
     </main>
   );

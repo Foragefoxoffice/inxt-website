@@ -2,6 +2,7 @@
 import {
   AffiliatePolicyIcon,
   AnalyticsIcon,
+  BlogIcon,
   CaseStudyICon,
   ChangeLogIcon,
   DocsIcon,
@@ -65,6 +66,12 @@ const resourceSections: ResourceSection[] = [
         icon: CaseStudyICon,
       },
       {
+        title: 'News & Events',
+        description: 'Latest news, announcements and events.',
+        href: '/news-events',
+        icon: PressIcon,
+      },
+      {
         title: 'Whitepapers',
         description: 'Detailed whitepapers on the product.',
         href: '/whitepaper',
@@ -104,6 +111,12 @@ const resourceSections: ResourceSection[] = [
         description: 'Stay updated with the latest changes and improvements.',
         href: '/changelog',
         icon: ChangeLogIcon,
+      },
+      {
+        title: 'Newsletter',
+        description: 'Our monthly digest of tech insights.',
+        href: '/newsletter',
+        icon: BlogIcon,
       },
       {
         title: 'Glossary',
@@ -170,7 +183,7 @@ const ResourcesMenu = ({
         className={cn(
           'dropdown-menu-bridge pointer-events-none fixed top-full left-1/2 z-40 h-3 w-full -translate-x-1/2 bg-transparent opacity-0 lg:w-[1290px]',
           menuDropdownId === 'resources-mega-menu'
-            ? '!pointer-events-auto opacity-100'
+            ? 'pointer-events-auto! opacity-100'
             : 'pointer-events-none opacity-0',
         )}
       />
@@ -179,7 +192,7 @@ const ResourcesMenu = ({
         className={cn(
           'dropdown-menu dark:bg-background-6 border-stroke-1 dark:border-background-7 pointer-events-none fixed top-full left-1/2 z-50 mt-2 w-full -translate-x-1/2 rounded-[20px] border bg-white p-6 opacity-0 transition-all duration-300 lg:w-[1290px]',
           menuDropdownId === 'resources-mega-menu'
-            ? '!pointer-events-auto translate-y-0 opacity-100'
+            ? 'pointer-events-auto! translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-2.5 opacity-0',
         )}>
         <div className="grid grid-cols-12 items-start gap-y-6 md:gap-x-12">

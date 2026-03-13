@@ -13,7 +13,9 @@
     "postinstall": "tsx folder-rename.ts --utb"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@gsap/react": "^2.1.2",
+    "antd": "^6.3.2",
     "classnames": "^2.5.1",
     "gray-matter": "^4.0.3",
     "gsap": "^3.13.0",
@@ -47,8 +49,8 @@
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "typescript": "^5"
   },
   "resolutions": {
     "@types/react": "19.2.2",

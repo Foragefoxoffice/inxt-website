@@ -3,6 +3,7 @@ import { IBlogPost } from '@/interface';
 import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '../ui/button/LinkButton';
+import { formatDate } from '@/utils/formatDate';
 
 export const BlogCard = ({ blog }: { blog: IBlogPost }) => {
   return (
@@ -29,7 +30,7 @@ export const BlogCard = ({ blog }: { blog: IBlogPost }) => {
               className="text-tagline-2 text-secondary/60 dark:text-accent/60 flex items-center gap-2 font-medium"
               dateTime="2025-05-14">
               <CalendarIcon className="size-5" />
-              {blog.publishDate}
+              {formatDate(blog.publishDate)}
             </time>
             <div aria-hidden="true" className="bg-stroke-2 dark:bg-stroke-6 inline-block h-3 w-px" />
             <time

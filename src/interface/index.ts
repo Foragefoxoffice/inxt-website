@@ -14,6 +14,20 @@ export interface IBlogPost {
   featured?: boolean;
 }
 
+export interface INewsItem extends IBlogPost {
+  category: 'news' | 'event';
+  eventDate?: string;
+  eventLocation?: string;
+}
+
+export interface INewsContent {
+  content: string;
+  data: Partial<INewsItem>;
+  isEmpty: boolean;
+  excerpt: string;
+  language: string;
+}
+
 export interface IBlogContent {
   content: string;
   data: Partial<IBlogPost>;

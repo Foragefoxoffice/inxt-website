@@ -7,6 +7,7 @@ import hero from '@public/images/ns-img-340.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/Button';
+import Link from 'next/link';
 import HeroBottomOverlay from './HeroBottomOverlay';
 import HeroDivider from './HeroDivider';
 import HeroRating from './HeroRating';
@@ -22,6 +23,13 @@ const Hero = () => {
       {/* section overlay for md devices  */}
       <div className="absolute left-1/2 size-full w-[120%] -translate-x-1/2 bg-linear-to-t from-white from-58% to-transparent blur-[18px] md:hidden" />
       <div className="main-container">
+        <RevealAnimation delay={0.05} offset={20}>
+          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8 sm:mb-12 relative z-10">
+            <Link href="/" className="hover:text-primary-500 transition-colors duration-300">Home</Link>
+            <span className="text-[10px]">●</span>
+            <span className="text-secondary font-medium">Insurance</span>
+          </nav>
+        </RevealAnimation>
         <div className="relative w-full space-y-10 md:space-y-0">
           {/* hero img */}
           <RevealAnimation delay={0.1} offset={50} instant>

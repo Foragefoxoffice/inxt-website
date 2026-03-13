@@ -3,6 +3,7 @@ import { cn } from '@/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '../../ui/button/Button';
+import { formatDate } from '@/utils/formatDate';
 
 interface BlogCardProps {
   blog: IBlogPost;
@@ -37,7 +38,7 @@ const BlogCard = ({ blog, className }: BlogCardProps) => {
             </span>
             <span className="h-[6px] w-[5px] rounded-full bg-[#ECE8FF]"> </span>
             <time dateTime="2025-03-20" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
-              {blog?.publishDate}
+              {formatDate(blog?.publishDate)}
             </time>
           </div>
           <div>

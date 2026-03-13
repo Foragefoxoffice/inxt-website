@@ -5,6 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import RevealAnimation from '../animation/RevealAnimation';
 import CaseStudyTestimonial from './CaseStudyTestimonial';
 
+import Link from 'next/link';
+
 interface CaseStudyDetailsProps {
   slug: string;
 }
@@ -15,6 +17,17 @@ const CaseStudyDetails = ({ slug }: CaseStudyDetailsProps) => {
   return (
     <section className="pt-[100px] pb-16 lg:pt-[140px] lg:pb-20 xl:pt-[170px] xl:pb-28">
       <div className="main-container">
+        <RevealAnimation delay={0.05}>
+          <nav className="flex items-center gap-2 text-tagline-2 text-secondary/60 mb-8 sm:mb-12">
+            <Link href="/" className="hover:text-primary-500 transition-colors duration-300">Home</Link>
+            <span className="text-[10px]">●</span>
+            <Link href="/case-study" className="hover:text-primary-500 transition-colors duration-300">Case Study</Link>
+            <span className="text-[10px]">●</span>
+            <span className="text-secondary font-medium truncate max-w-[200px] md:max-w-none">
+              {caseStudy.title}
+            </span>
+          </nav>
+        </RevealAnimation>
         <div className="space-y-[70px]">
           <RevealAnimation delay={0.2}>
             <h2 className="text-heading-3">{caseStudy.title}</h2>
@@ -83,7 +96,7 @@ const CaseStudyDetails = ({ slug }: CaseStudyDetailsProps) => {
                 <h5 className="text-heading-4">Key Features Used</h5>
                 <ul className="space-y-2">
                   {caseStudy.keyFeatures?.map((feature: string, index: number) => (
-                    <li key={index + 1} className="text-secondary/60 dark:!text-accent/60 flex items-center gap-x-4">
+                    <li key={index + 1} className="text-secondary/60 dark:text-accent/60! flex items-center gap-x-4">
                       <span className="bg-secondary dark:bg-accent size-1.5 rounded-full"></span> {feature}
                     </li>
                   ))}
