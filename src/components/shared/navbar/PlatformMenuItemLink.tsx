@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import HoverBgTransform from '../hover-bg-transform';
-import { PlatformMenuItem } from './PlatformMenu';
+
+export interface PlatformMenuItem {
+  href: string;
+  title: string;
+  description: string;
+  Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+}
 
 const PlatformMenuItemLink = ({
   href,

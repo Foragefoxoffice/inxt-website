@@ -16,6 +16,7 @@ interface TestimonialReview {
   id: number;
   name: string;
   position: string;
+  position2?: string;
   image: StaticImageData;
   text: string;
 }

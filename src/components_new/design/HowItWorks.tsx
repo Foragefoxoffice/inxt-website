@@ -1,8 +1,8 @@
 import { cn } from '@/utils/cn';
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import LinkButton from '@/components/ui/button/Button';
-import StepCard, { StepCardProps } from '@/components_new/referral-program/StepCard';
-import StepDirection from '@/components_new/referral-program/StepDirection';
+import StepCard, { StepCardProps } from '@/components_new/shared/StepCard';
+import StepDirection from '@/components_new/shared/StepDirection';
 
 const HowItWorks = () => {
   const stepCardData: StepCardProps[] = [

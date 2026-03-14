@@ -1,4 +1,4 @@
-import { MobileMenuGroup } from '@/components/shared/mobile-menu/MobileMenu';
+import { MobileMenuGroup } from '@/components_new/shared/mobile-menu/MobileMenu';
 import { FooterOneData } from '@/interface';
 
 export const mobileMenuData: MobileMenuGroup[] = [
