@@ -7,11 +7,16 @@ import { BlogCard } from '@/components/blog/BlogCard';
 import { formatDate } from '@/utils/formatDate';
 
 export async function generateStaticParams() {
-  const response = await getBlogs('en');
-  const blogs = response.data || [];
-  return blogs.map((post) => ({
-    slug: post.slug,
-  }));
+  try {
+    const response = await getBlogs('en');
+    const blogs = response.data || [];
+    return blogs.map((post) => ({
+      slug: post.slug,
+    }));
+  } catch (error) {
+    console.warn('[Build Warning] Failed to fetch blogs for static params. Skipping pre-rendering.');
+    return [];
+  }
 }
 
 export const metadata: Metadata = {

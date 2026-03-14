@@ -29,6 +29,7 @@ async function fetchAPI<T>(
   try {
     const response = await fetch(url, {
       ...options,
+      next: { revalidate: 3600, ...options.next }, // Default revalidation
       headers: {
         'Content-Type': 'application/json',
         ...options.headers,
@@ -41,20 +42,32 @@ async function fetchAPI<T>(
     if (contentType && contentType.includes('application/json')) {
       const text = await response.text();
       result = text ? JSON.parse(text) : {};
-    } else {
-      // Handle non-JSON response (like 404 HTML or empty body)
-      if (!response.ok) {
-        throw new Error(`API returned ${response.status}: ${response.statusText}`);
-      }
+    } else if (!response.ok) {
+      // Handle non-JSON error response
+      throw new Error(`API returned ${response.status}: ${response.statusText}`);
     }
 
     if (!response.ok) {
-      throw new Error(result.message || 'API request failed');
+      throw new Error(result.message || `API request failed with status ${response.status}`);
     }
 
     return result;
   } catch (error: any) {
-    console.error(`API Error (${endpoint}):`, error.message);
+    // Check if it's a connection error (common during build)
+    const isConnRefused = error.message?.includes('ECONNREFUSED') || error.cause?.code === 'ECONNREFUSED';
+    
+    if (isConnRefused) {
+      console.warn(`[API Warning] Connection refused to ${url}. This usually happens when the backend server is not running during build. Returning empty response.`);
+      // Return a "success: false" but valid response structure to prevent crashing the build
+      return { 
+        success: false, 
+        data: null as unknown as T, 
+        message: 'Connection refused' 
+      } as ApiResponse<T>;
+    } else {
+      console.error(`API Error (${endpoint}):`, error.message);
+    }
+    
     throw error;
   }
 }

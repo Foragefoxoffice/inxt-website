@@ -11,16 +11,27 @@ export const metadata: Metadata = {
 };
 
 const page = async () => {
-  const response = await getWhitePapers('en');
-  const whitepapers = response.data || [];
+  try {
+    const response = await getWhitePapers('en');
+    const whitepapers = response.data || [];
 
-  return (
-    <main className="bg-background-3">
-      <Hero />
-      <Research whitepapers={whitepapers} />
-      <Client />
-    </main>
-  );
+    return (
+      <main className="bg-background-3">
+        <Hero />
+        <Research whitepapers={whitepapers} />
+        <Client />
+      </main>
+    );
+  } catch (error) {
+    console.warn('[Build Warning] Failed to fetch whitepapers for list page. Rendering empty state.');
+    return (
+      <main className="bg-background-3">
+        <Hero />
+        <Research whitepapers={[]} />
+        <Client />
+      </main>
+    );
+  }
 };
 
 export default page;

@@ -11,15 +11,25 @@ export const metadata: Metadata = {
 };
 
 const page = async () => {
-  const response = await getBlogs('en');
-  const blogs = response.data || [];
+  try {
+    const response = await getBlogs('en');
+    const blogs = response.data || [];
 
-  return (
-    <main className="bg-white">
-      <BlogShowcase blogs={blogs} />
-      <CTA />
-    </main>
-  );
+    return (
+      <main className="bg-white">
+        <BlogShowcase blogs={blogs} />
+        <CTA />
+      </main>
+    );
+  } catch (error) {
+    console.warn('[Build Warning] Failed to fetch blogs for list page. Rendering empty state.');
+    return (
+      <main className="bg-white">
+        <BlogShowcase blogs={[]} />
+        <CTA />
+      </main>
+    );
+  }
 };
 
 export default page;

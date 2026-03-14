@@ -5,11 +5,16 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
-  const response = await getWhitePapers('en');
-  const whitepapers = response.data || [];
-  return whitepapers.map((whitepaper) => ({
-    slug: whitepaper.slug,
-  }));
+  try {
+    const response = await getWhitePapers('en');
+    const whitepapers = response.data || [];
+    return whitepapers.map((whitepaper) => ({
+      slug: whitepaper.slug,
+    }));
+  } catch (error) {
+    console.warn('[Build Warning] Failed to fetch whitepapers for static params. Skipping pre-rendering.');
+    return [];
+  }
 }
 
 export const metadata: Metadata = {
