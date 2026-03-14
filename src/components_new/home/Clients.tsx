@@ -40,10 +40,10 @@ const clientLogos: ClientLogo[] = [
 const languages: Language[] = [
   {
     flagSrc: '/technext-img/home/MALAYSIA.svg',
-    name: 'English',
+    name: 'Malaysia',
   },
-  { flagSrc: '/technext-img/home/INDIA.svg', name: 'Dutch' },
-  { flagSrc: '/technext-img/home/PHILIPPINES.svg', name: 'Chinese' },
+  { flagSrc: '/technext-img/home/INDIA.svg', name: 'India' },
+  { flagSrc: '/technext-img/home/PHILIPPINES.svg', name: 'Philippines' },
   {
     flagSrc: '/technext-img/home/THAILAND.svg',
     name: 'Thailand',
@@ -83,7 +83,7 @@ const Clients = () => {
       <div className="main-container">
         <div className="relative overflow-hidden text-center">
           <RevealAnimation delay={0.1}>
-            <h2 id="clients-heading" className="mx-auto mb-14 max-w-[800px] text-center font-normal">
+            <h2 id="clients-heading" className="mx-auto mb-4 max-w-[800px] text-center text-[24px]">
               Partnered with 
               <span className="text-[#3D5AF1]"> Industry Leaders </span>Worldwide
             </h2>
@@ -100,7 +100,7 @@ const Clients = () => {
                   className="relative w-full overflow-hidden rounded-2xl bg-[#E8F5FF] p-4 xl:max-w-[560px]"
                   aria-labelledby="language-marquee-heading">
                     <div className="overflow-hidden" aria-label="Available languages for AI voice generation">
-                    <Marquee autoFill speed={50} gradient={false}>
+                    <Marquee autoFill speed={50} gradient={false} direction="right">
                       <div className="ml-3 flex items-center justify-center gap-x-3">
                         {languages.map((language) => (
                           <div
@@ -144,7 +144,7 @@ const Clients = () => {
             <div
               className="logos-marquee-container mt-14 overflow-hidden"
               aria-label="Logos of trusted companies and brands using AI Voice Generator">
-              <Marquee autoFill speed={50} gradient={false}>
+              <Marquee autoFill speed={50} gradient={false} direction='right'>
                 <div className="flex items-center justify-center gap-x-14">
                   {clientLogos.map((logo) => (
                     <figure

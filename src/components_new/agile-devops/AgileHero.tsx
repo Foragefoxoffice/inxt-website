@@ -21,7 +21,7 @@ import HeroDotBg from '@/components/shared/HeroDotBg';
 import LinkButton from '../ui/button/LinkButton';
 import VerticalLine from '@/components/home/VerticalLine';
 
-const DataHero = () => {
+const AgileHero = () => {
   return (
     <RevealAnimation direction="up" offset={0}>
       <section className="bg-background-3 dark:bg-background-5 relative overflow-hidden pt-[200px] pb-16 lg:pb-[100px] 2xl:pt-[250px]">
@@ -93,14 +93,14 @@ const DataHero = () => {
           <RevealAnimation delay={0.2}>
             <h1 className="mx-auto my-12 max-w-[350px] leading-[1.2] sm:max-w-[450px] md:max-w-[700px] xl:max-w-[846px]">
               <span className="hero-text-gradient hero-text-color-1 block">
-                Drive Growth with <br className="hidden md:block" /> Data Insights
+                Achieve Agility with <br className="hidden md:block" /> DevOps
               </span>
             </h1>
           </RevealAnimation>
 
           <RevealAnimation delay={0.3}>
             <p className="mb-7 max-w-[700px] md:mb-10 lg:mb-14">
-              Our data analytics services help organizations transform raw data into meaningful insights that support smarter decisions, optimize operations, and accelerate business growth.
+              Accelerate software delivery, improve collaboration, and streamline development workflows with modern DevOps practices. Our DevOps solutions help organizations build scalable, secure, and efficient development pipelines.
             </p>
           </RevealAnimation>
 
@@ -192,5 +192,5 @@ const DataHero = () => {
     </RevealAnimation>
   );
 };
-DataHero.displayName = 'DataHero';
-export default DataHero;
+AgileHero.displayName = 'AgileHero';
+export default AgileHero;

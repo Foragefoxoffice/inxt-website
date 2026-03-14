@@ -31,7 +31,27 @@ export const metadata: Metadata = {
   title: 'AI Voice Generator - NextSaaS',
 };
 
-const page = () => {
+import { getBlogs, getNews, getNewsletterIssues, Blog as ApiBlog, NewsItem, NewsletterIssue } from '@/utils/api';
+
+const page = async () => {
+  let blogs: ApiBlog[] = [];
+  let news: NewsItem[] = [];
+  let newsletters: NewsletterIssue[] = [];
+
+  try {
+    const [blogsRes, newsRes, newslettersRes] = await Promise.all([
+      getBlogs('en', 'status=published&limit=3'),
+      getNews('en', 'status=published&limit=3'),
+      getNewsletterIssues('en', 'limit=3')
+    ]);
+
+    blogs = blogsRes.data || [];
+    news = newsRes.data || [];
+    newsletters = newslettersRes.data || [];
+  } catch (error) {
+    console.warn('[Build Warning] Failed to fetch resources for home page. Rendering empty states where needed.');
+  }
+
   return (
     <main className="bg-white">
       <HeroFinMgmt />
@@ -45,7 +65,7 @@ const page = () => {
       <Expertise />
       <AutomationPlatform />
       <Testimonial />
-      <Blog/>
+      <Blog blogs={blogs} news={news} newsletters={newsletters} />
       <CTA
         className="dark:bg-background-6 bg-white"
         badgeClass="hidden"

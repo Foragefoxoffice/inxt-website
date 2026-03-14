@@ -6,23 +6,25 @@ import { cn } from '@/utils/cn';
 const missionData = [
   {
     id: 1,
-    title: 'Unlock the Power of Data to Drive Innovation and Growth',
+    title: 'Driving Business Transformation with API & Microservices',
     description:
-      'Modern organizations generate vast amounts of data every day. Our analytics solutions help businesses convert this data into actionable insights that support better strategies, improved operational efficiency, and stronger customer experiences.',
-    description2:' By identifying patterns, trends, and opportunities within complex datasets, we enable organizations to make confident decisions and stay competitive in a rapidly evolving market.',
+      'Modern businesses require flexible and scalable systems that can adapt quickly to changing market demands. API and microservices architectures allow organizations to break down complex systems into smaller, independent services that communicate seamlessly.',
+    description2:
+      'By adopting this approach, enterprises can improve system agility, enable faster feature development, and integrate new technologies without disrupting existing operations.',
     image: 'https://placehold.co/600x400',
   },
   {
     id: 2,
-    title: 'Data-Driven Decisions for Business Success',
+    title: 'Unified, Agile Integration for Seamless Connectivity',
     description:
-      'We provide end-to-end data engineering, analytics, and business intelligence solutions designed to create scalable and reliable data ecosystems. Our services integrate seamlessly with your existing systems to provide real-time visibility and advanced analytics capabilities. ',
-    description2:'With the right data insights, organizations can improve decision-making, identify new opportunities, and build strategies based on real evidence rather than assumptions.',
+      'Our API and microservices solutions enable organizations to connect applications, services, and data systems into a unified digital ecosystem. By building modular architectures and scalable APIs, businesses can create flexible platforms that support rapid innovation.',
+    description2:
+      'This approach ensures seamless communication between systems, faster development cycles, and improved scalability for future digital initiatives.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const DataMission = () => {
+const ApiMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
@@ -40,9 +42,11 @@ const DataMission = () => {
                 <RevealAnimation delay={0.4}>
                   <p>{item.description}</p>
                 </RevealAnimation>
-                <RevealAnimation delay={0.4}>
-                  <p>{item.description2}</p>
-                </RevealAnimation>
+                {item.description2 && (
+                  <RevealAnimation delay={0.5}>
+                    <p>{item.description2}</p>
+                  </RevealAnimation>
+                )}
               </div>
             </div>
             {/*  */}
@@ -76,5 +80,5 @@ const DataMission = () => {
   );
 };
 
-DataMission.displayName = 'DataMission';
-export default DataMission;
+ApiMission.displayName = 'ApiMission';
+export default ApiMission;

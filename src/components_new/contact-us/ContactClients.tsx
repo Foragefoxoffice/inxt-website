@@ -30,7 +30,7 @@ const ContactClients = () => {
             <div
               className="logos-marquee-container relative overflow-hidden"
               aria-label="Logos of trusted companies and brands">
-              <Marquee autoFill speed={50} gradient={false}>
+              <Marquee autoFill speed={50} gradient={false} direction='right'>
                 <div className="flex items-center justify-center gap-x-14">
                   {clientLogos.map((logo) => (
                     <figure

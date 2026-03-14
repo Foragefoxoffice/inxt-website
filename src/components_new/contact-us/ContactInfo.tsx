@@ -61,6 +61,7 @@ const ContactInfo = () => {
             <RevealAnimation
               delay={0.3}
               className="dark:bg-background-6 mx-auto w-full max-w-[847px] rounded-4xl bg-white p-6 md:p-8 lg:p-11">
+              <div>
               <form action="#" method="POST" className="space-y-8">
                 {/* name and phone number  */}
                 <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
@@ -167,6 +168,43 @@ const ContactInfo = () => {
                   Submit
                 </button>
               </form>
+              {/* Contact Info Box */}
+              <div className="mt-10 rounded-2xl bg-gradient-to-br from-[#E8F5FF] to-[#F0F4FF] dark:from-[#1a2332] dark:to-[#1e293b] p-6 md:p-8">
+                <div className="flex flex-col gap-6 md:flex-row md:gap-10">
+                  <div className="flex items-start gap-4 flex-1 group">
+                    <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-md transition-transform duration-300 group-hover:scale-110 dark:bg-background-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D5AF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-tagline-2 font-semibold text-secondary dark:text-accent mb-1">Headquarters Address</h4>
+                      <p className="text-sm leading-relaxed text-secondary/70 dark:text-accent/70">
+                        2B-9-3, Plaza Sentral, Jalan Stesen Sentral 5,<br />
+                        Kuala Lumpur Sentral, 50470 Kuala Lumpur, Wilayah<br />
+                        Persekutuan Kuala Lumpur, Malaysia
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block w-px bg-[#3D5AF1]/20 self-stretch"></div>
+                  <div className="flex items-start gap-4 flex-1 group">
+                    <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-md transition-transform duration-300 group-hover:scale-110 dark:bg-background-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D5AF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-tagline-2 font-semibold text-secondary dark:text-accent mb-1">Email</h4>
+                      <a href="mailto:connect@iortatechnxt.com" className="text-sm text-secondary/70 dark:text-accent/70 hover:text-[#3D5AF1] transition-colors duration-200">
+                        connect@iortatechnxt.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
             </RevealAnimation>
           </div>
         </div>

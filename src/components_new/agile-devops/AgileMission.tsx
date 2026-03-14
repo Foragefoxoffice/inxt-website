@@ -6,23 +6,25 @@ import { cn } from '@/utils/cn';
 const missionData = [
   {
     id: 1,
-    title: 'Unlock the Power of Data to Drive Innovation and Growth',
+    title: 'Thriving in the Digital Era with Enterprise Agile DevOps',
     description:
-      'Modern organizations generate vast amounts of data every day. Our analytics solutions help businesses convert this data into actionable insights that support better strategies, improved operational efficiency, and stronger customer experiences.',
-    description2:' By identifying patterns, trends, and opportunities within complex datasets, we enable organizations to make confident decisions and stay competitive in a rapidly evolving market.',
+      'In today’s fast-moving digital landscape, organizations must deliver software faster while maintaining quality and reliability. Our DevOps solutions enable enterprises to automate development pipelines, streamline collaboration between development and operations teams, and deploy applications efficiently.',
+    description2:
+      'By implementing modern DevOps practices, businesses can reduce release cycles, improve product stability, and respond quickly to changing customer demands.',
     image: 'https://placehold.co/600x400',
   },
   {
     id: 2,
-    title: 'Data-Driven Decisions for Business Success',
+    title: 'Driving Agility with Product-Centric Value Delivery',
     description:
-      'We provide end-to-end data engineering, analytics, and business intelligence solutions designed to create scalable and reliable data ecosystems. Our services integrate seamlessly with your existing systems to provide real-time visibility and advanced analytics capabilities. ',
-    description2:'With the right data insights, organizations can improve decision-making, identify new opportunities, and build strategies based on real evidence rather than assumptions.',
+      'At Iorta TechNXT, we enable organizations to adopt a product-focused DevOps approach that aligns technology delivery with business outcomes. Our DevOps framework combines automation, continuous integration, and scalable infrastructure to help teams deliver reliable software faster.',
+    description2:
+      'With optimized workflows and intelligent monitoring, organizations can improve deployment frequency, reduce system downtime, and enhance operational efficiency.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const DataMission = () => {
+const AgileMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
@@ -40,9 +42,11 @@ const DataMission = () => {
                 <RevealAnimation delay={0.4}>
                   <p>{item.description}</p>
                 </RevealAnimation>
-                <RevealAnimation delay={0.4}>
-                  <p>{item.description2}</p>
-                </RevealAnimation>
+                {item.description2 && (
+                  <RevealAnimation delay={0.5}>
+                    <p>{item.description2}</p>
+                  </RevealAnimation>
+                )}
               </div>
             </div>
             {/*  */}
@@ -76,5 +80,5 @@ const DataMission = () => {
   );
 };
 
-DataMission.displayName = 'DataMission';
-export default DataMission;
+AgileMission.displayName = 'AgileMission';
+export default AgileMission;

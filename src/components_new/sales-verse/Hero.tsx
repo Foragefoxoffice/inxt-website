@@ -37,7 +37,7 @@ const Hero = () => {
             <RevealAnimation delay={0.1}>
               <h1 className="mb-3 font-medium opacity-0 leading-[1.2]">
                 <span className="hero-text-gradient hero-text-color-2 block">
-                  Sales Verse <br className="hidden md:block" /> AI-Powered Insurance <br className="hidden md:block" /> Sales Management Platform
+                  SalesVerse <br className="hidden md:block" /> AI-Powered Insurance <br className="hidden md:block" /> Sales Management Platform
                 </span>
               </h1>
             </RevealAnimation>

@@ -6,23 +6,25 @@ import { cn } from '@/utils/cn';
 const missionData = [
   {
     id: 1,
-    title: 'Unlock the Power of Data to Drive Innovation and Growth',
+    title: 'Empowering Enterprises with Agile and Scalable Application Solutions',
     description:
-      'Modern organizations generate vast amounts of data every day. Our analytics solutions help businesses convert this data into actionable insights that support better strategies, improved operational efficiency, and stronger customer experiences.',
-    description2:' By identifying patterns, trends, and opportunities within complex datasets, we enable organizations to make confident decisions and stay competitive in a rapidly evolving market.',
+      'In today’s rapidly evolving digital landscape, organizations require flexible and scalable applications that can support growing business demands. Our application development services help enterprises design, build, and deploy high-performance applications tailored to their operational needs.',
+    description2:
+      'By leveraging modern frameworks and agile development methodologies, we enable businesses to accelerate digital transformation and deliver innovative digital experiences to their customers.',
     image: 'https://placehold.co/600x400',
   },
   {
     id: 2,
-    title: 'Data-Driven Decisions for Business Success',
+    title: 'Innovative Application Solutions for Seamless Performance and Growth',
     description:
-      'We provide end-to-end data engineering, analytics, and business intelligence solutions designed to create scalable and reliable data ecosystems. Our services integrate seamlessly with your existing systems to provide real-time visibility and advanced analytics capabilities. ',
-    description2:'With the right data insights, organizations can improve decision-making, identify new opportunities, and build strategies based on real evidence rather than assumptions.',
+      'At Iorta TechNXT, we combine modern software engineering practices with scalable architecture to build powerful enterprise applications. Our solutions are designed to support long-term business growth while maintaining system stability and performance.',
+    description2:
+      'From custom application development to ongoing maintenance and optimization, we ensure your digital platforms remain secure, reliable, and adaptable to future business requirements.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const DataMission = () => {
+const AppMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
@@ -40,9 +42,11 @@ const DataMission = () => {
                 <RevealAnimation delay={0.4}>
                   <p>{item.description}</p>
                 </RevealAnimation>
-                <RevealAnimation delay={0.4}>
-                  <p>{item.description2}</p>
-                </RevealAnimation>
+                {item.description2 && (
+                  <RevealAnimation delay={0.5}>
+                    <p>{item.description2}</p>
+                  </RevealAnimation>
+                )}
               </div>
             </div>
             {/*  */}
@@ -76,5 +80,5 @@ const DataMission = () => {
   );
 };
 
-DataMission.displayName = 'DataMission';
-export default DataMission;
+AppMission.displayName = 'AppMission';
+export default AppMission;

@@ -3,7 +3,7 @@
  * Handles communication with the backend for blogs, news, white papers, webinars, and newsletters.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5002/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://inxt.placetest.in/api';
 
 interface ApiResponse<T> {
   success: boolean;

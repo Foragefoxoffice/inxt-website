@@ -6,72 +6,72 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 const data = [
   {
     id: 1,
-    title: 'Data collection and integration from multiple systems',
+    title: 'Digital transformation strategy development',
   },
   {
     id: 2,
-    title: 'Data warehousing and scalable data architecture',
+    title: 'Business process analysis and optimization',
   },
   {
     id: 3,
-    title: 'Data pipeline development and management',
+    title: 'Technology roadmap and architecture planning',
   },
   {
     id: 4,
-    title: 'Data quality and governance frameworks',
+    title: 'Digital product strategy and innovation',
   },
   {
     id: 5,
-    title: 'Real-time and batch data processing',
+    title: 'Data-driven decision frameworks',
   },
   {
     id: 6,
-    title: 'Business intelligence dashboards',
+    title: 'Legacy system modernization strategies',
   },
   {
     id: 7,
-    title: 'Predictive analytics and forecasting',
+    title: 'Cloud and platform transformation consulting',
   },
   {
     id: 8,
-    title: 'Interactive data visualization',
+    title: 'Process automation and workflow optimization',
   },
   {
     id: 9,
-    title: 'KPI monitoring and performance tracking',
+    title: 'Customer experience transformation',
   },
   {
     id: 10,
-    title: 'AI-driven analytics insights',
+    title: 'Enterprise technology integration',
   },
 ];
 
-const DataCapabilities = () => {
+const DigitalCapabilities = () => {
   return (
     <section className="py-16 md:py-20 lg:pt-[0px] xl:pt-[20px]">
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge bg-[#D3E7F8]">Data Capabilities</span>
+            <span className="badge bg-[#D3E7F8]">Consulting Capabilities</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
               <h2>
-                Advanced Data Analytics for <br className="hidden md:block" /> Intelligent Business Insights
+                Strategic Digital <br className="hidden md:block" /> Transformation Services
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="mx-auto max-w-[500px] lg:max-w-[674px]">
-                Our data analytics solutions combine advanced technologies, modern analytics platforms, and scalable data infrastructure to help organizations extract value from their data and transform insights into actionable strategies.
+                Our consulting services guide organizations through every stage of digital transformation—from strategy development to technology implementation and operational optimization.
               </p>
             </RevealAnimation>
           </div>
         </div>
         <div className="space-y-10 md:space-y-20 lg:space-y-[100px]">
-          <div className="flex flex-col items-start gap-y-6 lg:flex-row lg:gap-8 xl:gap-12">
+          <div className="flex flex-col items-center gap-y-6 lg:flex-row lg:gap-8 xl:gap-12">
             <RevealAnimation delay={0.5} offset={70} start="top 88%">
               <div className="bg-white dark:bg-background-6 w-full max-w-[500px] space-y-6 rounded-[20px] p-8 lg:max-w-[300px] xl:max-w-[360px] xl:p-[42px]">
-                <h3 className="xl:text-heading-4 text-heading-5">Data Strategy & Engineering</h3>
+                <h3 className="xl:text-heading-4 text-heading-5">Digital Strategy & Innovation</h3>
                 <ul>
                   {data.slice(0, 5).map((item) => (
                     <li key={item.id} className="flex items-center gap-2 py-1.5 xl:py-2.5">
@@ -111,7 +111,7 @@ const DataCapabilities = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.7} offset={70} start="top 88%">
               <div className="bg-white dark:bg-background-6 w-full max-w-[500px] space-y-6 rounded-[20px] p-8 lg:max-w-[300px] xl:max-w-[360px] xl:p-[42px]">
-                <h3 className="xl:text-heading-4 text-heading-5">Analytics & Visualization</h3>
+                <h3 className="xl:text-heading-4 text-heading-5">Enterprise Transformation</h3>
                 <ul>
                   {data.slice(5).map((item) => (
                     <li key={item.id} className="flex items-center gap-2 py-1.5 xl:py-2.5">
@@ -144,5 +144,5 @@ const DataCapabilities = () => {
   );
 };
 
-DataCapabilities.displayName = 'DataCapabilities';
-export default DataCapabilities;
+DigitalCapabilities.displayName = 'DigitalCapabilities';
+export default DigitalCapabilities;

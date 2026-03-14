@@ -6,23 +6,25 @@ import { cn } from '@/utils/cn';
 const missionData = [
   {
     id: 1,
-    title: 'Unlock the Power of Data to Drive Innovation and Growth',
+    title: 'Digital Consulting',
     description:
-      'Modern organizations generate vast amounts of data every day. Our analytics solutions help businesses convert this data into actionable insights that support better strategies, improved operational efficiency, and stronger customer experiences.',
-    description2:' By identifying patterns, trends, and opportunities within complex datasets, we enable organizations to make confident decisions and stay competitive in a rapidly evolving market.',
+      'At Iorta TechNXT, our digital consulting services help organizations navigate complex digital transformation journeys. We partner with businesses to evaluate current processes, identify innovation opportunities, and implement technology strategies that align with long-term business goals.',
+    description2:
+      'Our consultants combine industry expertise with advanced technologies to create scalable digital solutions that improve operational efficiency, enable better decision-making, and deliver measurable business value.',
     image: 'https://placehold.co/600x400',
   },
   {
     id: 2,
-    title: 'Data-Driven Decisions for Business Success',
+    title: 'Transforming the Insurance Sector',
     description:
-      'We provide end-to-end data engineering, analytics, and business intelligence solutions designed to create scalable and reliable data ecosystems. Our services integrate seamlessly with your existing systems to provide real-time visibility and advanced analytics capabilities. ',
-    description2:'With the right data insights, organizations can improve decision-making, identify new opportunities, and build strategies based on real evidence rather than assumptions.',
+      "In today's rapidly evolving insurance landscape, digital transformation is essential for staying competitive. We help insurers modernize their operations by implementing digital platforms, automation solutions, and data-driven strategies.",
+    description2:
+      'From streamlining core processes such as claims and underwriting to improving customer engagement and agent productivity, our consulting services enable organizations to adopt innovative digital solutions and build a future-ready insurance ecosystem.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const DataMission = () => {
+const DigitalMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
@@ -40,9 +42,11 @@ const DataMission = () => {
                 <RevealAnimation delay={0.4}>
                   <p>{item.description}</p>
                 </RevealAnimation>
-                <RevealAnimation delay={0.4}>
-                  <p>{item.description2}</p>
-                </RevealAnimation>
+                {item.description2 && (
+                  <RevealAnimation delay={0.5}>
+                    <p>{item.description2}</p>
+                  </RevealAnimation>
+                )}
               </div>
             </div>
             {/*  */}
@@ -76,5 +80,5 @@ const DataMission = () => {
   );
 };
 
-DataMission.displayName = 'DataMission';
-export default DataMission;
+DigitalMission.displayName = 'DigitalMission';
+export default DigitalMission;

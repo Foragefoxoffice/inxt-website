@@ -69,41 +69,48 @@ const HeroContent = () => {
   return (
     <div className="main-container z-10 flex flex-col items-center text-center">
       <RevealAnimation delay={0.1}>
-        <span className="badge badge-yellow mb-5">Artificial intelligence solutions</span>
+        <span className="badge badge-yellow mb-5">Contact Us</span>
       </RevealAnimation>
       <RevealAnimation delay={0.2}>
         <h1 className="max-[426px]:text-heading-5 max-sm:text-heading-4 mb-4 font-medium max-[426px]:mb-2.5 max-sm:max-w-[450px]">
-          Effortlessly build advanced website
-          <br className="hidden md:block" />
-          with AI-driven solutions
+          Get in Touch
         </h1>
       </RevealAnimation>
       <RevealAnimation delay={0.3}>
         <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14">
-          Effortlessly build advanced websites with AI-driven solutions that streamline every step of the development
-          process. From intelligent design suggestions to automated
+          Get in touch with our team to discuss your insurance technology needs and digital transformation journey
         </p>
       </RevealAnimation>
-      <ul className="mb-7 flex flex-col gap-4 max-md:w-full md:mb-14 md:flex-row">
-        <RevealAnimation delay={0.3} direction="left" offset={50}>
-          <li>
-            <LinkButton
-              href="/login"
-              className="btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
-              Get started
-            </LinkButton>
-          </li>
+      <div className="mb-7 flex flex-col gap-6 max-md:w-full md:mb-14 md:flex-row md:gap-12">
+        <RevealAnimation delay={0.4}>
+          <div className="flex items-start gap-3 text-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h4 className="text-tagline-1 font-semibold mb-1">Headquarters Address</h4>
+              <p className="text-sm leading-relaxed">
+                2B-9-3, Plaza Sentral, Jalan Stesen Sentral 5,<br />
+                Kuala Lumpur Sentral, 50470 Kuala Lumpur, Wilayah<br />
+                Persekutuan Kuala Lumpur, Malaysia
+              </p>
+            </div>
+          </div>
         </RevealAnimation>
-        <RevealAnimation delay={0.5} direction="left" offset={50}>
-          <li>
-            <LinkButton
-              href="/pricing"
-              className="btn btn-white max-md:btn-md btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent w-full max-md:mx-auto md:w-auto">
-              Free trial
-            </LinkButton>
-          </li>
+        <RevealAnimation delay={0.5}>
+          <div className="flex items-start gap-3 text-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <h4 className="text-tagline-1 font-semibold mb-1">Email</h4>
+              <a href="mailto:connect@iortatechnxt.com" className="text-sm hover:underline">connect@iortatechnxt.com</a>
+            </div>
+          </div>
         </RevealAnimation>
-      </ul>
+      </div>
     </div>
   );
 };
