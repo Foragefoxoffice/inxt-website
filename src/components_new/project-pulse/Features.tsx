@@ -30,11 +30,11 @@ const voicesBottom = [
 const Features = () => {
   return (
     <section className="max-[1920px]:px-5">
-      <div className="bg-background-12 mx-auto max-w-[1880px] rounded-3xl py-20 lg:rounded-4xl lg:py-30 xl:py-39">
+      <div className="mx-auto max-w-[1880px] rounded-3xl py-20 lg:rounded-4xl lg:py-30 xl:py-39">
         <div className="main-container">
           <div className="mb-10 space-y-4 text-center md:mb-14 lg:mx-auto lg:max-w-[740px]">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-white-v2 text-secondary font-medium">Key Features</span>
+              <span className="badge bg-[#D3E7F8] capitalize text-secondary font-medium">Key Features</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2>Powerful Features for Smarter Project Management</h2>
@@ -45,7 +45,7 @@ const Features = () => {
             {/* feature item 1 */}
             <RevealAnimation delay={0.1}>
               <div className="col-span-12 md:col-span-6">
-                <div className="relative h-full min-h-[450px] max-w-full overflow-hidden rounded-[20px] bg-white sm:min-h-[780px] md:min-h-[720px] lg:p-10.5">
+                <div className="relative h-full min-h-[450px] max-w-full overflow-hidden rounded-[20px] bg-white sm:min-h-[780px] md:min-h-[720px] lg:p-10.5 border border-gray-200">
                   <RevealAnimation delay={0.1}>
                     <div className="absolute bottom-0 left-0 z-10 h-[480px] w-full bg-(image:--color-gradient-11) blur-[2px] md:bottom-20 lg:bottom-0" />
                   </RevealAnimation>
@@ -68,7 +68,7 @@ const Features = () => {
             {/* feature item 2 */}
             <div className="col-span-12 space-y-8 md:col-span-6">
               <RevealAnimation delay={0.4}>
-                <div className="space-y-6 rounded-[20px] bg-white p-5 sm:p-8 md:p-5 xl:p-8">
+                <div className="space-y-6 rounded-[20px] bg-white p-5 sm:p-8 md:p-5 xl:p-8 border border-gray-200">
                   <div className="bg-background-12 relative space-y-7 overflow-hidden rounded-2xl pt-[25px] pb-[27px]">
                     {/* Left gradient overlay */}
                     <div className="from-background-12 pointer-events-none absolute top-0 left-0 z-10 h-full w-[20%] bg-gradient-to-r to-transparent" />
@@ -105,7 +105,7 @@ const Features = () => {
                   </div>
                   <RevealAnimation delay={0.4} start="top 97%">
                     <div className="max-md:space-y-0.5 md:space-y-1.5">
-                      <h3 className="text-heading-6 md:text-heading-5">Seamless Team Collaboration</h3>
+                      <h3 className="text-heading-6 text-heading-5 ">Seamless Team Collaboration</h3>
                       <p className="max-w-[450px]">
                         Enable teams to communicate, share updates, and work together in real time through a centralized project workspace.
                       </p>

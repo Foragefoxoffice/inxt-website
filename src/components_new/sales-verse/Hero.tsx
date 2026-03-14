@@ -1,7 +1,9 @@
 import heroBanner from '@public/images/ns-img-327.png';
 import Image from 'next/image';
-import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/Button';
+import RevealAnimation from '@/components/animation/RevealAnimation';
+import CtaInputForm from '@/components_new/shared/cta/CtaInputForm';
+
+import { Button } from '@/components/ui/button/Button';
 
 const Hero = () => {
   return (
@@ -15,8 +17,10 @@ const Hero = () => {
         <div className="main-container relative z-30">
           <div className="mb-12 text-center lg:mb-20 xl:mb-33">
             <RevealAnimation delay={0.1}>
-              <h1 className="mb-3 font-medium opacity-0">
-                Sales Verse <br /> <span className="text-[26px] md:text-[50px]">AI-Powered Insurance Sales Management Platform</span>
+              <h1 className="mb-3 font-medium opacity-0 leading-[1.2]">
+                <span className="hero-text-gradient hero-text-color-2 block">
+                  Sales Verse <br className="hidden md:block" /> AI-Powered Insurance <br className="hidden md:block" /> Sales Management Platform
+                </span>
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
@@ -24,23 +28,22 @@ const Hero = () => {
                 SalesVerse is an end-to-end sales cycle management platform that helps insurers capture leads, automate onboarding, manage agents, and gain real-time sales insights. With AI-driven automation and predictive analytics, insurers can improve lead conversion, accelerate deal closure, and optimize revenue growth.
               </p>
             </RevealAnimation>
-            <ul className="flex flex-col items-center justify-center gap-x-4 gap-y-3 md:flex-row md:gap-y-0">
-              <RevealAnimation delay={0.4} direction="left" instant offset={50}>
-                <div>
-                  <LinkButton href="/services" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Get Started
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
-
-              <RevealAnimation delay={0.5} direction="left" instant offset={50}>
-                <div>
-                  <LinkButton href="/signup" btnClass="btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2">
-                    Get started
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
-            </ul>
+            
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <div className="flex justify-center w-full">
+                <CtaInputForm 
+                  btnClass="btn-md"
+                  btnStyle={{ background: '#000000', color: '#ffffff', borderColor: '#000000' }}
+                  ctaBtnText="Get Information"
+                />
+              </div>
+              <Button 
+                btnClass="btn-md btn-white hover:btn-primary border-0"
+                className="mt-6"
+              >
+                Schedule a Demo
+              </Button>
+            </div>
           </div>
           {/* banner */}
           <RevealAnimation delay={0.4} direction="up" instant>

@@ -35,7 +35,7 @@ const Overview = () => {
                 {/* heading text  */}
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <span className="badge badge-green mb-5">Platform Overview </span>
+                    <span className="badge bg-[#D3E7F8] mb-5">Platform Overview </span>
                   </RevealAnimation>
                   <RevealAnimation delay={0.1}>
                     <h2 className="text-primary dark:text-accent">Manage Insurance Operations with a Unified Digital Platform</h2>

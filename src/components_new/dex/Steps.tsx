@@ -1,7 +1,6 @@
 import Step1 from '@public/images/ns-img-210.png';
 import Step2 from '@public/images/ns-img-211.png';
 import Step3 from '@public/images/ns-img-212.png';
-import Gradient6 from '@public/images/ns-img-498.png';
 import Step2Dark from '@public/images/ns-img-dark-143.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
@@ -64,15 +63,6 @@ const Steps = () => {
                   <p>DEX integrates with existing enterprise platforms and insurance systems to enable real-time data analysis and intelligent decision support.</p>
                 </RevealAnimation>
               </div>
-              <RevealAnimation delay={0.3}>
-                <div>
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn hover:btn-primary dark:btn-transparent btn-secondary btn-md mx-auto w-[85%] md:w-auto">
-                    Get started now
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6">
@@ -85,9 +75,10 @@ const Steps = () => {
                 <StackCardItem key={step.id}>
                   <div className="max-w-[383px] max-sm:min-h-[400px] sm:max-w-[483px]">
                     <div className="relative z-20 flex w-full items-center justify-center overflow-hidden rounded-[20px] p-2">
-                      <figure className="pointer-events-none absolute -top-[98%] -left-[90%] -z-10 size-[1000px] rotate-[307deg] opacity-50 select-none">
-                        <Image src={Gradient6} alt="step" />
-                      </figure>
+                      <div 
+                        className="absolute inset-0 -z-10" 
+                        style={{ background: 'linear-gradient(to top left, #ffffff 50%, #22D1EE, #3D5AF1)' }} 
+                      />
                       <div className="relative z-10 w-full space-y-6 rounded-[14px] bg-white p-5 sm:p-8 dark:bg-black">
                         <div className="space-y-1">
                           <p className="md:text-heading-5 text-heading-6 text-secondary dark:text-accent">

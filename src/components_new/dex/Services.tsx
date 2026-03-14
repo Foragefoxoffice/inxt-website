@@ -45,11 +45,11 @@ const Features = () => {
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-14">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-green">AI Capabilities</span>
+            <span className="badge bg-[#E9F3FC]">AI Capabilities</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
-              <h2>Advanced AI Features for Intelligent Decision-Making</h2>
+              <h2>Advanced AI Features for <br className="hidden md:block" /> Intelligent Decision-Making</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[578px]">

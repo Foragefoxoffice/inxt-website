@@ -13,7 +13,7 @@ const CTA = () => {
       <div className="main-container">
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-ivory uppercase" aria-label="Call to action section badge" itemProp="name">
+            <span className="badge bg-[#D3E7F8] capitalize" aria-label="Call to action section badge" itemProp="name">
               Get Started
             </span>
           </RevealAnimation>
@@ -24,7 +24,7 @@ const CTA = () => {
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p itemProp="description">Modernize your insurance systems, streamline policy and claims management, and deliver better digital experiences with a flexible insurance platform.</p>
+              <p className="max-w-[689px] mx-auto text-center" itemProp="description">Modernize your insurance systems, streamline policy and claims management, and deliver better digital experiences with a flexible insurance platform.</p>
             </RevealAnimation>
           </div>
         </div>
@@ -32,10 +32,10 @@ const CTA = () => {
         <RevealAnimation delay={0.4}>
           <div className="mx-auto mt-[76px] w-[90%] text-center md:w-auto">
             <LinkButton
-              href="/signup"
+              href="mailto:connect@iortatechnxt.com"
               btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
               aria-label="Book your free strategy call - Navigate to signup page">
-              Contact Our Team
+              Let's set up a call
             </LinkButton>
           </div>
         </RevealAnimation>

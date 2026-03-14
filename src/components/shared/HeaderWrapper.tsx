@@ -15,7 +15,7 @@ const HeaderWrapper = () => {
 
   return (
     <Fragment>
-      <TopNavHeading />
+      {/* <TopNavHeading /> */}
       <Navbar showTopNav={showTopNavMarquee} />
     </Fragment>
   );

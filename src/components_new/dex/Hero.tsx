@@ -5,6 +5,9 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import GradientAnimation from './GradientAnimation';
+import CtaInputForm from '@/components_new/shared/cta/CtaInputForm';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button/Button';
 
 const Hero = () => {
   return (
@@ -15,7 +18,7 @@ const Hero = () => {
             <RevealAnimation delay={0.2}>
               <h1 className="mx-auto max-w-[400px] leading-[1.3] sm:max-w-[600px] md:max-w-[900px] xl:max-w-[1110px]">
                 <span className="hero-text-gradient hero-text-color-2 block">
-                  DEX – AI Decision Intelligence Platform
+                  DEX <br className="hidden md:block" /> AI Decision Intelligence Platform
                 </span>
               </h1>
             </RevealAnimation>
@@ -26,15 +29,21 @@ const Hero = () => {
             </RevealAnimation>
           </div>
         </div>
-        <RevealAnimation delay={0.4}>
-          <div className="flex justify-center py-[72px]">
-            <LinkButton
-              href="/pricing"
-              className="btn dark:btn-accent hover:btn-white dark:hover:btn-white-dark btn-secondary btn-xl">
-              Get a free demo
-            </LinkButton>
+        <div className="flex flex-col items-center justify-center space-y-4 mt-12 mb-8">
+          <div className="flex justify-center w-full">
+            <CtaInputForm 
+              btnClass="btn-md"
+              btnStyle={{ background: '#000000', color: '#ffffff', borderColor: '#000000' }}
+              ctaBtnText="Get Information"
+            />
           </div>
-        </RevealAnimation>
+          <Button 
+            btnClass="btn-md btn-white hover:btn-primary border-1 border-gray-300"
+            className="mt-6"
+          >
+            Schedule a Demo
+          </Button>
+        </div>
         <div className="relative z-10 flex items-end justify-center -space-x-28">
           <RevealAnimation delay={0.5} direction="right" offset={100} instant>
             <figure className="relative -z-10 w-full max-w-[200px] overflow-hidden rounded-[20px] md:max-w-[250px] lg:max-w-[326px]">

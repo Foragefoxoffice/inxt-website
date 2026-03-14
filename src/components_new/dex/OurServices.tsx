@@ -74,7 +74,7 @@ const OurServices = () => {
       <div className="main-container">
         <div className="mb-14 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.3}>
-            <span className="badge badge-green mb-3.5 md:mb-5">AI Technology</span>
+            <span className="badge bg-[#E9F3FC] mb-3.5 md:mb-5">AI Technology</span>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <h2>
@@ -102,13 +102,7 @@ const OurServices = () => {
                       {service?.title}
                     </h3>
                     <p className="mb-6 line-clamp-3 max-w-[275px] md:mb-11">{service?.description}</p>
-                    <div className="flex items-center justify-start">
-                      <LinkButton
-                        href={`/services/${service?.slug}`}
-                        className="btn btn-md btn-accent dark:btn-white-dark dark:hover:btn-accent hover:btn-secondary block w-full md:inline-block md:w-auto">
-                        View Service
-                      </LinkButton>
-                    </div>
+                    
                   </div>
                   <figure className="w-full overflow-hidden md:w-1/2 lg:max-w-[260px]">
                     <Image
@@ -192,13 +186,6 @@ const OurServices = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex w-full items-start justify-start">
-                  <LinkButton
-                    href={`/services/${services[2]?.slug}`}
-                    className="btn btn-md btn-accent dark:btn-white-dark dark:hover:btn-accent hover:btn-secondary block w-full md:inline-block md:w-auto">
-                    View Service
-                  </LinkButton>
-                </div>
               </div>
             </div>
           </RevealAnimation>
@@ -247,32 +234,12 @@ const OurServices = () => {
                       />
                     </figure>
                   </div>
-                  <div className="flex w-full items-start justify-start">
-                    <LinkButton
-                      href={`/services/${service.slug}`}
-                      className={`btn btn-md ${
-                        index === 0
-                          ? 'btn-accent dark:bg-ns-green dark:border-stroke-7 dark:hover:btn-accent hover:btn-primary'
-                          : 'btn-accent dark:btn-white-dark dark:hover:btn-accent hover:btn-secondary'
-                      } block w-full md:inline-block md:w-auto`}>
-                      View Service
-                    </LinkButton>
-                  </div>
                 </div>
               </div>
             </RevealAnimation>
           ))}
         </div>
       </div>
-      <RevealAnimation delay={1.1}>
-        <div className="flex justify-center">
-          <LinkButton
-            href="/services"
-            className="btn btn-lg md:btn-xl dark:btn-transparent btn-white hover:btn-primary block w-full md:inline-block md:w-auto">
-            View All Services
-          </LinkButton>
-        </div>
-      </RevealAnimation>
     </section>
   );
 };

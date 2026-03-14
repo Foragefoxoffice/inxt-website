@@ -13,18 +13,18 @@ const CTA = () => {
       <div className="main-container">
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-ivory uppercase" aria-label="Call to action section badge" itemProp="name">
+            <span className="badge bg-[#E9F3FC] capitalize" aria-label="Call to action section badge" itemProp="name">
               Get Started
             </span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Transform Your Insurance Sales Operations
+                Transform Your <br className="hidden md:block" /> Insurance Sales Operations
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p itemProp="description">Empower your sales teams with AI-driven lead management, real-time insights, and a unified platform designed for modern insurance distribution.</p>
+              <p className="mx-auto max-w-[689px] text-center" itemProp="description">Empower your sales teams with AI-driven lead management, real-time insights, and a unified platform designed for modern insurance distribution.</p>
             </RevealAnimation>
           </div>
         </div>
@@ -32,10 +32,10 @@ const CTA = () => {
         <RevealAnimation delay={0.4}>
           <div className="mx-auto mt-[76px] w-[90%] text-center md:w-auto">
             <LinkButton
-              href="/signup"
-              btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
+              href="mailto:connect@iortatechnxt.com"
+              btnClass="btn-md btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
               aria-label="Book your free strategy call - Navigate to signup page">
-              Contact Our Team
+              Let's Set up a Call
             </LinkButton>
           </div>
         </RevealAnimation>

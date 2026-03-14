@@ -37,9 +37,6 @@ const Services = () => {
   return (
     <section className="relative py-16 md:py-20 lg:py-[90px] xl:py-[100px]">
       <div className="main-container">
-        {/* Actions steps */}
-
-          
         {/* Request demo */}
         <div className="my-24 lg:my-[100px]">
           <div className="bg-background-2 dark:bg-background-5 flex flex-col gap-y-14 rounded-2xl px-6 py-10 sm:px-8 sm:py-10 md:px-[42px] md:py-14 lg:flex-row lg:gap-20 lg:rounded-4xl xl:gap-[165px]">

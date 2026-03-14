@@ -2,6 +2,8 @@ import heroBanner from '@public/images/ns-img-327.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/Button';
+import { Button } from '@/components/ui/button/Button';
+import CtaInputForm from '../shared/cta/CtaInputForm';
 
 const Hero = () => {
   return (
@@ -15,8 +17,10 @@ const Hero = () => {
         <div className="main-container relative z-30">
           <div className="mb-12 text-center lg:mb-20 xl:mb-33">
             <RevealAnimation delay={0.1}>
-              <h1 className="mb-3 font-medium opacity-0">
-                Project Pulse – Project Management System
+              <h1 className="mb-3 font-medium opacity-0 leading-[1.2]">
+                <span className="hero-text-gradient hero-text-color-2 block">
+                  Project Pulse <br className="hidden md:block" /> Project Management Platform
+                </span>
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
@@ -24,6 +28,22 @@ const Hero = () => {
                 Project Pulse helps teams organize tasks, monitor project progress, and collaborate seamlessly across departments. With real-time insights and centralized project tracking, organizations can manage resources more effectively and deliver projects on time.
               </p>
             </RevealAnimation>
+
+            <div className="flex flex-col items-center justify-center space-y-4">
+                          <div className="flex justify-center w-full">
+                            <CtaInputForm 
+                              btnClass="btn-md"
+                              btnStyle={{ background: '#000000', color: '#ffffff', borderColor: '#000000' }}
+                              ctaBtnText="Get Information"
+                            />
+                          </div>
+                          <Button 
+                            btnClass="btn-md btn-white hover:btn-primary border-0"
+                            className="mt-6"
+                          >
+                            Schedule a Demo
+                          </Button>
+                        </div>  
             
           </div>
           {/* banner */}

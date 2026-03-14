@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
                   <div className="mx-auto w-[80%] text-center sm:w-auto md:mx-0 md:text-right">
                     <LinkButton
                       href="/features"
-                      className="btn-v3-white btn-v3-lg w-full sm:w-auto"
+                      className="btn-v3-white btn-md w-full sm:w-auto"
                       ariaLabel="Get started with NextSaaS">
                       Get started
                     </LinkButton>

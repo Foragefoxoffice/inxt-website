@@ -31,12 +31,12 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[461px] md:text-start">
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
                   Why Organizations Struggle with Data-Driven Decisions
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="mb-8 text-center md:text-start">
+                <p className="max-w-[561px] mb-8 text-center md:text-start">
                   Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
                 </p>
               </RevealAnimation>

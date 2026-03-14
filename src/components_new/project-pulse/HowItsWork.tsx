@@ -9,7 +9,7 @@ const HowItsWork = () => {
       <div className="main-container">
         <div className="mb-10 text-center md:mb-11 lg:mx-auto lg:max-w-[730px]">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-gray-light-v2 mb-4">How It Works</span>
+            <span className="badge bg-[#D3E7F8] capitalize mb-4">How It Works</span>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
             <h2 className="mb-3">Streamline Project Management with Project Pulse</h2>
@@ -20,7 +20,7 @@ const HowItsWork = () => {
         </div>
         <div className="relative flex flex-col items-center justify-center gap-8 max-lg:flex-wrap sm:flex-row">
           <RevealAnimation delay={0.4} direction="left" offset={80}>
-            <div className="bg-ns-green flex w-full max-w-[408px] flex-col justify-between rounded-[20px] p-11 max-sm:space-y-8 sm:min-h-[350px]">
+            <div className="bg-[#D3E7F8] flex w-full max-w-[408px] flex-col justify-between rounded-[20px] p-11 max-sm:space-y-8 sm:min-h-[350px]">
               <div className="text-center">
                 <span className="ns-shape-3 text-secondary text-[52px]"> </span>
               </div>
@@ -51,7 +51,7 @@ const HowItsWork = () => {
 
 
           <RevealAnimation delay={1} direction="left" offset={80} duration={0.7}>
-            <div className="bg-ns-green flex w-full max-w-[408px] flex-col justify-between rounded-[20px] p-11 max-sm:space-y-8 sm:min-h-[350px]">
+            <div className="bg-[#D3E7F8] flex w-full max-w-[408px] flex-col justify-between rounded-[20px] p-11 max-sm:space-y-8 sm:min-h-[350px]">
               <div className="text-center">
                 <span className="ns-shape-8 text-secondary text-[52px]"> </span>
               </div>

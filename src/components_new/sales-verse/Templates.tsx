@@ -49,7 +49,7 @@ const Templates = () => {
                   className="group border-stroke-1 relative min-h-[420px] w-full rounded-[20px] border bg-white px-6 py-8 sm:h-[420px] sm:px-8 sm:py-10.5"
                   aria-labelledby="card1-heading">
                   <span
-                    className="bg-ns-green flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const Templates = () => {
                   className="group border-stroke-1 relative min-h-[500px] w-full rounded-[20px] border bg-white px-6 py-8 sm:h-[750px] sm:px-8 sm:py-10.5"
                   aria-labelledby="card2-heading">
                   <span
-                    className="bg-ns-green flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ const Templates = () => {
                   className="group border-stroke-1 relative min-h-[420px] w-full rounded-[20px] border bg-white px-6 py-8 sm:h-[420px] sm:px-8 sm:py-10.5"
                   aria-labelledby="card3-heading">
                   <span
-                    className="bg-ns-green flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@ const Templates = () => {
                   aria-labelledby="card4-heading">
                   {/* icon  */}
                   <span
-                    className="bg-ns-green flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -319,7 +319,7 @@ const Templates = () => {
                   aria-labelledby="card5-heading">
                   {/* icon  */}
                   <span
-                    className="bg-ns-green relative flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] relative flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +369,7 @@ const Templates = () => {
                   aria-labelledby="card6-heading">
                   {/* icon  */}
                   <span
-                    className="bg-ns-green flex size-12 items-center justify-center rounded-full sm:size-14"
+                    className="bg-[#A7D0F1] flex size-12 items-center justify-center rounded-full sm:size-14"
                     aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

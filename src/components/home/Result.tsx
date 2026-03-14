@@ -76,7 +76,7 @@ const Result = () => {
                       <div className="w-[90%] md:w-auto">
                         <LinkButton
                           href="/case-study/ai-powered-patient-care-solutions-in-healthcare"
-                          btnClass="btn-md-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
+                          btnClass="btn-md btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
                           Read now
                         </LinkButton>
                       </div>
@@ -187,7 +187,7 @@ const Result = () => {
                     <div className="w-[90%] md:w-auto">
                       <LinkButton
                         href="/case-study/cove-financial-risk-management-and-compliance"
-                        btnClass="btn-md-v2 btn-v2-white !border-0 group-hover/btn-v2:btn-primary-v2">
+                        btnClass="btn-md btn-v2-white !border-0 group-hover/btn-v2:btn-primary-v2">
                         Read now
                       </LinkButton>
                     </div>

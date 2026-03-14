@@ -36,7 +36,7 @@ const Faq = () => {
           <div className="main-container">
             <div className="mx-auto mb-12 max-w-[720px] space-y-3 text-center md:space-y-5 lg:mb-[70px]">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-white-v2 uppercase">Frequently Asked Questions</span>
+                <span className="badge bg-[#D3E7F8] capitalize">Frequently Asked Questions</span>
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>

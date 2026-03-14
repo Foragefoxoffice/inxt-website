@@ -35,8 +35,12 @@ const Hero = () => {
               {/* text + btn  */}
               <div className="space-y-7 xl:space-y-14">
                 <div className="space-y-3 text-center md:text-left">
-                  <RevealAnimation delay={0.2} offset={50} instant>
-                    <h1>iNXT InsurePrime <br /> Insurance Operations Platform</h1>
+                  <RevealAnimation delay={0.1}>
+                    <h1 className="mb-3 font-medium opacity-0 leading-[1.2]">
+                      <span className="hero-text-gradient hero-text-color-2 block">
+                        iNXT InsurePrime <br className="hidden md:block" /> Insurance Operations <br className="hidden md:block" /> Platform
+                      </span>
+                    </h1>
                   </RevealAnimation>
 
                   <RevealAnimation delay={0.3} offset={50} instant>
@@ -44,76 +48,7 @@ const Hero = () => {
                       A comprehensive platform designed to manage the entire insurance lifecycle from policy administration and underwriting to claims processing and customer engagement.
                     </p>
                   </RevealAnimation>
-                  <RevealAnimation delay={0.4} offset={50} instant>
-                    <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">
-                     InsurePrime enables insurers to streamline operations, improve efficiency, and deliver better digital services across multiple insurance segments.
-                    </p>
-                  </RevealAnimation>
                 </div>
-                {/* btns */}
-                <ul className="flex flex-col items-center justify-start gap-x-4 gap-y-3 md:flex-row md:gap-y-0">
-                  <RevealAnimation delay={0.4} direction="left" offset={50} instant>
-                    <li className="w-[90%] list-none md:w-auto">
-                      <LinkButton href="/login" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                        Get started
-                      </LinkButton>
-                    </li>
-                  </RevealAnimation>
-
-                  <RevealAnimation delay={0.5} direction="left" offset={50} instant>
-                    <li className="group w-[90%] list-none md:w-auto" onClick={videoModal.openModal}>
-                      <div
-                        className="group-hover:bg-secondary border-stroke-7 text-secondary group-hover:text-accent text-tagline-1 mx-auto inline-flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-full bg-[#EAECEB] px-6 py-2.5 text-center font-normal text-nowrap lowercase transition-all duration-500 ease-in-out group-hover:scale-101 md:mx-0 md:w-auto md:px-8 md:py-3.5"
-                        aria-label="Watch a demo">
-                        <span className="inline-block transition-transform duration-300 ease-in-out first-letter:uppercase">
-                          Watch a demo
-                        </span>
-                        <div className="relative size-6 overflow-hidden">
-                          {/* one  */}
-                          <span className="absolute inset-0 -translate-x-6 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={24}
-                              height={24}
-                              viewBox="0 0 24 24"
-                              fill="none">
-                              <path d="M11 5H13V7H11V5Z" fill="white" />
-                              <path d="M5 5H7V7H5V5Z" fill="white" />
-                              <path d="M14 8H16V10H14V8Z" fill="white" />
-                              <path d="M8 8H10V10H8V8Z" fill="white" />
-                              <path d="M17 11H19V13H17V11Z" fill="white" />
-                              <path d="M11 11H13V13H11V11Z" fill="white" />
-                              <path d="M14 14H16V16H14V14Z" fill="white" />
-                              <path d="M8 14H10V16H8V14Z" fill="white" />
-                              <path d="M11 17H13V19H11V17Z" fill="white" />
-                              <path d="M5 17H7V19H5V17Z" fill="white" />
-                            </svg>
-                          </span>
-                          {/* two  */}
-                          <span className="absolute -translate-x-2 transition-transform duration-300 ease-in-out group-hover:translate-x-6">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={24}
-                              height={24}
-                              viewBox="0 0 24 24"
-                              fill="none">
-                              <path d="M11 5H13V7H11V5Z" fill="#1A1A1C" />
-                              <path d="M5 5H7V7H5V5Z" fill="#1A1A1C" />
-                              <path d="M14 8H16V10H14V8Z" fill="#1A1A1C" />
-                              <path d="M8 8H10V10H8V8Z" fill="#1A1A1C" />
-                              <path d="M17 11H19V13H17V11Z" fill="#1A1A1C" />
-                              <path d="M11 11H13V13H11V11Z" fill="#1A1A1C" />
-                              <path d="M14 14H16V16H14V14Z" fill="#1A1A1C" />
-                              <path d="M8 14H10V16H8V14Z" fill="#1A1A1C" />
-                              <path d="M11 17H13V19H11V17Z" fill="#1A1A1C" />
-                              <path d="M5 17H7V19H5V17Z" fill="#1A1A1C" />
-                            </svg>
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                  </RevealAnimation>
-                </ul>
               </div>
               {/* divider  */}
               {/* review image  */}

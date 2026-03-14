@@ -316,11 +316,11 @@ Common Styles all over the sites
 }
 
 .hero-text-color-1 {
-  background-image: linear-gradient(45deg, #a585ff, #ffc2ad, #a585ff);
+  background-image: linear-gradient(266.02deg, #22D1EE -2.37%, #3D5AF1 102.49%, #22D1EE 200%);
 }
 
 .hero-text-color-2 {
-  background-image: linear-gradient(45deg, #83e7ee, #f9eb57, #83e7ee);
+  background-image: linear-gradient(266.02deg, #22D1EE -2.37%, #3D5AF1 102.49%, #22D1EE 200%);
 }
 
 @keyframes textAnimate {

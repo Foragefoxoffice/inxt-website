@@ -80,7 +80,7 @@ const FeaturesFileCard = () => {
 
   return (
     <RevealAnimation delay={0.2}>
-      <div className="space-y-8 rounded-[20px] bg-white p-5 sm:p-8 md:p-5 xl:p-8">
+      <div className="space-y-8 rounded-[20px] bg-white p-5 sm:p-8 md:p-5 xl:p-8  border border-gray-200">
         <div className="flex items-center justify-center -space-x-12">
           <figure
             ref={featureCard1Ref}

@@ -9,7 +9,7 @@ const Number = () => {
           {/* heading   */}
           <div className="space-y-5 text-center xl:max-w-[442px] xl:text-left">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-green">Customer Impact</span>
+              <span className="badge bg-[#D3E7F8]">Customer Impact</span>
             </RevealAnimation>
 
             <div className="space-y-3">

@@ -91,7 +91,7 @@ const HeroFinMgmt = () => {
                   aria-label="Call to action buttons">
                   <RevealAnimation delay={0.7} direction="left" offset={50} instant>
                     <div className="w-[80%] text-center sm:w-auto md:mx-0 md:w-auto">
-                      <LinkButton href="/pricing" className="btn-v3-lg btn-v3-white w-full sm:w-auto">
+                      <LinkButton href="/pricing" className="btn-md btn-v3-white w-full sm:w-auto">
                         Get started
                       </LinkButton>
                     </div>
@@ -100,7 +100,7 @@ const HeroFinMgmt = () => {
                     <div className="w-[80%] text-center sm:w-auto md:mx-0 md:w-auto">
                       <LinkButton
                         href="/contact-us"
-                        className="btn-v3-lg btn-v3-white bg-secondary/20 w-full text-white backdrop-blur-[2px] sm:w-auto">
+                        className="btn-md btn-v3-white bg-secondary/20 w-full text-white backdrop-blur-[2px] sm:w-auto">
                         Book a Demo
                       </LinkButton>
                     </div>

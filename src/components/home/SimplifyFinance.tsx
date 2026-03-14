@@ -174,7 +174,7 @@ const SimplifyFinance = () => {
                     <div>
                       <LinkButton
                         href="/services"
-                        className="btn-v3-secondary btn-v3-lg lg:btn-v3-lg"
+                        className="btn-v3-secondary btn-md lg:btn-md"
                         ariaLabel="Explore more">
                         Explore more
                       </LinkButton>

@@ -34,7 +34,7 @@ const CTA = () => {
                 <div className="w-[80%] sm:w-full md:mx-0 md:w-auto">
                   <LinkButton
                     href="/financial-management-platform-services"
-                    className="btn-v3-secondary btn-v3-lg w-full sm:w-fit"
+                    className="btn-v3-secondary btn-md w-full sm:w-fit"
                     ariaLabel="Get started Now">
                     Get started Now
                   </LinkButton>
@@ -45,7 +45,7 @@ const CTA = () => {
                 <div className="w-[80%] sm:w-full md:mx-0 md:w-auto">
                   <LinkButton
                     href="/financial-management-platform-contact"
-                    className="btn-v3-lg btn-v3-white bg-secondary/20 w-full text-white backdrop-blur-[2px] sm:w-fit"
+                    className="btn-md btn-v3-white bg-secondary/20 w-full text-white backdrop-blur-[2px] sm:w-fit"
                     ariaLabel="Book a Demo">
                     Book a Demo
                   </LinkButton>

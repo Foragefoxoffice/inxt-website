@@ -141,16 +141,22 @@ const Services = () => {
     <section className="pt-14 pb-10 xl:pt-28 xl:pb-5" aria-labelledby="services-heading">
       <div className="main-container">
         <div className="space-y-12 lg:space-y-19">
-          <div className="flex flex-col items-center justify-between gap-y-5 lg:flex-row">
-            <div className="space-y-3 mx-auto">
+          <div className="text-center">
+            <div className="mx-auto space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 id="services-heading" className="mx-auto text-center lg:max-w-[630px] lg:text-center" itemProp="name">
+                <h2
+                  id="services-heading"
+                  className="mx-auto text-center lg:max-w-[818px]"
+                  itemProp="name">
                   Advanced Features for Intelligent Insurance Sales Management
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="mx-auto max-w-[630px] text-center lg:mx-0 lg:text-center" itemProp="description">
-                  AI-powered features that help insurers capture leads, manage sales activities, and improve conversion through intelligent automation and real-time insights.
+                <p
+                  className="mx-auto max-w-[608px] text-center"
+                  itemProp="description">
+                  AI-powered features that help insurers capture leads, manage sales activities, and improve
+                  conversion through intelligent automation and real-time insights.
                 </p>
               </RevealAnimation>
             </div>

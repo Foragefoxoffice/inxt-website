@@ -32,7 +32,7 @@ const CaseStudy = () => {
       <div className="main-container">
         <div className="mb-[70px] text-center lg:text-left">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan mb-5">Business Benefits</span>
+            <span className="badge bg-[#D3E7F8] mb-5">Business Benefits</span>
           </RevealAnimation>
           <div className="flex flex-col lg:flex-row gap-8 justify-between items-center lg:items-end">
             <RevealAnimation delay={0.3}>

@@ -61,7 +61,7 @@ const ImpressiveTemplates = () => {
             <div className="mx-auto mt-14 w-[80%] text-center sm:w-auto md:mx-0">
               <LinkButton
                 href="/integration"
-                className="btn-v3-secondary btn-v3-lg mx-auto w-full sm:w-fit"
+                className="btn-v3-secondary btn-md mx-auto w-full sm:w-fit"
                 ariaLabel="Explore Tools">
                 Explore Tools
               </LinkButton>
