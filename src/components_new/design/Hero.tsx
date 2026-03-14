@@ -92,13 +92,20 @@ const Hero = () => {
 
           
 
-          <RevealAnimation delay={0.1}>
+          {/* <RevealAnimation delay={0.1}>
             <h1 className="mt-20 mb-4 font-medium">
               UI/UX Design
             </h1>
-          </RevealAnimation>
-
+          </RevealAnimation> */}
           <RevealAnimation delay={0.2}>
+                <h1 className="mx-auto my-12 max-w-[350px] leading-[1.2] sm:max-w-[450px] md:max-w-[600px] xl:max-w-[846px]">
+                  <span className="hero-text-gradient hero-text-color-1 block">
+                    UI/UX Design
+                  </span>
+                </h1>
+              </RevealAnimation>
+
+          <RevealAnimation delay={0.3}>
             <p className="mb-7 max-w-[700px] md:mb-10 lg:mb-14">
               Our UI/UX design services help organizations build user-centered digital products that are intuitive, visually compelling, and easy to use. By combining research, design strategy, and modern interface design, we deliver experiences that improve usability, increase engagement, and drive better business outcomes.
             </p>

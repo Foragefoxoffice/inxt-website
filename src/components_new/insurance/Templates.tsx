@@ -68,8 +68,7 @@ const OurServices = () => {
       <div className="main-container">
         <div className="mb-14 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.3}>
-            <span className="badge badge-green mb-3.5 md:mb-5">Platform Capabilities
-</span>
+            <span className="badge bg-[#D3E7F8] mb-3.5 md:mb-5">Platform Capabilities</span>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <h2>

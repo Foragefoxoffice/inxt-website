@@ -36,11 +36,11 @@ const Faq = () => {
           <div className="main-container">
             <div className="mx-auto mb-12 max-w-[720px] space-y-3 text-center md:space-y-5 lg:mb-[70px]">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-white-v2 uppercase">Frequently Asked Questions</span>
+                <span className="badge bg-white capitalize">Frequently Asked Questions</span>
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About Core Modernization</h2>
+                  <h2>Common Questions About <br className='hidden md:block' /> Core Modernization</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>

@@ -70,7 +70,7 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[0px] xl:pb-[100px]">
       <div className="main-container">
         <div className="mb-14 space-y-3 text-center md:mb-[70px]">
           <RevealAnimation delay={0.3}>

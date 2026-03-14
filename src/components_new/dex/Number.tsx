@@ -3,7 +3,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const Number = () => {
   return (
-    <section className="dark:bg-background-6 bg-white py-[100px] lg:py-[150px] xl:py-[200px]">
+    <section className="dark:bg-background-6 bg-white py-[10px] lg:py-[50px] xl:py-[80px]">
       <div className="main-container">
         <div className="flex flex-col items-center justify-between gap-8 xl:flex-row xl:gap-0">
           {/* heading   */}

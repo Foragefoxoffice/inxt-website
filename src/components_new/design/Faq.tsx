@@ -36,7 +36,7 @@ const Faq = () => {
           <div className="main-container">
             <div className="mx-auto mb-12 max-w-[720px] space-y-3 text-center md:space-y-5 lg:mb-[70px]">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-white-v2 uppercase">Frequently Asked Questions</span>
+                <span className="badge bg-white capitalize">Frequently Asked Questions</span>
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
@@ -62,7 +62,7 @@ const Faq = () => {
                   key={item.id}
                   value={item.id.toString()}>
                   <AccordionTrigger
-                    titleClassName="flex-1 text-left lg:text-heading-6 text-tagline-1 font-normal text-secondary hover:text-primary-500 transition-colors"
+                    titleClassName="flex-1 text-left lg:text-heading-6 text-tagline-1 font-normal text-secondary"
                     className="flex w-full cursor-pointer items-center justify-between py-6 md:py-8"
                     value={item.id.toString()}
                     iconType="arrow">

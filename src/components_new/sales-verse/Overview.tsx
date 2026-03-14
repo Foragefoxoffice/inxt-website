@@ -16,7 +16,7 @@ import LinkButton from '../ui/button/LinkButton';
 
 const Overview = () => {
   return (
-    <section className="overflow-hidden pt-[115px] pb-[97px]">
+    <section className="overflow-hidden pt-[115px] pb-[0px]">
       <div className="mx-auto max-w-[1365px]">
         <div className="relative">
           {/* hero bg  */}

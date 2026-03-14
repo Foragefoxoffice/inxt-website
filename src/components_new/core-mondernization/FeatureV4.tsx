@@ -41,7 +41,7 @@ const featureItems: FeatureItem[] = [
 const FeatureV4 = () => {
   return (
     <RevealAnimation delay={0.1}>
-      <section className="py-20 md:py-[100px] lg:py-[200px]">
+      <section className="pt-20 pb-14 md:py-[100px] lg:py-[150px]">
         <div className="main-container">
           <div className="lp:gap-[100px] grid grid-cols-12 items-center gap-y-10 md:gap-y-18 lg:gap-y-20">
             

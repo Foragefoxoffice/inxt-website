@@ -138,7 +138,7 @@ const servicesData: ServiceData[] = [
 
 const Services = () => {
   return (
-    <section className="pt-14 pb-30 xl:pt-28 xl:pb-43.5" aria-labelledby="services-heading">
+    <section className="pt-14 pb-3 xl:pt-8 xl:pb-4" aria-labelledby="services-heading">
       <div className="main-container">
         <div className="space-y-12 lg:space-y-19">
           <div className="flex flex-col items-center justify-center gap-y-5 lg:flex-row">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="bg-background-1">
+    <main className="bg-white">
       <Hero />      
       <FeatureV3 />
       <WhyChooseNextSaas />

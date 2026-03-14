@@ -30,7 +30,7 @@ const voicesBottom = [
 const Features = () => {
   return (
     <section className="max-[1920px]:px-5">
-      <div className="mx-auto max-w-[1880px] rounded-3xl py-20 lg:rounded-4xl lg:py-30 xl:py-39">
+      <div className="mx-auto max-w-[1880px] rounded-3xl py-20 lg:rounded-4xl lg:pt-20 lg:pb-10 xl:pt-5 xl:pb-10 ">
         <div className="main-container">
           <div className="mb-10 space-y-4 text-center md:mb-14 lg:mx-auto lg:max-w-[740px]">
             <RevealAnimation delay={0.1}>

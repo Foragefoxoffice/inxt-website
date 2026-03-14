@@ -10,10 +10,10 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
   return (
     <div
       className={cn(
-        'border-stroke-1 col-span-12 flex w-full flex-col items-center gap-y-[22px] rounded-[20px] border px-8 py-10.5 md:col-span-4 md:max-w-[314px] md:items-start lg:col-span-3',
+        'border-stroke-1 col-span-12 flex w-full flex-col items-center gap-y-[22px] rounded-[20px] border px-8 py-10.5 md:col-span-4 md:max-w-[314px] md:items-start lg:col-span-3 ',
         index === 6 && 'col-start-auto md:col-start-3 lg:col-start-auto',
       )}>
-      <span className="bg-ns-green flex size-14 items-center justify-center rounded-full p-3.5" aria-hidden="true">
+      <span className="bg-[#A7D0F1] flex size-14 items-center justify-center rounded-full p-3.5" aria-hidden="true">
         {service.icon}
       </span>
       <h3

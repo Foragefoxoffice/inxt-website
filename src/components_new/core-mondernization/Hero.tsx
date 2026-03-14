@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
 import HeroLineGradient from './HeroLineGradient';
+import CtaInputForm from '../shared/cta/CtaInputForm';
 
 const Hero = () => {
   return (
@@ -29,17 +29,13 @@ const Hero = () => {
                 </p>
               </RevealAnimation>
             </div>
-            <ul className="mt-8 mb-8 flex flex-col items-center justify-center gap-4 md:mt-14 md:mb-8 md:flex-row">
-              <RevealAnimation delay={0.5} direction="left">
-                <li className="w-full text-center sm:w-auto sm:text-left">
-                  <LinkButton
-                    href="/contact-us"
-                    className="btn btn-white dark:btn-white-dark hover:btn-primary btn-lg md:btn-xl mx-auto w-[90%] md:mx-0 md:w-auto">
-                    Get started now
-                  </LinkButton>
-                </li>
-              </RevealAnimation>
-            </ul>
+            <div className="flex justify-center w-full my-12">
+              <CtaInputForm 
+                btnClass="btn-md"
+                btnStyle={{ background: '#000000', color: '#ffffff', borderColor: '#000000' }}
+                ctaBtnText="Get Information"
+              />
+            </div>
             <div>
               <RevealAnimation delay={1.1} instant={true}>
                 <figure className="mx-auto w-full overflow-hidden rounded-t-2xl md:max-w-[640px] lg:max-w-[1240px]">

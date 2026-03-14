@@ -12,7 +12,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
       className={cn(
         'border-stroke-1 flex w-full items-center gap-[22px] rounded-[20px] border px-6 py-8 h-full',
       )}>
-      <span className="bg-ns-green flex size-14 shrink-0 items-center justify-center rounded-full p-2.5" aria-hidden="true">
+      <span className="bg-[#A7D0F1] flex size-14 shrink-0 items-center justify-center rounded-full p-2.5" aria-hidden="true">
         {service.icon}
       </span>
       <h3

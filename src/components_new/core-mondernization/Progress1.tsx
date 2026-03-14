@@ -48,7 +48,7 @@ const ProgressItem = ({ item, index }: { item: (typeof data)[0]; index: number }
       <div className="flex items-center gap-3">
         <div className="h-2.5 bg-secondary dark:bg-accent rounded-full flex-1 relative overflow-hidden">
           <div
-            className="absolute top-0 bottom-0 left-0 h-full bg-ns-green overflow-hidden rounded-full transition-all duration-300 ease-out"
+            className={`absolute top-0 bottom-0 left-0 h-full overflow-hidden rounded-full transition-all duration-300 ease-out ${index === data.length - 1 ? 'bg-ns-green' : 'bg-[#1C6DB0]'}`}
             style={{ width: `${value}%` }}
           />
         </div>

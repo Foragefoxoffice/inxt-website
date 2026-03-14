@@ -31,7 +31,7 @@ const FeatureListOne = () => {
     <div className="w-full lg:w-2/5">
       <div className="mb-8 space-y-5 text-center max-[426px]:mb-5 max-[426px]:text-left sm:text-left">
         <RevealAnimation delay={0.1}>
-          <span className="badge badge-yellow">ndustry Applications</span>
+          <span className="badge bg-[#D3E7F8]">Industry Applications</span>
         </RevealAnimation>
         <RevealAnimation delay={0.2}>
           <h2>

@@ -11,13 +11,13 @@ const Feature = () => {
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan">Business Impact Example</span>
+            <span className="badge bg-[#D3E7F8]">Business Impact Example</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
               <h2>
                 Real Financial Impact from 
-                <span className="text-primary-500"> Core Modernization</span>
+                <span className="text-[#1D74BA]"> Core Modernization</span>
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>

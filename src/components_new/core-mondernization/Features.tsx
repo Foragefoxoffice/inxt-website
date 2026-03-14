@@ -9,7 +9,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const FeaturesV2 = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-[90px] xl:py-[100px]">
+    <section className="pt-16 pb-0 md:py-20 lg:py-[10px] xl:py-[40px]">
       <div className="main-container space-y-10 md:space-y-[70px]">
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>

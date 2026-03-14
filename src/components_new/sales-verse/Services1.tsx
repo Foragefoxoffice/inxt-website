@@ -35,7 +35,7 @@ const servicesData: Service[] = [
 
 const Services = () => {
   return (
-    <section className="relative py-16 md:py-20 lg:py-[90px] xl:py-[100px]">
+    <section className="relative py-16 md:py-20 lg:pt-[40px] xl:pt-[40px]">
       <div className="main-container">
         {/* Request demo */}
         <div className="my-24 lg:my-[100px]">

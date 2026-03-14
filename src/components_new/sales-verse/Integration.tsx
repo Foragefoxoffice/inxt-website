@@ -36,7 +36,7 @@ const Integration = () => {
   return (
     <section className="bg-background-4 dark:bg-background-5">
       <div className="main-container">
-        <div className="flex flex-col items-start gap-y-10 pt-14 pb-14 md:gap-y-20 md:pt-16 md:pb-16 lg:flex-row lg:gap-[100px] lg:pt-[88px] lg:pb-[88px] xl:pt-[150px] xl:pb-[150px]">
+        <div className="flex flex-col items-start gap-y-10 pt-14 pb-14 md:gap-y-20 md:pt-16 md:pb-16 lg:flex-row lg:gap-[100px] lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[150px]">
           <div className="mx-auto w-full max-w-[520px] text-center lg:sticky lg:top-28 lg:mx-0 lg:max-w-full lg:flex-1 lg:text-left">
             <RevealAnimation delay={0.2}>
               <span className="badge bg-[#E9F3FC] mb-5"> Business Benefits </span>

@@ -75,7 +75,7 @@ const Integration = () => {
         <div className="mx-auto max-w-[850px]">
           <div className="mb-[112px] flex flex-col items-center gap-y-4 text-center max-[426px]:mb-10">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3">Insurance Platforms</span>
+              <span className="badge badge-blur text-white mb-5 max-[426px]:mb-3">Insurance Platforms</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
@@ -113,7 +113,7 @@ const Integration = () => {
                         <p className="text-accent/60 max-[426px]:text-tagline-2">{integration.category}</p>
                       </div>
                     </div>
-                    <div className="bg-ns-green group-hover:bg-ns-green/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-[600ms] ease-in-out max-[426px]:size-12">
+                    <div className="bg-[#A7D0F1] group-hover:bg-[#A7D0F1]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-[600ms] ease-in-out max-[426px]:size-12">
                       <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-[600ms] ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
                       <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-[600ms] ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
                     </div>

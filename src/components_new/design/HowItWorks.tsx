@@ -34,7 +34,7 @@ const HowItWorks = () => {
 
   return (
     <section
-      className="pt-16 pb-12 md:pb-16 lg:pt-22 lg:pb-22 xl:pt-39 xl:pb-28"
+      className="pt-10 pb-12 md:pb-16 lg:pt-16 lg:pb-12 xl:pt-20 xl:pb-20"
       aria-labelledby="how-it-works-heading">
       <div className="main-container">
         <div className="space-y-10 md:space-y-12 lg:space-y-14 xl:space-y-19">
@@ -60,7 +60,7 @@ const HowItWorks = () => {
             {/* card one  */}
             {stepCardData.map((step, index) => (
               <RevealAnimation key={step.id} delay={0.1 + index * 0.2} direction="left">
-                <StepCard key={step.id} {...step} className={`${cn(index % 2 === 0 ? 'bg-background-3' : 'bg-ns-green')} min-h-[430px]`} />
+                <StepCard key={step.id} {...step} className={`${cn(index % 2 === 0 ? 'bg-background-3' : 'bg-[#D3E7F8]')} min-h-[430px]`} />
               </RevealAnimation>
             ))}
 

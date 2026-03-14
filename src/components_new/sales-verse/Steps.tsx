@@ -43,7 +43,7 @@ const stepsData: Step[] = [
 const Steps = () => {
   return (
     <section
-      className="bg-background-2 dark:bg-background-5 relative py-16 md:py-20 lg:py-[100px] xl:py-[200px]"
+      className="bg-background-2 dark:bg-background-5 relative py-16 md:py-20 lg:pt-[100px] xl:pt-[200px] lg:pt-[50px] xl:pb-[100px]"
       aria-label="Hero section">
       <div className="main-container">
         <div className="grid grid-cols-12 items-start gap-y-10 max-lg:justify-items-center lg:gap-10 xl:gap-[68px]">

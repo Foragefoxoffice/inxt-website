@@ -57,11 +57,11 @@ const data = [
 
 const FeatureV2 = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-[100px] xl:py-[200px]">
+    <section className="py-16 md:py-20 lg:pt-[0px] xl:pt-[20px]">
       <div className="main-container">
         <div className="mb-10 space-y-5 text-center md:mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan">Design Excellence</span>
+            <span className="badge bg-[#D3E7F8]">Design Excellence</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
@@ -147,15 +147,6 @@ const FeatureV2 = () => {
               </div>
             </RevealAnimation>
           </div>
-          <RevealAnimation delay={0.8}>
-            <div className="text-center">
-              <LinkButton
-                href="/features"
-                className="btn hover:btn-primary dark:btn-accent btn-secondary btn-lg md:btn-xl w-[85%] md:w-auto">
-                Explore all features
-              </LinkButton>
-            </div>
-          </RevealAnimation>
         </div>
       </div>
     </section>

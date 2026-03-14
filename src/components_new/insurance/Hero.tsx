@@ -37,8 +37,13 @@ const Hero = () => {
               <div className="space-y-7 xl:space-y-14">
                 <div className="space-y-3 text-center md:text-left">
                   <RevealAnimation delay={0.2} offset={50} instant>
-                    <h1>Digital Platforms for Modern Insurance Operations</h1>
+                    <h1 className=" leading-[1.2] sm:max-w-[450px] md:max-w-[600px] xl:max-w-[846px]">
+                  <span className="hero-text-gradient hero-text-color-1 block">
+                    Digital Platforms for Modern Insurance Operations
+                  </span>
+                </h1>
                   </RevealAnimation>
+                  
 
                   <RevealAnimation delay={0.3} offset={50} instant>
                     <p className="max-w-[400px] text-center text-[18px] leading-[150%] font-normal md:max-w-[612px] md:text-left">

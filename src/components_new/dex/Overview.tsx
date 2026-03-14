@@ -16,7 +16,7 @@ import LinkButton from '../ui/button/LinkButton';
 
 const Overview = () => {
   return (
-    <section className="overflow-hidden pt-[115px] pb-[97px]">
+    <section className="overflow-hidden pt-[15px] pb-[15px]">
       <div className="mx-auto max-w-[1365px]">
         <div className="relative">
           {/* hero bg  */}
@@ -29,7 +29,7 @@ const Overview = () => {
             />
           </figure>
           <div className="main-container">
-            <div className="flex flex-col items-start justify-between gap-12 pt-4 pb-[110px] lg:flex-row lg:pt-[200px] xl:gap-0">
+            <div className="flex flex-col items-start justify-between gap-12 pt-4 pb-[60px] lg:flex-row lg:pt-[200px] xl:gap-0">
               {/* hero content  */}
               <div className="w-full space-y-7 text-center md:text-left lg:max-w-[490px] lg:space-y-14 xl:max-w-[629px]">
                 {/* heading text  */}

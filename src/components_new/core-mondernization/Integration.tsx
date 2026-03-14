@@ -4,19 +4,19 @@ import IntegrationCircle from './IntegrationCircle';
 
 const Integration = () => {
   return (
-    <section className="py-[80px] md:h-[750px] md:py-[120px] lg:py-[156px] xl:h-[956px]">
+    <section className="pt-[80px] pb-[0px] md:h-[750px] md:py-[120px] lg:py-[156px] xl:h-[956px]">
       <RevealAnimation delay={0.1}>
         <div className="relative mx-auto h-[620px] max-w-[1600px] overflow-hidden">
           <div className="main-container lp:pb-4 relative z-30">
             <div className="mt-[180px] space-y-[76px] md:mt-[200px] lg:mt-[280px]">
               <div className="space-y-4 text-center">
                 <RevealAnimation delay={0.2}>
-                  <span className="badge badge-ivory">Why Choose Iorta TechNXT</span>
+                  <span className="badge bg-[#D3E7F8]">Why Choose Iorta TechNXT</span>
                 </RevealAnimation>
                 <div className="space-y-3">
                   <RevealAnimation delay={0.3}>
                     <h2 className='max-w-[729px] mx-auto'>
-                      Trusted Expertise for <span className="text-ns-linen">Modern Insurance </span>Transformation
+                      Trusted Expertise for <span className="text-[#1D74BA]">Modern Insurance </span>Transformation
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.4}>

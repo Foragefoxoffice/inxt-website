@@ -144,12 +144,11 @@ const Services = () => {
           <div className=" text-center ">
             <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-            <span className="badge badge-green mb-3.5 md:mb-5">Industry Challenges</span>
+            <span className="badge bg-[#D3E7F8] mb-3.5 md:mb-5">Industry Challenges</span>
           </RevealAnimation>
 
               <RevealAnimation delay={0.1}>
-                <h2 id="services-heading" className="text-center" itemProp="name">
-Challenges Facing Insurance Organizations
+                <h2 id="services-heading" className="text-center" itemProp="name">Challenges Facing Insurance Organizations
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>

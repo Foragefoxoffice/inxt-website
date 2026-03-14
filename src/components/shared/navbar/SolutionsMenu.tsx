@@ -21,7 +21,7 @@ import MenuCategoryHeader from './MenuCategoryHeader';
 
 export const solutionsData = {
   expertise: [
-    { href: '/core-moderations', title: 'Core Moderations', description: 'Advanced moderation experts', Icon: FeatureIcon },
+    { href: '/core-mondernization', title: 'Core Moderations', description: 'Advanced moderation experts', Icon: FeatureIcon },
   ],
   industry: [
     { href: '/insurance', title: 'Insurance', description: 'Tailored insurance solutions', Icon: IntegrationIcon },

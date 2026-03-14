@@ -19,7 +19,7 @@ const Templates = () => {
   const sceneRef = useParallaxEffect();
 
   return (
-    <section className="bg-background-3 overflow-hidden py-24 lg:py-32 xl:py-43.5" aria-labelledby="templates-heading">
+    <section className="bg-background-3 overflow-hidden py-24 lg:py-32 xl:py-20" aria-labelledby="templates-heading">
       <div className="main-container">
         <div className="space-y-12 sm:space-y-16 lg:space-y-19">
           {/* Header Section */}
