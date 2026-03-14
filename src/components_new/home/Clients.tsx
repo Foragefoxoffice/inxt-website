@@ -170,17 +170,17 @@ const Clients = () => {
           
 
           {/* left gradient */}
-          {/* <div
-            className="absolute bottom-[0%] left-0 h-[80px] w-[80px] sm:h-[130px] md:w-[150px] xl:left-[-20%] 2xl:w-[455px]"
-            style={{ background: 'linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 39.14%)' }}
+          <div
+            className="absolute bottom-[0%] left-0 h-[80px] w-[80px] sm:h-[130px] md:w-[150px] xl:left-0 2xl:w-[455px] z-10"
+            style={{ background: 'linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%)' }}
             aria-hidden="true"
             aria-label="Decorative left gradient fade"
-          /> */}
+          />
 
           {/* right gradient */}
           <div
-            className="absolute right-0 bottom-[0%] h-[80px] w-[80px] rotate-180 sm:h-[130px] md:w-[150px] xl:right-[-20%] 2xl:w-[455px]"
-            style={{ background: 'linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 39.14%)' }}
+            className="absolute right-0 bottom-[0%] h-[80px] w-[80px] sm:h-[130px] md:w-[150px] xl:right-0 2xl:w-[455px] z-10"
+            style={{ background: 'linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%)' }}
             aria-hidden="true"
             aria-label="Decorative right gradient fade"
           />

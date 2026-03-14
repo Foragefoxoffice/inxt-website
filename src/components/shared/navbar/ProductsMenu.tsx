@@ -19,7 +19,7 @@ import {
 import PlatformMenuItemLink from './PlatformMenuItemLink';
 import MenuCategoryHeader from './MenuCategoryHeader';
 
-const productsData = {
+export const productsData = {
   frontendFabrics: [
     { href: '/sales-verse', title: 'Sales Verse', description: 'Empower your sales team', Icon: FeatureIcon },
     { href: '/broker-verse', title: 'Broker Verse', description: 'Streamline broker operations', Icon: IntegrationIcon },
@@ -34,7 +34,7 @@ const productsData = {
     { href: '/digital-one', title: 'Digital one', description: 'Unified digital experience', Icon: DownloadIcon },
     { href: '/dashes', title: 'Dashes', description: 'Interactive dash components', Icon: UseCaseIcon },
   ],
-  coreSuite: [
+  platforms: [
     { href: '/insure-prime', title: 'Insure Prime', description: 'Core insurance engine', Icon: CaseStudyICon },
     { href: '/fin-prime', title: 'FinPrime', description: 'Financial management suite', Icon: TestimonialIcon },
   ],
@@ -68,10 +68,12 @@ const ProductsMenu = ({
       />
       <div
         id="products-mega-menu"
+        onWheel={(e) => e.stopPropagation()}
+        onTouchMove={(e) => e.stopPropagation()}
         className={cn(
-          'dark:bg-background-6 border-stroke-1 fixed top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 rounded-[20px] border bg-white p-6 transition-all duration-300 lg:w-[900px] xl:block dark:border-white/10',
+          'dark:bg-background-6 border-stroke-1 fixed top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 rounded-[20px] border bg-white p-6 transition-all duration-300 lg:w-[900px] xl:block dark:border-white/10 max-h-[85vh] overflow-y-auto overscroll-contain custom-scrollbar touch-pan-y',
           menuDropdownId === 'products-mega-menu'
-            ? 'translate-y-0 opacity-100'
+            ? 'translate-y-0 opacity-100 pointer-events-auto'
             : 'pointer-events-none translate-y-2.5 opacity-0',
         )}>
         <div className="space-y-10">
@@ -85,9 +87,18 @@ const ProductsMenu = ({
           </div>
 
           <div>
-            <MenuCategoryHeader title="AI products & Core Suite" />
+            <MenuCategoryHeader title="AI products" />
             <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-2">
-              {[...productsData.aiProducts, ...productsData.coreSuite].map((item) => (
+              {productsData.aiProducts.map((item) => (
+                <PlatformMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <MenuCategoryHeader title="Platform" />
+            <div className="grid grid-cols-3 gap-x-4 gap-y-1 mt-2">
+              {productsData.platforms.map((item) => (
                 <PlatformMenuItemLink key={item.href} {...item} setMenuDropdownId={setMenuDropdownId} />
               ))}
             </div>

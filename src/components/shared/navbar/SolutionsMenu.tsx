@@ -19,7 +19,7 @@ import {
 import PlatformMenuItemLink from './PlatformMenuItemLink';
 import MenuCategoryHeader from './MenuCategoryHeader';
 
-const solutionsData = {
+export const solutionsData = {
   expertise: [
     { href: '/core-moderations', title: 'Core Moderations', description: 'Advanced moderation experts', Icon: FeatureIcon },
   ],
@@ -63,10 +63,12 @@ const SolutionsMenu = ({
       />
       <div
         id="solutions-mega-menu"
+        onWheel={(e) => e.stopPropagation()}
+        onTouchMove={(e) => e.stopPropagation()}
         className={cn(
-          'dark:bg-background-6 border-stroke-1 fixed top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 rounded-[20px] border bg-white p-6 transition-all duration-300 lg:w-[900px] xl:block dark:border-white/10',
+          'dark:bg-background-6 border-stroke-1 fixed top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 rounded-[20px] border bg-white p-6 transition-all duration-300 lg:w-[900px] xl:block dark:border-white/10 max-h-[85vh] overflow-y-auto overscroll-contain custom-scrollbar touch-pan-y',
           menuDropdownId === 'solutions-mega-menu'
-            ? 'translate-y-0 opacity-100'
+            ? 'translate-y-0 opacity-100 pointer-events-auto'
             : 'pointer-events-none translate-y-2.5 opacity-0',
         )}>
         <div className="space-y-10">

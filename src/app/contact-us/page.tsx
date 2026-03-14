@@ -1,8 +1,12 @@
-import ContactInfo from '@/components/contact-page/ContactInfo';
-import ContactMap from '@/components/contact-page/ContactMap';
+import ContactClients from '@/components_new/contact-us/ContactClients';
+import ContactSalesTeam from '@/components_new/contact-us/ContactSalesTeam';
+import ContactMap from '@/components_new/contact-us/ContactMap';
 import CTA from '@/components/shared/cta/CTA';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import ContactHero from '@/components_new/contact-us/ContactHero';
+import ContactInfo from '@/components_new/contact-us/ContactInfo';
+import ContactWhereWe from '@/components_new/contact-us/contact-where-we';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -12,15 +16,12 @@ export const metadata: Metadata = {
 const ContactUs = () => {
   return (
     <main className="bg-background-3">
+      <ContactHero />
       <ContactInfo />
       <ContactMap />
-      <CTA
-        className="bg-white"
-        badgeText="Get started"
-        ctaBtnText="Contact us"
-        ctaHeading="Get in touch"
-        description="We're here to help you with your inquiries and needs. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible."
-      />
+      <ContactSalesTeam />
+      <ContactWhereWe />
+      <ContactClients />
     </main>
   );
 };

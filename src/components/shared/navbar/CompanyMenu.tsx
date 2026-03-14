@@ -26,7 +26,7 @@ interface MenuItemProps {
   icon: React.ReactNode;
 }
 
-const leftColumnMenuItems: MenuItemProps[] = [
+export const companyMenuItems: MenuItemProps[] = [
   {
     id: 'about-us',
     href: '/about',
@@ -71,7 +71,7 @@ const CompanyMenu = ({
         <div className="flex-1">
           <MenuCategoryHeader title="Company" />
           <ul id="product-dropdown-menu" className="space-y-1">
-            {leftColumnMenuItems.map((item, index) => (
+            {companyMenuItems.map((item, index) => (
               <CompanyMenuItemLink
                 setMenuDropdownId={setMenuDropdownId}
                 key={item.id}
@@ -79,7 +79,7 @@ const CompanyMenu = ({
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
-                showDivider={index !== leftColumnMenuItems.length - 1}
+                showDivider={index !== companyMenuItems.length - 1}
               />
             ))}
           </ul>

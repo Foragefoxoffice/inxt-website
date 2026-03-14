@@ -17,77 +17,77 @@ const integrationData = [
   {
     id: 1,
     name: 'Malaysia',
-    category: 'Contact Now',
+    category: 'Headquarters',
     icon: zapierIcon,
     href: '/pricing',
   },
   {
     id: 2,
     name: 'India',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: snapchatIcon,
     href: '/pricing',
   },
   {
     id: 3,
     name: 'Philippines',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: shopifyIcon,
     href: '/pricing',
   },
   {
     id: 4,
     name: 'Thailand',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: figmaIcon,
     href: '/pricing',
   },
   {
     id: 5,
     name: 'Vietnam',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: slackIcon,
     href: '/pricing',
   },
   {
     id: 6,
     name: 'USA',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: tiktokIcon,
     href: '/pricing',
   },
   {
     id: 7,
     name: 'Ethiopia',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: tiktokIcon,
     href: '/pricing',
   },
   {
     id: 8,
     name: 'Cambodia',
-    category: 'Contact Now',
+    category: 'Regional Office',
     icon: tiktokIcon,
     href: '/pricing',
   },
   {
     id: 9,
     name: 'Indonesia',
-    category: 'Contact Now',
+    category: 'Customer presence',
     icon: tiktokIcon,
     href: '/pricing',
   },
   {
     id: 10,
     name: 'Hongkong',
-    category: 'Contact Now',
+    category: 'Customer presence',
     icon: tiktokIcon,
     href: '/pricing',
   },
   {
     id: 11,
     name: 'Singapore',
-    category: 'Contact Now',
+    category: 'Customer presence',
     icon: tiktokIcon,
     href: '/pricing',
   },
@@ -104,12 +104,12 @@ const Integration = () => {
           <div className="mb-[112px] flex flex-col items-center gap-y-4 text-center max-[426px]:mb-10">
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
-               Where We Work
+               Our Global Presence
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent max-[426px]:text-tagline-2 max-w-[510px]">
-                With 8 global offices and clients in 11+ countries, we serve organizations of all sizes with localized insights and global best practices. We understand the unique challenges of each market and deliver solutions that are compliant, customizable, and future-ready ensuring long-term value and measurable impact.
+                Connecting with clients and partners across multiple countries to deliver innovative insurance technology solutions worldwide.
               </p>
             </RevealAnimation>
           </div>

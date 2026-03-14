@@ -7,7 +7,7 @@ import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
 import mainLogo from '@public/technext-img/h-logo.svg';
-import logoIcon from '@public/technext-img/home/h-logo2.svg';
+import logoIcon from '@public/technext-img/h-logo-mob.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -18,7 +18,6 @@ import CompanyMenu from './CompanyMenu';
 import ProductsMenu from './ProductsMenu';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
-import { mobileMenuData } from './data';
 
 const dropdownNavItems = [
   { label: 'Products', dataMenu: 'products-mega-menu', MenuComponent: ProductsMenu },
@@ -109,7 +108,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
         </RevealAnimation>
         {/* mobile menu component */}
       </header>
-      <MobileMenu menuData={mobileMenuData} />
+      <MobileMenu />
     </MobileMenuProvider>
   );
 };

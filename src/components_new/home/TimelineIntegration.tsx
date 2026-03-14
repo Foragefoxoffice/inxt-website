@@ -73,8 +73,8 @@ const TimelineIntegration = () => {
           </RevealAnimation>
           <div className="relative z-30 flex justify-center items-center">
             <RevealAnimation delay={0.4}>
-              <div className="sm:text-heading-5 text-heading-6 bg-black relative z-10 mt-14 inline-block rounded-[365px] font-normal w-[100px] h-[100px] flex justify-center items-center 2xl:mt-[70px]">
-                <Image src={logoIcon} alt="NextSaaS" className="h-auto w-[60px]" priority />
+              <div className="sm:text-heading-5 text-heading-6 relative z-10 mt-14 inline-block rounded-[365px] font-normal w-[100px] h-[100px] flex justify-center items-center 2xl:mt-[70px]">
+                <Image src={logoIcon} alt="NextSaaS" className="h-auto w-[100px]" priority />
               </div>
             </RevealAnimation>
 

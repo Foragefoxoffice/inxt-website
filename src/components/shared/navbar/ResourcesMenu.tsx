@@ -11,7 +11,7 @@ type ResourcesMenuItem = {
   icon: ReactNode;
 };
 
-const resourcesMenuItems: ResourcesMenuItem[] = [
+export const resourcesMenuItems: ResourcesMenuItem[] = [
   {
     href: '/news',
     title: 'News and Events',
@@ -26,7 +26,7 @@ const resourcesMenuItems: ResourcesMenuItem[] = [
   },
 ];
 
-const secondaryResources: ResourcesMenuItem[] = [
+export const secondaryResources: ResourcesMenuItem[] = [
   {
     href: '/contact-us',
     title: 'Contact us',
