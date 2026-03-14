@@ -34,7 +34,7 @@ const CtaInputForm = ({ btnClass, btnStyle, ctaBtnText = 'Get Started', inputFie
 
   return (
     <RevealAnimation delay={0.4}>
-      <div>
+      <div className='w-full'>
         <form
           onSubmit={handleSubmit}
           className="flex flex-col items-center justify-start gap-3 md:flex-row"

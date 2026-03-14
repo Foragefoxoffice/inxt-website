@@ -43,7 +43,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
         onMouseLeave={() => handleMenuHover(null)}
         className={cn(
           'lp:max-w-[1290px]! fixed top-5 left-1/2 z-50 mx-auto w-full max-w-[350px] -translate-x-1/2 rounded-full transition-all duration-500 min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]',
-          showTopNav ? 'top-8 md:top-12 lg:top-15' : 'top-5',
+          showTopNav ? 'top-8 md:top-12 lg:top-5' : 'top-5',
           isScrolled && 'top-2!',
         )}>
         <RevealAnimation direction="up" offset={100} delay={0.1} instant>
