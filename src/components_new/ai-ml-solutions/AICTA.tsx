@@ -3,7 +3,7 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import LinkButton from '@/components/ui/button/Button';
 
-const CTA = () => {
+const AICTA = () => {
   return (
     <section
       className="py-[80px] md:py-[112px]"
@@ -14,17 +14,19 @@ const CTA = () => {
         <div className="space-y-5 text-center">
           <RevealAnimation delay={0.1}>
             <span className="badge bg-[#D3E7F8] capitalize" aria-label="Call to action section badge" itemProp="name">
-              Let’s Build Better Experiences
+              Build Intelligent AI Solutions for Your Business
             </span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
               <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Design Digital Experiences That Users Love
+                Build Intelligent AI Solutions for Your Business
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p className="mx-auto max-w-[689px] text-center" itemProp="description">Create intuitive, engaging, and user-centered digital products with our UI/UX design expertise. From research to interface design, we help transform ideas into seamless user experiences.</p>
+              <p className="mx-auto max-w-[689px] text-center" itemProp="description">
+                Unlock the potential of AI and machine learning to automate processes, improve decision-making, and accelerate digital transformation.
+              </p>
             </RevealAnimation>
           </div>
         </div>
@@ -34,8 +36,8 @@ const CTA = () => {
             <LinkButton
               href="mailto:connect@iortatechnxt.com"
               btnClass="btn-md btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
-              aria-label="Book your free strategy call - Navigate to signup page">
-              Start Your Design Journey
+              aria-label="Book your free strategy call">
+              Start Your AI Journey
             </LinkButton>
           </div>
         </RevealAnimation>
@@ -44,4 +46,5 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+AICTA.displayName = 'AICTA';
+export default AICTA;

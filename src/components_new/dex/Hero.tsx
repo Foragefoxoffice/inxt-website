@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button/Button';
 
 const Hero = () => {
   return (
-    <section className="dark:bg-background-5 relative bg-white pt-[180px] pb-[50px] lg:pt-[230px] lg:pb-[100px]">
+    <section className="dark:bg-background-5 relative bg-white pt-[180px] pb-[100px] lg:pt-[230px] lg:pb-[100px]">
       <div className="main-container relative z-10">
         <div className="space-y-5 text-center">
           <div className="space-y-3">

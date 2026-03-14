@@ -5,27 +5,27 @@ import { cn } from '@/utils/cn';
 
 const missionData = [
   {
-    badge: 'Our Mission 1',
-    title: 'Elevating Customer Experience with Exceptional UI/UX Design',
+    id: 1,
+    title: 'Transforming Businesses with Intelligent AI Solutions',
     description:
-      "At Iorta Technxt, we craft digital experiences that not only engage, delight, and retain customers but also drive business success. Through personalized, intuitive UI and UX design, we create seamless interactions that meet user needs and exceed expectations. Our designs are rooted in deep user understanding, ensuring every touchpoint fosters trust, enhances satisfaction, and strengthens long-term relationships with your customers.",
+      'AI and machine learning enable organizations to analyze complex data, automate processes, and uncover insights that drive innovation. Our AI solutions are designed to help businesses improve efficiency, predict outcomes, and deliver smarter customer experiences.',
     image: 'https://placehold.co/600x400',
   },
   {
-    badge: 'Our Mission 2',
-    title: 'Designing Seamless, Integrated Experiences',
+    id: 2,
+    title: 'Developing Scalable AI & ML Solutions',
     description:
-      'We blend aesthetics and functionality to create user-friendly platforms that provide seamless navigation across all touchpoints. By carefully considering both form and function, we ensure that every interaction is intuitive and enjoyable. Our designs prioritize user needs, enabling effortless navigation that keeps users engaged, reduces friction, and enhances overall satisfaction, resulting in a memorable and efficient experience.',
+      'We build intelligent systems that integrate seamlessly with existing platforms, enabling organizations to leverage AI capabilities without disrupting operations. From predictive analytics to intelligent automation, our solutions help businesses unlock the true potential of their data.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const OurMission = () => {
+const AIMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
         {missionData.map((item, index) => (
-          <div className="grid grid-cols-12 items-center gap-y-14 xl:gap-x-28" key={index}>
+          <div className="grid grid-cols-12 items-center gap-y-14 xl:gap-x-28" key={item.id}>
             <div
               className={cn(
                 'col-span-12 mx-4 lg:col-span-6 xl:mx-0',
@@ -71,5 +71,5 @@ const OurMission = () => {
   );
 };
 
-OurMission.displayName = 'OurMission';
-export default OurMission;
+AIMission.displayName = 'AIMission';
+export default AIMission;

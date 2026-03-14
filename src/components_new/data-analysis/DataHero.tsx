@@ -21,7 +21,7 @@ import HeroDotBg from '@/components/shared/HeroDotBg';
 import LinkButton from '../ui/button/LinkButton';
 import VerticalLine from '@/components/home/VerticalLine';
 
-const Hero = () => {
+const DataHero = () => {
   return (
     <RevealAnimation direction="up" offset={0}>
       <section className="bg-background-3 dark:bg-background-5 relative overflow-hidden pt-[200px] pb-16 lg:pb-[100px] 2xl:pt-[250px]">
@@ -90,24 +90,17 @@ const Hero = () => {
             </figure>
           </RevealAnimation>
 
-          
-
-          {/* <RevealAnimation delay={0.1}>
-            <h1 className="mt-20 mb-4 font-medium">
-              UI/UX Design
-            </h1>
-          </RevealAnimation> */}
           <RevealAnimation delay={0.2}>
-                <h1 className="mx-auto my-12 max-w-[350px] leading-[1.2] sm:max-w-[450px] md:max-w-[600px] xl:max-w-[846px]">
-                  <span className="hero-text-gradient hero-text-color-1 block">
-                    UI/UX Design
-                  </span>
-                </h1>
-              </RevealAnimation>
+            <h1 className="mx-auto my-12 max-w-[350px] leading-[1.2] sm:max-w-[450px] md:max-w-[700px] xl:max-w-[846px]">
+              <span className="hero-text-gradient hero-text-color-1 block">
+                Drive Growth with Data Insights
+              </span>
+            </h1>
+          </RevealAnimation>
 
           <RevealAnimation delay={0.3}>
             <p className="mb-7 max-w-[700px] md:mb-10 lg:mb-14">
-              Our UI/UX design services help organizations build user-centered digital products that are intuitive, visually compelling, and easy to use. By combining research, design strategy, and modern interface design, we deliver experiences that improve usability, increase engagement, and drive better business outcomes.
+              Our data analytics services help organizations transform raw data into meaningful insights that support smarter decisions, optimize operations, and accelerate business growth.
             </p>
           </RevealAnimation>
 
@@ -164,8 +157,6 @@ const Hero = () => {
             </RevealAnimation>
           </div>
 
-          {/* <!-- Client Logos --> */}
-
           <RevealAnimation instant delay={0.6}>
             <div className="relative mx-auto w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1100px]">
               <div className="from-background-3 dark:from-background-5 absolute top-0 left-0 z-40 h-full w-[30%] bg-gradient-to-r to-transparent"></div>
@@ -201,5 +192,5 @@ const Hero = () => {
     </RevealAnimation>
   );
 };
-Hero.displayName = 'Hero';
-export default Hero;
+DataHero.displayName = 'DataHero';
+export default DataHero;

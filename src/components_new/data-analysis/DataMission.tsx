@@ -5,27 +5,27 @@ import { cn } from '@/utils/cn';
 
 const missionData = [
   {
-    badge: 'Our Mission 1',
-    title: 'Elevating Customer Experience with Exceptional UI/UX Design',
+    id: 1,
+    title: 'Unlock the Power of Data to Drive Innovation and Growth',
     description:
-      "At Iorta Technxt, we craft digital experiences that not only engage, delight, and retain customers but also drive business success. Through personalized, intuitive UI and UX design, we create seamless interactions that meet user needs and exceed expectations. Our designs are rooted in deep user understanding, ensuring every touchpoint fosters trust, enhances satisfaction, and strengthens long-term relationships with your customers.",
+      'Modern organizations generate vast amounts of data every day. Our analytics solutions help businesses convert this data into actionable insights that support better strategies, improved operational efficiency, and stronger customer experiences. By identifying patterns, trends, and opportunities within complex datasets, we enable organizations to make confident decisions and stay competitive in a rapidly evolving market.',
     image: 'https://placehold.co/600x400',
   },
   {
-    badge: 'Our Mission 2',
-    title: 'Designing Seamless, Integrated Experiences',
+    id: 2,
+    title: 'Data-Driven Decisions for Business Success',
     description:
-      'We blend aesthetics and functionality to create user-friendly platforms that provide seamless navigation across all touchpoints. By carefully considering both form and function, we ensure that every interaction is intuitive and enjoyable. Our designs prioritize user needs, enabling effortless navigation that keeps users engaged, reduces friction, and enhances overall satisfaction, resulting in a memorable and efficient experience.',
+      'We provide end-to-end data engineering, analytics, and business intelligence solutions designed to create scalable and reliable data ecosystems. Our services integrate seamlessly with your existing systems to provide real-time visibility and advanced analytics capabilities. With the right data insights, organizations can improve decision-making, identify new opportunities, and build strategies based on real evidence rather than assumptions.',
     image: 'https://placehold.co/600x400',
   },
 ];
 
-const OurMission = () => {
+const DataMission = () => {
   return (
     <section className="pt-14 pb-20 md:pt-16 md:pb-28 lg:pt-[88px] lg:pb-44 xl:pt-[100px] xl:pb-[200px]">
       <div className="main-container flex flex-col gap-y-20 lg:gap-y-32">
         {missionData.map((item, index) => (
-          <div className="grid grid-cols-12 items-center gap-y-14 xl:gap-x-28" key={index}>
+          <div className="grid grid-cols-12 items-center gap-y-14 xl:gap-x-28" key={item.id}>
             <div
               className={cn(
                 'col-span-12 mx-4 lg:col-span-6 xl:mx-0',
@@ -71,5 +71,5 @@ const OurMission = () => {
   );
 };
 
-OurMission.displayName = 'OurMission';
-export default OurMission;
+DataMission.displayName = 'DataMission';
+export default DataMission;

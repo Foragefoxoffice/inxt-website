@@ -13,7 +13,7 @@ import HeroRating from './HeroRating';
 const Hero = () => {
   const { videoModal } = useModalContext();
   return (
-    <section className="relative overflow-hidden pt-[112px] pb-[80px] md:pb-[112px] lg:pt-[180px] lg:pb-[60px] xl:pt-[236px] xl:pb-0 2xl:pb-15">
+    <section className="relative overflow-hidden pt-[112px] pb-[80px] md:pb-[90px] lg:pt-[180px] lg:pb-[60px] xl:pt-[180px] xl:pb-0 2xl:pb-15">
       <RevealAnimation delay={0.1} offset={50} instant>
         <figure className="absolute inset-0 h-full w-full min-[2550px]:!h-[calc(100%-1px)]">
           <Image src={heroBg} alt="hero bg banner" className="h-full w-full object-cover" />

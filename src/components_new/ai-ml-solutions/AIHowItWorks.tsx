@@ -1,34 +1,33 @@
 import { cn } from '@/utils/cn';
 import RevealAnimation from '@/components/animation/RevealAnimation';
-import LinkButton from '@/components/ui/button/Button';
 import StepCard, { StepCardProps } from '@/components_new/shared/StepCard';
 import StepDirection from '@/components_new/shared/StepDirection';
 
-const HowItWorks = () => {
+const AIHowItWorks = () => {
   const stepCardData: StepCardProps[] = [
     {
       id: 'step-1',
       stepNumber: 1,
       title: 'Research & Discovery',
-      description: 'We begin by understanding your business goals, user needs, and market landscape to ensure a strong foundation.',
+      description: 'We analyze business challenges, data sources, and operational goals to define the AI strategy.',
     },
     {
       id: 'step-2',
       stepNumber: 2,
-      title: 'Prototyping & Wireframing',
-      description: 'Low- and high-fidelity prototypes are created to visualize structure, flow, and interactions before development begins.',
+      title: 'AI Model Development',
+      description: 'Custom machine learning models are designed and trained using advanced data science techniques.',
     },
     {
       id: 'step-3',
       stepNumber: 3,
-      title: 'UI/UX Design',
-      description: 'User-centered interfaces are designed to be intuitive, engaging, and aligned with your brand identity.',
+      title: 'Implementation & Testing',
+      description: 'AI solutions are integrated with existing systems and validated for performance and accuracy.',
     },
     {
       id: 'step-4',
       stepNumber: 4,
-      title: 'Testing & Iteration',
-      description: 'Designs and features are tested with real users and iterated for continuous improvement and optimal performance.',
+      title: 'Optimization & Continuous Learning',
+      description: 'We monitor model performance and refine algorithms to ensure long-term success.',
     },
   ];
 
@@ -40,23 +39,23 @@ const HowItWorks = () => {
         <div className="space-y-10 md:space-y-12 lg:space-y-14 xl:space-y-19">
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-cyan">How it works</span>
+              <span className="badge bg-[#D3E7F8]">How We Work</span>
             </RevealAnimation>
             <RevealAnimation delay={0.1}>
               <h2 id="how-it-works-heading" itemProp="name">
-                From Vision to Execution
+                From Strategy to AI Implementation
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
-              <p className="text-[#323A44]" itemProp="description">
-                Our process focuses on understanding your business needs and customer expectations todesign custom solutions that align with your goals.
+              <p className="text-[#323A44] max-w-[700px] mx-auto" itemProp="description">
+                Our AI development process focuses on understanding business objectives, designing intelligent models, and deploying scalable AI solutions that drive measurable results.
               </p>
             </RevealAnimation>
           </div>
           {/* cards  */}
           <div
             className="relative flex items-center justify-center gap-x-3 gap-y-6 max-xl:flex-wrap"
-            aria-label="Step-by-step process to use NextSaaS">
+            aria-label="Step-by-step process">
             {/* card one  */}
             {stepCardData.map((step, index) => (
               <RevealAnimation key={step.id} delay={0.1 + index * 0.2} direction="left">
@@ -83,5 +82,5 @@ const HowItWorks = () => {
   );
 };
 
-HowItWorks.displayName = 'HowItWorks';
-export default HowItWorks;
+AIHowItWorks.displayName = 'AIHowItWorks';
+export default AIHowItWorks;
