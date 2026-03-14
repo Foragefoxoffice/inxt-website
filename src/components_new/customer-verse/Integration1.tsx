@@ -16,17 +16,17 @@ import LinkButton from '../ui/button/LinkButton';
 const integrationData = [
   {
     id: 1,
-    name: 'BrokerVerse',
-    category: 'Brokerage',
+    name: 'SalesVerse',
+    category: 'Sales Management',
     icon: snapchatIcon,
-    href: '/broker-verse',
+    href: '/sales-verse',
   },
   {
     id: 2,
-    name: 'CustomerVerse',
-    category: 'Customers',
+    name: 'BrokerVerse',
+    category: 'Brokerage',
     icon: shopifyIcon,
-    href: '/customer-verse',
+    href: '/broker-verse',
   },
   {
     id: 3,
@@ -47,14 +47,14 @@ const integrationData = [
     name: 'ReportVerse',
     category: 'Analytics',
     icon: tiktokIcon,
-    href: '/report-verse',
+    href: '/pricing',
   },
   {
     id: 6,
     name: 'ReconVerse',
     category: 'Reconciliation',
     icon: tiktokIcon,
-    href: '/recon-verse',
+    href: '/pricing',
   },
 ];
 
@@ -77,7 +77,7 @@ const Integration = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent max-[426px]:text-tagline-2 max-w-[510px]">
-                Our platforms are designed to solve different operational challenges across insurance and enterprise workflows. Discover how our other products can help you unlock more value.
+                Our platforms are designed to solve different operational challenges across the insurance and financial ecosystem. Discover how our products work together to power modern digital operations.
               </p>
             </RevealAnimation>
           </div>
@@ -106,9 +106,9 @@ const Integration = () => {
                         <p className="text-accent/60 max-[426px]:text-tagline-2">{integration.category}</p>
                       </div>
                     </div>
-                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-500 ease-in-out max-[426px]:size-12">
-                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
-                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-500 ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
+                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-600 ease-in-out max-[426px]:size-12">
+                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-600 ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
+                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-600 ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
                     </div>
                   </Link>
                 </div>

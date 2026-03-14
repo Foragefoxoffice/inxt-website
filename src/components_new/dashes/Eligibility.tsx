@@ -6,19 +6,23 @@ import LinkButton from '../ui/button/LinkButton';
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Data scattered across multiple platforms and systems',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Manual reporting processes slowing decision-making',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Limited real-time visibility into business performance',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Difficulty analyzing large volumes of operational data',
+  },
+  {
+    id: 5,
+    text: 'Lack of centralized dashboards for key business metrics',
   },
 ];
 
@@ -32,12 +36,12 @@ const Eligibility = () => {
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
                 <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                  Why Organizations Struggle with Business Data Visibility
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                  Many organizations struggle to extract meaningful insights from their data due to fragmented systems, complex reporting processes, and limited visibility into operational performance.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}

@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is MerchantVerse used for?',
+    answer: 'MerchantVerse is an AI-powered platform designed for banks and financial institutions to digitize merchant onboarding, manage compliance, and monitor merchant performance.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Can MerchantVerse support digital merchant applications?',
+    answer: 'Yes. MerchantVerse provides fully digital onboarding workflows where merchants can submit applications and documents through a secure portal.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does MerchantVerse automate compliance checks?',
+    answer: 'Yes. The platform automates KYC, eKYC, and regulatory compliance checks through integrated verification systems.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Can MerchantVerse integrate with core banking systems?',
+    answer: 'Yes. MerchantVerse is designed to integrate seamlessly with core banking and payment processing systems via APIs.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About MerchantVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how MerchantVerse helps banks digitize merchant onboarding, ensure regulatory compliance, and improve operational efficiency.
                   </p>
                 </RevealAnimation>
               </div>

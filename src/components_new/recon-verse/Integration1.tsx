@@ -10,51 +10,50 @@ import integrationBg from '@public/images/ns-img-24.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
 
 // Integration data
 const integrationData = [
   {
     id: 1,
-    name: 'BrokerVerse',
-    category: 'Brokerage',
+    name: 'SalesVerse',
+    category: 'Sales Management',
     icon: snapchatIcon,
-    href: '/broker-verse',
+    href: '/sales-verse',
   },
   {
     id: 2,
-    name: 'CustomerVerse',
-    category: 'Customers',
+    name: 'BrokerVerse',
+    category: 'Brokerage',
     icon: shopifyIcon,
-    href: '/customer-verse',
+    href: '/broker-verse',
   },
   {
     id: 3,
-    name: 'MerchantVerse',
-    category: 'Payments',
+    name: 'CustomerVerse',
+    category: 'Customers',
     icon: figmaIcon,
-    href: '/merchant-verse',
+    href: '/customer-verse',
   },
   {
     id: 4,
-    name: 'ClaimVerse',
-    category: 'Claims',
+    name: 'MerchantVerse',
+    category: 'Payments',
     icon: slackIcon,
-    href: '/claim-verse',
+    href: '/merchant-verse',
   },
   {
     id: 5,
+    name: 'ClaimVerse',
+    category: 'Claims',
+    icon: tiktokIcon,
+    href: '/claim-verse',
+  },
+  {
+    id: 6,
     name: 'ReportVerse',
     category: 'Analytics',
     icon: tiktokIcon,
     href: '/report-verse',
-  },
-  {
-    id: 6,
-    name: 'ReconVerse',
-    category: 'Reconciliation',
-    icon: tiktokIcon,
-    href: '/recon-verse',
   },
 ];
 

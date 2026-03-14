@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is ReconVerse used for?',
+    answer: 'ReconVerse is a reconciliation platform that helps organizations match financial transactions, detect discrepancies, and automate reconciliation workflows.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Who should use ReconVerse?',
+    answer: 'ReconVerse is designed for banks, financial institutions, payment providers, and enterprises managing large transaction volumes.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does ReconVerse support automated transaction matching?',
+    answer: 'Yes. ReconVerse uses rule-based automation and AI analytics to match transactions across multiple systems.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Can ReconVerse integrate with banking and payment platforms?',
+    answer: 'Yes. ReconVerse supports API-based integrations with banking systems, payment gateways, and financial platforms.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About ReconVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how ReconVerse helps organizations automate reconciliation workflows and improve financial transparency.
                   </p>
                 </RevealAnimation>
               </div>

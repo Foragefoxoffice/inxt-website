@@ -6,19 +6,23 @@ import LinkButton from '../ui/button/LinkButton';
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Fragmented digital channels across web, mobile, and service platforms',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Disconnected customer data across enterprise systems',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Slow service delivery due to manual workflows',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Limited visibility into digital engagement performance',
+  },
+  {
+    id: 5,
+    text: 'Difficulty delivering personalized experiences at scale',
   },
 ];
 
@@ -32,12 +36,12 @@ const Eligibility = () => {
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
                 <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                  Why Organizations Struggle with Digital Experiences
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                  Many enterprises face challenges delivering seamless digital experiences due to fragmented technology ecosystems, disconnected customer data, and manual operational processes. These limitations make it difficult to create consistent and personalized digital journeys.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}

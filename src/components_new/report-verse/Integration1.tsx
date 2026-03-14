@@ -10,44 +10,43 @@ import integrationBg from '@public/images/ns-img-24.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
 
 // Integration data
 const integrationData = [
   {
     id: 1,
+    name: 'SalesVerse',
+    category: 'Sales Management',
+    icon: zapierIcon,
+    href: '/sales-verse',
+  },
+  {
+    id: 2,
     name: 'BrokerVerse',
     category: 'Brokerage',
     icon: snapchatIcon,
     href: '/broker-verse',
   },
   {
-    id: 2,
+    id: 3,
     name: 'CustomerVerse',
     category: 'Customers',
     icon: shopifyIcon,
     href: '/customer-verse',
   },
   {
-    id: 3,
+    id: 4,
     name: 'MerchantVerse',
     category: 'Payments',
     icon: figmaIcon,
     href: '/merchant-verse',
   },
   {
-    id: 4,
+    id: 5,
     name: 'ClaimVerse',
     category: 'Claims',
     icon: slackIcon,
     href: '/claim-verse',
-  },
-  {
-    id: 5,
-    name: 'ReportVerse',
-    category: 'Analytics',
-    icon: tiktokIcon,
-    href: '/report-verse',
   },
   {
     id: 6,
@@ -58,7 +57,7 @@ const integrationData = [
   },
 ];
 
-const Integration = () => {
+const Integration1 = () => {
   return (
     <section className="dark:bg-background-6 py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
       <div className="bg-secondary relative z-0 mx-auto w-[95%] overflow-hidden rounded-4xl p-5 max-[426px]:w-[90%] max-[426px]:rounded-2xl max-[426px]:px-5 max-[426px]:py-8 sm:p-10 2xl:max-w-[1440px] 2xl:px-[100px] 2xl:py-[100px]">
@@ -72,12 +71,12 @@ const Integration = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
-               Explore Our Other Products
+                Explore Our Other Products
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent max-[426px]:text-tagline-2 max-w-[510px]">
-                Our platforms are designed to solve different operational challenges across insurance and enterprise workflows. Discover how our other products can help you unlock more value.
+                Our platforms help organizations modernize operations and deliver intelligent digital experiences across the insurance and financial ecosystem.
               </p>
             </RevealAnimation>
           </div>
@@ -121,5 +120,5 @@ const Integration = () => {
   );
 };
 
-Integration.displayName = 'Integration';
-export default Integration;
+Integration1.displayName = 'Integration1';
+export default Integration1;

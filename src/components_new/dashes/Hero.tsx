@@ -1,0 +1,74 @@
+import hero1 from '@public/images/ns-img-243.png';
+import hero2 from '@public/images/ns-img-244.png';
+import hero3 from '@public/images/ns-img-245.png';
+import Image from 'next/image';
+import RevealAnimation from '../animation/RevealAnimation';
+import LinkButton from '../ui/button/LinkButton';
+import GradientAnimation from './GradientAnimation';
+import CtaInputForm from '@/components_new/shared/cta/CtaInputForm';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button/Button';
+
+const Hero = () => {
+  return (
+    <section className="dark:bg-background-5 relative bg-white pt-[180px] pb-[100px] lg:pt-[230px] lg:pb-[100px]">
+      <div className="main-container relative z-10">
+        <div className="space-y-5 text-center">
+          <div className="space-y-3">
+            <RevealAnimation delay={0.2}>
+              <h1 className="mx-auto max-w-[400px] leading-[1.3] sm:max-w-[600px] md:max-w-[900px] xl:max-w-[1110px]">
+                <span className="hero-text-gradient hero-text-color-2 block">
+                  Dashes <br className="hidden md:block" /> AI-Powered Business Dashboard & Insights Platform
+                </span>
+              </h1>
+            </RevealAnimation>
+            <RevealAnimation delay={0.3}>
+              <p className="mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-full">
+                Dashes is an intelligent dashboard and analytics platform designed to transform complex data into clear, actionable insights. By combining real-time analytics, interactive visualizations, and AI-powered reporting, Dashes enables organizations to monitor performance, track key metrics, and make faster, data-driven decisions.
+              </p>
+            </RevealAnimation>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4 mt-12 mb-8">
+          <div className="flex justify-center w-full">
+            <CtaInputForm 
+              btnClass="btn-md"
+              btnStyle={{ background: '#000000', color: '#ffffff', borderColor: '#000000' }}
+              ctaBtnText="Get Information"
+            />
+          </div>
+          <Button 
+            btnClass="btn-md btn-white hover:btn-primary border-1 border-gray-300"
+            className="mt-6"
+          >
+            Schedule a Demo
+          </Button>
+        </div>
+        <div className="relative z-10 flex items-end justify-center -space-x-28">
+          <RevealAnimation delay={0.5} direction="right" offset={100} instant>
+            <figure className="relative -z-10 w-full max-w-[200px] overflow-hidden rounded-[20px] md:max-w-[250px] lg:max-w-[326px]">
+              <Image src={hero3} alt="hero" className="h-full w-full rounded-[20px] object-cover" />
+            </figure>
+          </RevealAnimation>
+          <RevealAnimation delay={0.2} offset={100} instant>
+            <figure className="shadow-6 relative z-10 w-full max-w-[250px] overflow-hidden rounded-[30px] md:max-w-[300px] lg:max-w-[370px]">
+              <Image src={hero1} alt="hero" className="h-full w-full object-cover" />
+            </figure>
+          </RevealAnimation>
+          <RevealAnimation delay={0.5} offset={100} direction="left" instant>
+            <figure className="relative -z-10 w-full max-w-[200px] overflow-hidden rounded-[20px] md:max-w-[250px] lg:max-w-[326px]">
+              <Image src={hero2} alt="hero" className="h-full w-full rounded-[20px] object-cover" />
+            </figure>
+          </RevealAnimation>
+        </div>
+      </div>
+      <RevealAnimation delay={0.6} offset={0}>
+        <figure className="absolute top-0 left-1/2 z-0 h-full w-full max-w-[1390px] -translate-x-1/2">
+          <GradientAnimation />
+        </figure>
+      </RevealAnimation>
+    </section>
+  );
+};
+
+export default Hero;

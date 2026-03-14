@@ -192,6 +192,7 @@ const AiChatbot = () => {
         onCancel={() => setIsExpanded(false)}
         footer={null}
         closeIcon={null}
+        closable={false}
         width="100%"
         centered
         destroyOnClose
@@ -199,7 +200,7 @@ const AiChatbot = () => {
         transitionName=""
         maskTransitionName=""
       >
-        <div className="flex flex-col h-screen w-screen bg-[#0b0f1a] relative overflow-hidden font-sans">
+        <div className="flex flex-col h-screen w-full bg-[#0b0f1a] relative overflow-hidden font-sans">
           {/* Background Decor */}
           <div className="absolute inset-0 pointer-events-none opacity-40">
             <div className="absolute top-[-10%] right-[-10%] w-[80%] h-[80%] bg-blue-900/20 blur-[200px] rounded-full"></div>
@@ -207,20 +208,22 @@ const AiChatbot = () => {
           </div>
 
           {/* Header */}
-          <header className="h-20 w-full flex items-center justify-end px-12 shrink-0 relative z-50">
-            <button 
-              onClick={() => { setIsExpanded(false); setMessages([]); }}
-              className="w-10 h-10 rounded-full bg-white/5 text-slate-400 hover:text-white hover:bg-white/10 flex items-center justify-center transition-all border border-white/5"
-            >
-              <div className="w-5 h-5">{iconClose()}</div>
-            </button>
+          <header className="h-24 w-full shrink-0 relative z-50">
+            <div className="max-w-4xl mx-auto h-full flex items-center justify-end px-6 md:px-10">
+              <button 
+                onClick={() => { setIsExpanded(false); setMessages([]); }}
+                className="w-12 h-12 rounded-full bg-white/5 text-slate-400 hover:text-white hover:bg-[#1D74BA] flex items-center justify-center transition-all border border-white/5 group shadow-lg"
+              >
+                <div className="w-6 h-6">{iconClose()}</div>
+              </button>
+            </div>
           </header>
 
           {/* Scrollable Messages Area */}
           <main 
             ref={msgsRef}
             data-lenis-prevent
-            className="flex-1 w-full max-w-4xl mx-auto overflow-y-auto px-6 py-6 relative z-40 scroll-smooth"
+            className="flex-1 w-full max-w-4xl mx-auto overflow-y-auto px-6 md:px-10 py-6 relative z-40 scroll-smooth"
             style={{ 
               scrollbarWidth: 'thin', 
               scrollbarColor: 'rgba(255,255,255,0.1) transparent' 
@@ -243,7 +246,7 @@ const AiChatbot = () => {
                   )}
                 >
                   <div className={cn(
-                    "w-10 h-10 rounded-xl shrink-0 flex items-center justify-center p-2.5 shadow-xl transition-transform",
+                    "w-11 h-11 rounded-xl shrink-0 flex items-center justify-center p-2.5 shadow-xl transition-transform",
                     msg.role === 'user' ? 'bg-[#1D74BA] text-white' : 'bg-slate-800 text-slate-300 border border-white/5'
                   )}>
                     {msg.role === 'user' ? iconUser() : iconBot()}
@@ -261,19 +264,19 @@ const AiChatbot = () => {
               
               {isLoading && (
                 <div className="w-full flex gap-5 opacity-40 animate-pulse">
-                  <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center p-2.5 shadow-xl">
+                  <div className="w-11 h-11 rounded-xl bg-slate-800 flex items-center justify-center p-2.5 shadow-xl">
                      {iconBot()}
                   </div>
-                  <div className="h-4 w-48 bg-slate-800 rounded-full mt-4"></div>
+                  <div className="h-4 w-48 bg-slate-800 rounded-full mt-5"></div>
                 </div>
               )}
             </div>
           </main>
 
           {/* Bottom Fixed Footer Area */}
-          <footer className="w-full max-w-4xl mx-auto px-6 py-10 shrink-0 relative z-50">
-             <div className="relative group bg-[#161b2a]/95 backdrop-blur-3xl border border-white/10 rounded-[24px] p-2.5 pl-6 flex items-end gap-4 shadow-2xl focus-within:border-[#1D74BA]/50 transition-all">
-                <div className="w-8 h-8 shrink-0 text-[#1D74BA] p-1.5 mb-1.5 opacity-60">
+          <footer className="w-full max-w-4xl mx-auto px-6 md:px-10 py-10 shrink-0 relative z-50">
+             <div className="relative group bg-[#161b2a]/95 backdrop-blur-3xl border border-white/10 rounded-[28px] p-3 flex items-end gap-4 shadow-2xl focus-within:border-[#1D74BA]/50 transition-all">
+                <div className="w-9 h-9 shrink-0 text-[#1D74BA] p-2 mb-1.5 opacity-60">
                   {iconBot()}
                 </div>
                 <textarea 
@@ -299,7 +302,7 @@ const AiChatbot = () => {
                 <button 
                    onClick={() => handleSend()}
                    disabled={!input.trim() || isLoading}
-                   className="p-3.5 bg-[#1D74BA] rounded-xl text-white hover:brightness-110 active:scale-95 transition-all disabled:opacity-20 shadow-xl"
+                   className="p-4 bg-[#1D74BA] rounded-2xl text-white hover:brightness-110 active:scale-95 transition-all disabled:opacity-20 shadow-xl"
                 >
                   <div className="w-5 h-5">{iconSend()}</div>
                 </button>

@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is BrokerVerse used for?',
+    answer: 'BrokerVerse is an end-to-end digital platform designed for insurance brokers to manage clients, policies, claims, and brokerage financial operations from a single system.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Can BrokerVerse handle commission tracking?',
+    answer: 'Yes. BrokerVerse includes financial reconciliation and commission management tools to track brokerage revenue and payments accurately.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does BrokerVerse support client document management?',
+    answer: 'Yes. The platform provides integrated document repositories for client files, policy documents, and regulatory compliance records.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'How does BrokerVerse improve broker efficiency?',
+    answer: 'By unifying client management, policy servicing, and operations into one intelligent system, BrokerVerse automates manual workflows and provides real-time performance insights.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About BrokerVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how BrokerVerse helps insurance brokerages manage operations, improve productivity, and strengthen client servicing.
                   </p>
                 </RevealAnimation>
               </div>

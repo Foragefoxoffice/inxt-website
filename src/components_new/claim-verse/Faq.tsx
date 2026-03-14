@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is ClaimVerse used for?',
+    answer: 'ClaimVerse is a digital platform designed to help insurers manage claims processing, verification, and settlement through a centralized claims management system.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Who should use ClaimVerse?',
+    answer: 'ClaimVerse is designed for insurance companies, claims teams, and operational departments responsible for managing claims workflows.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does ClaimVerse support fraud detection?',
+    answer: 'Yes. ClaimVerse includes AI-powered fraud detection tools to identify suspicious claims and reduce risk.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Can ClaimVerse integrate with policy systems?',
+    answer: 'Yes. ClaimVerse integrates with policy administration systems, analytics platforms, and customer engagement tools.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About ClaimVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how ClaimVerse helps insurers modernize claims management and deliver faster claims experiences.
                   </p>
                 </RevealAnimation>
               </div>

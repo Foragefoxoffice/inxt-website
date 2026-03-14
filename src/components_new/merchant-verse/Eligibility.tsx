@@ -1,24 +1,27 @@
 import eligibilityImg from '@public/images/ns-img-132.png';
 import Image from 'next/image';
-import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
+import RevealAnimation from '@/components/animation/RevealAnimation';
 
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Slow and manual merchant onboarding workflows',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Complex regulatory and compliance verification processes',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Limited visibility into merchant performance and activity',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Disconnected systems across onboarding, risk, and payments',
+  },
+  {
+    id: 5,
+    text: 'Poor merchant onboarding experience due to lengthy approval processes',
   },
 ];
 
@@ -31,13 +34,15 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[530px] md:text-start">
+                  Challenges in Merchant Onboarding and Management
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                <p className="mb-8 text-center md:text-start md:max-w-[530px]">
+                  Banks and financial institutions often face operational challenges when onboarding and managing merchants due to manual processes, complex compliance requirements, and disconnected systems.
+                  <br /><br />
+                  MerchantVerse addresses these challenges with a fully digital onboarding platform designed for modern banking operations.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}
@@ -67,17 +72,7 @@ const Eligibility = () => {
                 ))}
               </ul>
 
-              {/* <RevealAnimation delay={0.7}>
-                <div className="text-center md:text-start">
-                  <LinkButton
-                    href="/features"
-                    rel="noopener noreferrer"
-                    className="btn btn-white btn-xl dark:btn-transparent hover:btn-primary w-[90%] md:w-auto"
-                    aria-label="Check eligibility now">
-                    Check eligibility now
-                  </LinkButton>
-                </div>
-              </RevealAnimation> */}
+              
             </div>
             {/* img  */}
             <RevealAnimation delay={0.6}>

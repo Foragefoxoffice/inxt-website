@@ -16,45 +16,59 @@ import LinkButton from '../ui/button/LinkButton';
 const integrationData = [
   {
     id: 1,
-    name: 'BrokerVerse',
-    category: 'Brokerage',
-    icon: snapchatIcon,
-    href: '/broker-verse',
+    name: 'SalesVerse',
+    category: 'Sales Management',
+    icon: figmaIcon,
+    href: '/sales-verse',
   },
   {
     id: 2,
-    name: 'CustomerVerse',
-    category: 'Customers',
+    name: 'BrokerVerse',
+    category: 'Brokerage',
     icon: shopifyIcon,
-    href: '/customer-verse',
+    href: '/broker-verse',
   },
   {
     id: 3,
-    name: 'MerchantVerse',
-    category: 'Payments',
-    icon: figmaIcon,
-    href: '/merchant-verse',
+    name: 'CustomerVerse',
+    category: 'Customers',
+    icon: slackIcon,
+    href: '/customer-verse',
   },
   {
     id: 4,
-    name: 'ClaimVerse',
-    category: 'Claims',
-    icon: slackIcon,
-    href: '/claim-verse',
+    name: 'MerchantVerse',
+    category: 'Payments',
+    icon: zapierIcon,
+    href: '/merchant-verse',
   },
   {
     id: 5,
+    name: 'ClaimVerse',
+    category: 'Claims',
+    icon: snapchatIcon,
+    href: '/claim-verse',
+  },
+  {
+    id: 6,
     name: 'ReportVerse',
     category: 'Analytics',
     icon: tiktokIcon,
     href: '/report-verse',
   },
   {
-    id: 6,
+    id: 7,
     name: 'ReconVerse',
     category: 'Reconciliation',
-    icon: tiktokIcon,
+    icon: figmaIcon,
     href: '/recon-verse',
+  },
+  {
+    id: 8,
+    name: 'DigitalOne',
+    category: 'Digital Experience',
+    icon: shopifyIcon,
+    href: '/digital-one',
   },
 ];
 
@@ -72,7 +86,7 @@ const Integration = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="text-accent max-[426px]:text-heading-6 mx-auto max-w-[750px]">
-               Explore Our Other Products
+                Explore Our Other Products
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
@@ -106,9 +120,9 @@ const Integration = () => {
                         <p className="text-accent/60 max-[426px]:text-tagline-2">{integration.category}</p>
                       </div>
                     </div>
-                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-500 ease-in-out max-[426px]:size-12">
-                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
-                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-500 ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
+                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-[600ms] ease-in-out max-[426px]:size-12">
+                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-[600ms] ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
+                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-[600ms] ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
                     </div>
                   </Link>
                 </div>

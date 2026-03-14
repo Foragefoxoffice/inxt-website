@@ -6,19 +6,23 @@ import LinkButton from '../ui/button/LinkButton';
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Limited visibility into customer journeys and engagement behavior',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Disconnected communication channels and service systems',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Manual customer onboarding and verification processes',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Difficulty delivering personalized customer experiences',
+  },
+  {
+    id: 5,
+    text: 'Lack of real-time insights into customer satisfaction and engagement',
   },
 ];
 
@@ -31,13 +35,13 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[530px] md:text-start">
+                  Challenges in Customer Engagement Management
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                <p className="mb-8 text-center md:text-start md:max-w-[530px]">
+                  Organizations often face challenges in delivering seamless customer experiences due to fragmented systems, disconnected communication channels, and limited insights into customer behavior.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}
@@ -67,17 +71,7 @@ const Eligibility = () => {
                 ))}
               </ul>
 
-              {/* <RevealAnimation delay={0.7}>
-                <div className="text-center md:text-start">
-                  <LinkButton
-                    href="/features"
-                    rel="noopener noreferrer"
-                    className="btn btn-white btn-xl dark:btn-transparent hover:btn-primary w-[90%] md:w-auto"
-                    aria-label="Check eligibility now">
-                    Check eligibility now
-                  </LinkButton>
-                </div>
-              </RevealAnimation> */}
+              
             </div>
             {/* img  */}
             <RevealAnimation delay={0.6}>

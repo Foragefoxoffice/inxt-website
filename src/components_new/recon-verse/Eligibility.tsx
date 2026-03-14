@@ -1,24 +1,27 @@
 import eligibilityImg from '@public/images/ns-img-132.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
 
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Manual reconciliation processes causing delays and errors',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Large transaction volumes across multiple systems',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Difficulty identifying mismatched or missing transactions',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Lack of visibility into reconciliation status and exceptions',
+  },
+  {
+    id: 5,
+    text: 'Fragmented financial data across payment and accounting platforms',
   },
 ];
 
@@ -31,13 +34,13 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[530px] md:text-start">
+                  Challenges in Financial Reconciliation Processes
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                <p className="mb-8 text-center md:text-start md:max-w-[530px]">
+                  Financial institutions and enterprises often face operational challenges in reconciliation due to fragmented systems, high transaction volumes, and manual reconciliation processes.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}
@@ -67,17 +70,7 @@ const Eligibility = () => {
                 ))}
               </ul>
 
-              {/* <RevealAnimation delay={0.7}>
-                <div className="text-center md:text-start">
-                  <LinkButton
-                    href="/features"
-                    rel="noopener noreferrer"
-                    className="btn btn-white btn-xl dark:btn-transparent hover:btn-primary w-[90%] md:w-auto"
-                    aria-label="Check eligibility now">
-                    Check eligibility now
-                  </LinkButton>
-                </div>
-              </RevealAnimation> */}
+              
             </div>
             {/* img  */}
             <RevealAnimation delay={0.6}>

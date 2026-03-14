@@ -4,29 +4,29 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is Dashes used for?',
+    answer: 'Dashes is an intelligent business dashboard and analytics platform that helps organizations monitor performance and gain actionable insights from their business data.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'How does Dashes visualize business data?',
+    answer: 'Dashes uses interactive visualizations, real-time analytics, and customizable dashboards to present data from multiple systems in a single, clear view.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Can Dashes integrate with other business systems?',
+    answer: 'Yes. Dashes integrates with enterprise systems, operational databases, and third-party data sources to provide a unified view of business performance.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Who can use Dashes for business insights?',
+    answer: 'Business leaders, executives, and operational teams can use Dashes to monitor KPIs, identify trends, and make data-driven decisions.',
   },
 ];
 
 const Faq = () => {
   return (
-    <section className="max-[1920px]:px-5 bg-white">
+    <section className="max-[1920px]:px-5">
       <RevealAnimation delay={0.1}>
         <div className="bg-background-12 mx-auto max-w-[1880px] rounded-2xl py-18 md:rounded-4xl md:py-20 lg:py-25 xl:py-28">
           <div className="main-container">
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About Dashes</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how Dashes helps organizations visualize data, monitor performance, and gain actionable insights through intelligent dashboards and analytics.
                   </p>
                 </RevealAnimation>
               </div>

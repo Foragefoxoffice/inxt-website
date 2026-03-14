@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is CustomerVerse used for?',
+    answer: 'CustomerVerse is a digital engagement platform that helps businesses manage customer interactions, onboarding, and engagement through a unified system.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Who should use CustomerVerse?',
+    answer: 'CustomerVerse is designed for insurers and enterprises looking to improve customer engagement and deliver personalized digital experiences.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does CustomerVerse support digital onboarding?',
+    answer: 'Yes. CustomerVerse includes digital onboarding, identity verification, and automated document management.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Can CustomerVerse integrate with existing systems?',
+    answer: 'Yes. CustomerVerse supports API-based integrations with CRM platforms, enterprise systems, and digital communication tools.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About CustomerVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how CustomerVerse helps organizations transform customer engagement and deliver seamless digital experiences.
                   </p>
                 </RevealAnimation>
               </div>

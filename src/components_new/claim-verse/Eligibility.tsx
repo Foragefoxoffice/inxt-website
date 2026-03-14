@@ -1,24 +1,27 @@
 import eligibilityImg from '@public/images/ns-img-132.png';
 import Image from 'next/image';
-import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
+import RevealAnimation from '@/components/animation/RevealAnimation';
 
 const eligibilityData = [
   {
     id: 1,
-    text: 'Critical insights hidden in large volumes of data',
+    text: 'Manual claims processing and document verification',
   },
   {
     id: 2,
-    text: 'Dependence on manual analysis and delayed reports',
+    text: 'Limited visibility into claim status and workflow progress',
   },
   {
     id: 3,
-    text: 'Operational risks identified too late',
+    text: 'Fraud detection challenges and risk assessment delays',
   },
   {
     id: 4,
-    text: 'Lack of real-time decision intelligence',
+    text: 'Disconnected systems across claims, policy, and customer data',
+  },
+  {
+    id: 5,
+    text: 'Slow claim settlement leading to poor customer experience',
   },
 ];
 
@@ -31,13 +34,13 @@ const Eligibility = () => {
             {/* heading  */}
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[661px] md:text-start">
-                  Why Organizations Struggle with Data-Driven Decisions
+                <h2 className="md:text-heading-4 lg:text-heading-3 xl:text-heading-2 w-full text-center md:max-w-[530px] md:text-start">
+                  Challenges in Insurance Claims Management
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p className="max-w-[561px] mb-8 text-center md:text-start">
-                  Many organizations struggle to turn large volumes of operational data into actionable insights. Without intelligent decision support, teams often rely on delayed reporting and manual analysis.
+                <p className="mb-8 text-center md:text-start md:max-w-[530px]">
+                  Insurance companies often face operational challenges in managing claims due to manual processes, limited visibility, and complex verification requirements.
                 </p>
               </RevealAnimation>
               {/* eligibility list  */}
@@ -67,17 +70,7 @@ const Eligibility = () => {
                 ))}
               </ul>
 
-              {/* <RevealAnimation delay={0.7}>
-                <div className="text-center md:text-start">
-                  <LinkButton
-                    href="/features"
-                    rel="noopener noreferrer"
-                    className="btn btn-white btn-xl dark:btn-transparent hover:btn-primary w-[90%] md:w-auto"
-                    aria-label="Check eligibility now">
-                    Check eligibility now
-                  </LinkButton>
-                </div>
-              </RevealAnimation> */}
+              
             </div>
             {/* img  */}
             <RevealAnimation delay={0.6}>

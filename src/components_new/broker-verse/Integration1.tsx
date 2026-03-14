@@ -16,10 +16,10 @@ import LinkButton from '../ui/button/LinkButton';
 const integrationData = [
   {
     id: 1,
-    name: 'BrokerVerse',
-    category: 'Brokerage',
+    name: 'SalesVerse',
+    category: 'Sales',
     icon: snapchatIcon,
-    href: '/broker-verse',
+    href: '/sales-verse',
   },
   {
     id: 2,
@@ -47,14 +47,14 @@ const integrationData = [
     name: 'ReportVerse',
     category: 'Analytics',
     icon: tiktokIcon,
-    href: '/report-verse',
+    href: '/pricing',
   },
   {
     id: 6,
     name: 'ReconVerse',
     category: 'Reconciliation',
     icon: tiktokIcon,
-    href: '/recon-verse',
+    href: '/pricing',
   },
 ];
 
@@ -106,9 +106,9 @@ const Integration = () => {
                         <p className="text-accent/60 max-[426px]:text-tagline-2">{integration.category}</p>
                       </div>
                     </div>
-                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-500 ease-in-out max-[426px]:size-12">
-                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
-                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-500 ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
+                    <div className="bg-[#D3E7F8] group-hover:bg-[#D3E7F8]/90 group-hover:shadow-1 relative flex size-14 items-center justify-center overflow-hidden rounded-full transition-all duration-[600ms] ease-in-out max-[426px]:size-12">
+                      <ArrowIcon className="absolute size-6 -translate-x-11 stroke-black opacity-0 transition-all duration-[600ms] ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
+                      <ArrowIcon className="absolute size-6 translate-x-0 stroke-black opacity-100 transition-all duration-[600ms] ease-in-out group-hover:translate-x-10 group-hover:opacity-0" />
                     </div>
                   </Link>
                 </div>

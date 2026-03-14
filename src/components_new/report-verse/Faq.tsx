@@ -4,23 +4,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqData = [
   {
     id: 1,
-    question: 'What is SalesVerse used for?',
-    answer: 'SalesVerse is a sales management platform designed for insurance organizations to capture leads, manage agents, and track sales performance through a centralized system.',
+    question: 'What is ReportVerse used for?',
+    answer: 'ReportVerse is an analytics and reporting platform that helps organizations generate insights, monitor performance, and automate reporting processes.',
   },
   {
     id: 2,
-    question: 'Can SalesVerse support multiple sales channels?',
-    answer: 'Yes. SalesVerse supports omni-channel sales including digital platforms, mobile applications, and agent-based sales channels.',
+    question: 'Who should use ReportVerse?',
+    answer: 'ReportVerse is designed for business leaders, analytics teams, and operational departments looking to leverage data for better decision-making.',
   },
   {
     id: 3,
-    question: 'Does SalesVerse provide AI-driven insights?',
-    answer: 'Yes. The platform uses AI for lead scoring, sales recommendations, and predictive analytics to help teams prioritize high-value opportunities.',
+    question: 'Does ReportVerse support real-time analytics?',
+    answer: 'Yes. ReportVerse provides real-time dashboards and data insights to monitor performance continuously.',
   },
   {
     id: 4,
-    question: 'Can SalesVerse integrate with existing insurance systems?',
-    answer: 'Yes. SalesVerse integrates with policy administration systems, CRM platforms, and analytics tools through APIs.',
+    question: 'Can ReportVerse integrate with existing business systems?',
+    answer: 'Yes. ReportVerse integrates with enterprise systems, data platforms, and analytics tools through APIs.',
   },
 ];
 
@@ -36,11 +36,11 @@ const Faq = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2>Common Questions About SalesVerse</h2>
+                  <h2>Common Questions About ReportVerse</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p>
-                    Learn how SalesVerse helps insurance organizations manage sales operations, improve lead conversion, and optimize distribution networks.
+                    Learn how ReportVerse helps organizations transform raw data into meaningful insights through advanced analytics and reporting tools.
                   </p>
                 </RevealAnimation>
               </div>
